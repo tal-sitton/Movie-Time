@@ -1,0 +1,4676 @@
+{
+  "Screenings": [
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d3\u05d5\u05de\u05d4 \u05d0\u05e9",
+      "type": "2D",
+      "time": "14:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d3\u05d5\u05de\u05d4 \u05d0\u05e9",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "20:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "23:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "20:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "23:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d0\u05e8\u05e0\u05d2\u05d5\u05dc \u05d5\u05e9\u05d5\u05d3\u05d3\u05d9 \u05d4\u05d0\u05d5\u05e6\u05e8 \u05d4\u05d0\u05d1\u05d5\u05d3",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "12:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d1\u05dc\u05d0\u05e7-\u05e4\u05d5\u05df",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "15:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "17:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d0\u05e9\u05de\u05d4",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "15:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "12:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "18:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "00:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05db\u05dc\u05d1 \u05de\u05d9 \u05e9\u05de\u05e0\u05d2\u05df 2",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "18:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "22:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "15:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "18:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d4\u05d9\u05d5\u05e8\u05d4: \u05e2\u05d5\u05dc\u05dd \u05d7\u05d3\u05e9",
+      "type": "2D",
+      "time": "14:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d4\u05d9\u05d5\u05e8\u05d4: \u05e2\u05d5\u05dc\u05dd \u05d7\u05d3\u05e9",
+      "type": "2D",
+      "time": "18:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e4\u05e9\u05e2 \u05d4\u05d5\u05dc\u05d9\u05d5\u05d5\u05d3\u05d9",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "13:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "16:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05db\u05e0\u05d9\u05ea \u05e4\u05e8\u05d9\u05e6\u05d4",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d2\u05dc\u05d9\u05dc\u05d5\u05ea",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "23:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d3\u05d5\u05de\u05d4 \u05d0\u05e9",
+      "type": "2D",
+      "time": "13:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "16:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "20:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "22:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "23:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "17:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d0\u05d7 \u05d4\u05d2\u05d3\u05d5\u05dc",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "13:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "17:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "20:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05e9\u05dc \u05e1\u05e0\u05d8\u05d5\u05e4\u05d9\u05d4",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:35"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "20:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "21:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "23:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "20:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "20:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "23:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "23:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "14:35"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "18:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "18:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "12:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "18:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "20:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "22:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "23:35"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "20:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "22:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "17:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:35"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "15:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "20:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "21:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "21:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "16:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "14:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "12:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "13:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "16:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "18:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "20:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "22:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "13:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "21:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "18:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "16:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "16:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "16:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "14:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "18:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "18:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "18:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "00:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "20:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05e9\u05dc \u05e1\u05e0\u05d8\u05d5\u05e4\u05d9\u05d4",
+      "type": "2D",
+      "time": "14:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "16:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "16:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "22:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05db\u05dc\u05d1 \u05de\u05d9 \u05e9\u05de\u05e0\u05d2\u05df 2",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e1\u05d5\u05e0\u05d9\u05e7 \u05d4\u05e1\u05e8\u05d8 2",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "21:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "18:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "12:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "15:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "18:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "16:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05e0\u05ea\u05e0\u05d9\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "19:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d0\u05e8\u05e0\u05d2\u05d5\u05dc \u05d5\u05e9\u05d5\u05d3\u05d3\u05d9 \u05d4\u05d0\u05d5\u05e6\u05e8 \u05d4\u05d0\u05d1\u05d5\u05d3",
+      "type": "2D",
+      "time": "14:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d1\u05e8\u05d6\u05d9\u05dc \u05d0\u05d4\u05d5\u05d1\u05ea\u05d9",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d1\u05e8\u05d6\u05d9\u05dc \u05d0\u05d4\u05d5\u05d1\u05ea\u05d9",
+      "type": "2D",
+      "time": "16:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "20:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05e9\u05dc \u05e1\u05e0\u05d8\u05d5\u05e4\u05d9\u05d4",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05e9\u05dc \u05e1\u05e0\u05d8\u05d5\u05e4\u05d9\u05d4",
+      "type": "2D",
+      "time": "16:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "16:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05db\u05dc\u05d1 \u05de\u05d9 \u05e9\u05de\u05e0\u05d2\u05df 2",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "13:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "16:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "14:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d4\u05d9\u05d5\u05e8\u05d4: \u05e2\u05d5\u05dc\u05dd \u05d7\u05d3\u05e9",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "14:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "16:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "13:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "16:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "21:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "23:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "00:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "20:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05de\u05d4, \u05d4\u05d6\u05d0\u05d1 \u05d5\u05d4\u05d0\u05e8\u05d9\u05d4 \u05d4\u05d2\u05d3\u05d5\u05dc",
+      "type": "2D",
+      "time": "14:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "14:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d1\u05e8\u05d6\u05d9\u05dc \u05d0\u05d4\u05d5\u05d1\u05ea\u05d9",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "12:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "15:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "18:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "00:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "17:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "00:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "14:55"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "17:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "12:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "12:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "15:05"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "16:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "00:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "13:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "16:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "21:35"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d7\u05d3\u05e8\u05d4",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "00:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "22:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "14:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d5\u05d4\u05d1 \u05d0\u05d5\u05ea\u05da \u05e6'\u05d0\u05e8\u05dc\u05d9",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05d7\u05e8\u05d9 \u05e9... \u05e0\u05e4\u05dc\u05e0\u05d5",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05de\u05d4, \u05d4\u05d6\u05d0\u05d1 \u05d5\u05d4\u05d0\u05e8\u05d9\u05d4 \u05d4\u05d2\u05d3\u05d5\u05dc",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05de\u05d4, \u05d4\u05d6\u05d0\u05d1 \u05d5\u05d4\u05d0\u05e8\u05d9\u05d4 \u05d4\u05d2\u05d3\u05d5\u05dc",
+      "type": "2D",
+      "time": "16:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d0\u05e8\u05e0\u05d2\u05d5\u05dc \u05d5\u05e9\u05d5\u05d3\u05d3\u05d9 \u05d4\u05d0\u05d5\u05e6\u05e8 \u05d4\u05d0\u05d1\u05d5\u05d3",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d1\u05dc\u05d0\u05e7-\u05e4\u05d5\u05df",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d1\u05dc\u05d0\u05e7-\u05e4\u05d5\u05df",
+      "type": "2D",
+      "time": "00:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df",
+      "type": "2D",
+      "time": "19:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "16:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "14:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "18:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d7\u05d5\u05de\u05d5\u05e1 FULL \u05d8\u05e8\u05d9\u05d9\u05dc\u05e8",
+      "type": "2D",
+      "time": "00:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "17:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d8\u05e8\u05e3",
+      "type": "2D",
+      "time": "00:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "23:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05d9\u05ea\u05d5\u05de\u05d4: \u05d4\u05d4\u05ea\u05d7\u05dc\u05d4",
+      "type": "2D",
+      "time": "00:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "14:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8 \u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "14:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05de\u05d9 \u05d1\u05d0 \u05dc\u05d7\u05d2?",
+      "type": "2D",
+      "time": "19:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e0\u05e8\u05d0\u05ea\u05d4 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4 \u05d1\u05d7\u05d9\u05d9\u05dd",
+      "type": "2D",
+      "time": "00:25"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e2\u05d5\u05dc\u05d4 \u05dc\u05e8\u05d0\u05e9",
+      "type": "2D",
+      "time": "00:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d4\u05d9\u05d5\u05e8\u05d4: \u05e2\u05d5\u05dc\u05dd \u05d7\u05d3\u05e9",
+      "type": "2D",
+      "time": "18:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e2\u05ea \u05dc\u05de\u05d5\u05ea",
+      "type": "2D",
+      "time": "23:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "14:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "20:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "22:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "23:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "20:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Cinema City",
+      "location": "\u05d0\u05e9\u05d3\u05d5\u05d3",
+      "title": "\u05ea\u05d5\u05e8: \u05d0\u05d4\u05d1\u05d4 \u05d5\u05e8\u05e2\u05dd",
+      "type": "2D",
+      "time": "23:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "13:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "13:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df - \u05d4\u05e7\u05e8\u05e0\u05d5\u05ea \u05de\u05d9\u05d5\u05d7\u05d3\u05d5",
+      "type": "2D",
+      "time": "13:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "16:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8-\u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05e2\u05d3\u05d9\u05e0\u05d4",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05e1\u05d1\u05d5\u05d9 + \u05e9\u05d9\u05d7 \u05d9\u05d5\u05e6\u05e8\u05d9\u05dd \u05ea\"\u05d0",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "21:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05dc\u05d1\u05d9\u05e1",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05e9 \u05d4\u05d0\u05d4\u05d1\u05d4",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d4\u05db\u05d5\u05dc \u05d1\u05db\u05dc \u05de\u05e7\u05d5\u05dd \u05d1\u05d1\u05ea \u05d0\u05d7\u05ea",
+      "type": "2D",
+      "time": "21:50"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1",
+      "title": "\u05d0\u05d4\u05d1\u05d4 \u05d1\u05e9\u05d7\u05e7\u05d9\u05dd: \u05de\u05d0\u05d5\u05d5\u05e8\u05d9\u05e7",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "21:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05de\u05e0\u05d3\u05e8\u05d9\u05df",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "18:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05de\u05e0\u05d3\u05e8\u05d9\u05df",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "18:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05de\u05e0\u05d3\u05e8\u05d9\u05df",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "20:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05de\u05e0\u05d3\u05e8\u05d9\u05df",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "20:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "13:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "13:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "15:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "16:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "18:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e1\u05de\u05d3\u05e8",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "16:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e1\u05de\u05d3\u05e8",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8 - \u05d0\u05d9\u05e8\u05d5\u05e2 \u05de\u05d9\u05d5\u05d7\u05d3",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e1\u05de\u05d3\u05e8",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "22:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "13:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df - \u05d4\u05e7\u05e8\u05e0\u05d5\u05ea \u05de\u05d9\u05d5\u05d7\u05d3\u05d5",
+      "type": "2D",
+      "time": "13:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05dc\u05d9\u05d2\u05ea \u05e1\u05d5\u05e4\u05e8-\u05e4\u05d8\u05e1",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e4\u05dc\u05d0\u05de\u05dc\u05d9\u05dd",
+      "type": "2D",
+      "time": "15:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "16:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "17:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "17:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:15"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "19:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e2\u05d5\u05dc\u05dd \u05d0\u05d7\u05e8",
+      "type": "2D",
+      "time": "19:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:20"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e8\u05e2\u05e0\u05e0\u05d4",
+      "title": "\u05e1\u05d1\u05d5\u05d9",
+      "type": "2D",
+      "time": "21:45"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "13:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "13:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d4\u05d3\u05d1\u05d5\u05e8\u05d4 \u05de\u05d0\u05d9\u05d4 \u05d5\u05d1\u05d9\u05e6\u05ea \u05d4\u05d6\u05d4\u05d1",
+      "type": "2D",
+      "time": "14:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d1\u05d3\u05d9\u05d7\u05d4 \u05e9\u05dc \u05de\u05de\u05dc\u05db\u05d4",
+      "type": "2D",
+      "time": "15:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05e1\u05de\u05d5\u05e8\u05d0\u05d9 \u05e2\u05dc \u05d0\u05e8\u05d1\u05e2",
+      "type": "2D",
+      "time": "15:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d4\u05d0\u05e8\u05d9 \u05e4\u05d5\u05d8\u05e8 \u05d5\u05d4\u05d0\u05e1\u05d9\u05e8 \u05de\u05d0\u05d6\u05e7\u05d1\u05d0\u05df - \u05d4\u05e7\u05e8\u05e0\u05d5\u05ea \u05de\u05d9\u05d5\u05d7\u05d3\u05d5",
+      "type": "2D",
+      "time": "16:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "17:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d4\u05de\u05d9\u05e0\u05d9\u05d5\u05e0\u05d9\u05dd 2: \u05e2\u05dc\u05d9\u05d9\u05ea\u05d5 \u05e9\u05dc \u05d2\u05e8\u05d5",
+      "type": "2D",
+      "time": "17:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d4\u05d2\u05d9\u05d1\u05d5\u05e8",
+      "type": "2D",
+      "time": "19:00"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d1\u05ea\u05e0\u05d5\u05e2\u05d4",
+      "type": "2D",
+      "time": "19:10"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d3\u05dc\u05d9\u05e9\u05e1",
+      "type": "2D",
+      "time": "21:30"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05d0\u05e3 \u05e4\u05e2\u05dd \u05dc\u05d0 \u05de\u05d0\u05d5\u05d7\u05e8",
+      "type": "2D",
+      "time": "21:40"
+    },
+    {
+      "date": "14-08-2022",
+      "cinema": "Lev",
+      "location": "\u05e9\u05d5\u05d4\u05dd",
+      "title": "\u05e8\u05db\u05d1\u05ea \u05d4\u05e7\u05dc\u05d9\u05e2",
+      "type": "2D",
+      "time": "21:40"
+    }
+  ]
+}
