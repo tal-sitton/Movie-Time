@@ -2,6 +2,7 @@ package com.example.firstkotlinapp
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
+import android.net.Uri
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
@@ -34,8 +35,9 @@ class MainActivity : AppCompatActivity() {
                 val title = screeningInfo.getString("title")
                 val type = screeningInfo.getString("type")
                 val time = screeningInfo.getString("time")
+                val url = screeningInfo.getString("link")
 
-                val screening = Screening(title, date, time, location, theater, type)
+                val screening = Screening(title, date, time, location, theater, type, url)
                 allScreenings.add(screening)
             }
         }
@@ -82,6 +84,8 @@ class MainActivity : AppCompatActivity() {
             button.setOnClickListener {
                 toast("Button clicked")
                 println("BUTTON HEIGHT: ${button.height}")
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
+                startActivity(browserIntent)
             }
             if (i % 3 != 0) {
                 val spacer = Space(this)

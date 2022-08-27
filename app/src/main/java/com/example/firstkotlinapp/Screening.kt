@@ -18,7 +18,8 @@ class Screening(
     val time: String,
     val city: String,
     val theater: String,
-    val type: String
+    val type: String,
+    val url: String
 ) {
 
     val cinema: String = "$city $theater"
@@ -26,6 +27,7 @@ class Screening(
     var dateTimeFormatted: String? = null
 
     init {
+        println("Screening: $movie, $date, $time, $city, $theater, $type, $url")
         val day = date.split("-")[0].toInt()
         val month = date.split("-")[1].toInt() - 1
         val year = date.split("-")[2].toInt()
@@ -41,7 +43,6 @@ class Screening(
         val button = TextView(context)
         button.width = 330
         button.minHeight = 442
-//        button.layoutParams(LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT))
         button.textAlignment = ViewGroup.TEXT_ALIGNMENT_CENTER
 
         button.setBackgroundResource(R.drawable.movie_button)
@@ -68,15 +69,6 @@ class Screening(
             Spannable.SPAN_INCLUSIVE_INCLUSIVE
         )
         button.text = text
-//        val text: String =
-//            "<h5>$movie ($type)</h5><br>" +
-//                    "<p><b style=\"font-size:12px;\">$city<br>$theater</b><br>" +
-//                    "$dateTimeFormatted</p>"
-//        button.text = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-//            Html.fromHtml(text, Html.FROM_HTML_MODE_COMPACT)
-//        } else {
-//            Html.fromHtml(text)
-//        }
 
         println(text)
         println("BUTTON HEIGHTTT: ${button.height}")
