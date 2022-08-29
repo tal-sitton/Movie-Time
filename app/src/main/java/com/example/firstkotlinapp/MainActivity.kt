@@ -11,6 +11,7 @@ import android.widget.Space
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 
@@ -42,6 +43,11 @@ class MainActivity : AppCompatActivity() {
                 val url = screeningInfo.getString("link")
 
                 val screening = Screening(title, date, time, location, theater, type, url)
+
+                if (screening.dateTime.isBefore(LocalDateTime.now())) {
+                    continue
+                }
+
                 tmpAllScreenings.add(screening)
             }
         }
