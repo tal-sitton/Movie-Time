@@ -17,7 +17,10 @@ import java.time.format.DateTimeFormatter
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        var allScreenings: MutableList<Screening> = mutableListOf()
+        var allScreenings: Set<Screening> = setOf()
+        var filteredCinemaScreenings: Set<Screening> = setOf()
+        var filteredMoviesScreenings: Set<Screening> = setOf()
+        var filteredScreenings: Set<Screening> = setOf()
     }
 
     private fun jsonToList() {
@@ -25,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         val json: JSONObject? = Utils.loadJSONFromAsset(this)
         print(json)
+        val tmpAllScreenings: MutableList<Screening> = mutableListOf()
         if (json != null) {
             val screenings = json.getJSONArray("Screenings")
             for (i in 0 until screenings.length()) {
@@ -38,9 +42,10 @@ class MainActivity : AppCompatActivity() {
                 val url = screeningInfo.getString("link")
 
                 val screening = Screening(title, date, time, location, theater, type, url)
-                allScreenings.add(screening)
+                tmpAllScreenings.add(screening)
             }
         }
+        allScreenings = tmpAllScreenings.toSet()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         jsonToList()
+        resetToDefault()
 
         val movieButton: Button = findViewById(R.id.movieButton)
         val dateButton: Button = findViewById(R.id.dateButton)
@@ -58,32 +64,36 @@ class MainActivity : AppCompatActivity() {
 
         movieButton.setOnClickListener {
             intent.setClass(this, MovieActivity::class.java)
-            toast("Movie Button Clicked")
             startActivity(intent)
         }
 
         dateButton.setOnClickListener {
             intent.setClass(this, DateActivity::class.java)
-            toast("Date Button Clicked")
             startActivity(intent)
         }
         cinemaButton.setOnClickListener {
             intent.setClass(this, CinemaActivity::class.java)
-            toast("Cinema Button Clicked")
             startActivity(intent)
         }
 
         createButtons(findViewById(R.id.gl))
     }
 
+    private fun resetToDefault() {
+        filteredCinemaScreenings = allScreenings
+        filteredMoviesScreenings = allScreenings
+        filteredScreenings = allScreenings
+        MovieActivity.selectedMovies.clear()
+        CinemaActivity.selectedCinemas.clear()
+    }
+
     private fun createButtons(grid: GridLayout) {
+        grid.removeAllViewsInLayout()
         var i = 1
-        for (screening in allScreenings) {
+        for (screening in filteredScreenings) {
             val button = screening.createButton(this)
             grid.addView(button)
             button.setOnClickListener {
-                toast("Button clicked")
-                println("BUTTON HEIGHT: ${button.height}")
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
                 startActivity(browserIntent)
             }
@@ -98,8 +108,28 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        toast("Movies: ${MovieActivity.selectedMovies}")
-        toast("Cinemas: ${CinemaActivity.selectedCinemas}")
+        val selectedMovies = MovieActivity.selectedMovies
+        if (selectedMovies.isNotEmpty()) {
+            filteredMoviesScreenings =
+                allScreenings.filter { screening ->
+                    selectedMovies.contains(screening.movie)
+                }.toSet()
+        } else
+            filteredMoviesScreenings = allScreenings
+
+        val selectedCinemas = CinemaActivity.selectedCinemas
+        if (selectedCinemas.isNotEmpty()) {
+            filteredCinemaScreenings =
+                allScreenings.filter { screening ->
+                    selectedCinemas.contains(screening.cinema)
+                }.toSet()
+        } else
+            filteredCinemaScreenings = allScreenings
+
+        filteredScreenings =
+            filteredMoviesScreenings.intersect(filteredCinemaScreenings).toSet()
+
+        createButtons(findViewById(R.id.gl))
     }
 
     private fun toast(message: String) {
