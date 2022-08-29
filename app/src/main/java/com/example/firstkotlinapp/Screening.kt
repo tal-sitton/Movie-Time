@@ -29,13 +29,17 @@ class Screening(
     init {
         println("Screening: $movie, $date, $time, $city, $theater, $type, $url")
         val day = date.split("-")[0].toInt()
-        val month = date.split("-")[1].toInt() - 1
+        val month = date.split("-")[1].toInt()
         val year = date.split("-")[2].toInt()
         val hour = time.split(":")[0].toInt()
         val minute = time.split(":")[1].toInt()
         dateTime = LocalDateTime.of(year, month, day, hour, minute)
         dateTimeFormatted =
             dateTime.format(DateTimeFormatter.ofPattern("HH:mm - dd.MM"))
+    }
+
+    override fun toString(): String {
+        return "Screening: $movie, $dateTime, $city, $theater, $type, $url"
     }
 
 
