@@ -108,20 +108,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-
-        if (MovieActivity.selectedMovies.isNotEmpty()) {
+        val selectedMovies = MovieActivity.selectedMovies
+        if (selectedMovies.isNotEmpty()) {
             filteredMoviesScreenings =
                 allScreenings.filter { screening ->
-                    MovieActivity.selectedMovies.contains(screening.movie)
+                    selectedMovies.contains(screening.movie)
                 }.toSet()
         } else
             filteredMoviesScreenings = allScreenings
 
-
-        if (CinemaActivity.selectedCinemas.isNotEmpty()) {
+        val selectedCinemas = CinemaActivity.selectedCinemas
+        if (selectedCinemas.isNotEmpty()) {
             filteredCinemaScreenings =
                 allScreenings.filter { screening ->
-                    CinemaActivity.selectedCinemas.contains(screening.cinema)
+                    selectedCinemas.contains(screening.cinema)
                 }.toSet()
         } else
             filteredCinemaScreenings = allScreenings
