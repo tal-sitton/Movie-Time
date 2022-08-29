@@ -22,6 +22,6 @@ jobs:
       uses: sparkfabrik/android-build-action@v1.2.0
       with:
         project-path: .
-        output-path: ./output/my-app.apk
+        output-path: app/out/my-app.apk
         browserstack-upload: false
 
