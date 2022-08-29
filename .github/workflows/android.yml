@@ -22,12 +22,12 @@ jobs:
       uses: sparkfabrik/android-build-action@v1.2.0
       with:
         project-path: .
-        output-path: app/out/my-app.apk
+        output-path: my-app.apk
         browserstack-upload: false
         
     - name: save artifacts  
       uses: actions/upload-artifact@v3
       with:
-        name: code-coverage-report
-        path: app/out/my-app.apk
+        name: apk
+        path: my-app.apk
 
