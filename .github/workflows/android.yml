@@ -27,4 +27,8 @@ jobs:
     
     - name: Build Android App
       uses: sparkfabrik/android-build-action@v1.2.0
+      with:
+        project-path: /
+        output-path: my-app.apk
+        browserstack-upload: false
 
