@@ -14,8 +14,9 @@ jobs:
     steps:
     - name: shell
       run: |
-        find -name "gradlew"
+        var=$(find -name gradlew)
         echo "IMPORNTAT"
+        echo "$var"
 #     - uses: actions/checkout@v3
 #     - name: set up JDK 11
 #       uses: actions/setup-java@v3
