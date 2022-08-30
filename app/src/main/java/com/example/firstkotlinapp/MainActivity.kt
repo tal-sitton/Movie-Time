@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() {
 
                 tmpAllScreenings.add(screening)
             }
+        } else {
+            val intent: Intent = Intent(this, LoadingActivity::class.java)
+            intent.addFlags(FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
         }
         allScreenings = tmpAllScreenings.toSet()
     }
