@@ -16,7 +16,7 @@ class LoadingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_loading)
 
         val now: LocalDateTime = LocalDateTime.now()
-        val json: JSONObject? = Utils.loadJSONFromAsset(this)
+        val json: JSONObject? = Utils.loadJSONFromFile(this)
         if (json != null) {
             val lastUpdate = json.getString("time")
             if (lastUpdate.split("-")[0].toInt() != now.dayOfMonth) {

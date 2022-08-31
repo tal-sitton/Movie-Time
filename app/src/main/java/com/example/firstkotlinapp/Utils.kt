@@ -16,7 +16,7 @@ import java.util.concurrent.Executors
 class Utils {
     companion object {
 
-        fun loadJSONFromAsset(context: Context): JSONObject? {
+        fun loadJSONFromFile(context: Context): JSONObject? {
             val json: JSONObject? = try {
                 val stream: InputStream = context.openFileInput("Movies.json")
                 val size: Int = stream.available()

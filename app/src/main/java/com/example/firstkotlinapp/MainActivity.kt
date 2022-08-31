@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun jsonToList() {
         DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")
 
-        val json: JSONObject? = Utils.loadJSONFromAsset(this)
+        val json: JSONObject? = Utils.loadJSONFromFile(this)
         print(json)
         val tmpAllScreenings: MutableList<Screening> = mutableListOf()
         if (json != null) {
@@ -38,12 +38,13 @@ class MainActivity : AppCompatActivity() {
                 val date = screeningInfo.getString("date")
                 val theater = screeningInfo.getString("cinema")
                 val location = screeningInfo.getString("location")
+                val district = screeningInfo.getString("district")
                 val title = screeningInfo.getString("title")
                 val type = screeningInfo.getString("type")
                 val time = screeningInfo.getString("time")
                 val url = screeningInfo.getString("link")
 
-                val screening = Screening(title, date, time, location, theater, type, url)
+                val screening = Screening(title, date, time, location, district, theater, type, url)
 
                 if (screening.dateTime.isBefore(LocalDateTime.now())) {
                     continue

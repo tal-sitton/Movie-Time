@@ -1,17 +1,16 @@
 package com.example.firstkotlinapp
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Space
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 class CinemaActivity : AppCompatActivity() {
-    /*
-    TODO organize cinemas, or maybe the sql will come in a certain order?
-     */
 
     companion object {
         val selectedCinemas: MutableList<String> = mutableListOf("")
@@ -22,17 +21,23 @@ class CinemaActivity : AppCompatActivity() {
         setContentView(R.layout.actvity_filter)
         setupButton()
 
-        val cinemas: List<String> = getCinemas()
+        val cinemas: List<Cinema> = getCinemas()
         val ll: LinearLayout = findViewById(R.id.ll)
         createMoviesButtons(cinemas, ll)
 
     }
 
-    private fun createMoviesButtons(cinemas: List<String>, ll: LinearLayout) {
+    private fun createMoviesButtons(cinemas: List<Cinema>, ll: LinearLayout) {
+        var district = cinemas[0].district
+        createDisTextView(district, ll)
         for (cinema in cinemas) {
+            if (cinema.district != district) {
+                district = cinema.district
+                createDisTextView(district, ll)
+            }
             val button = Button(this)
-            button.text = cinema
-            if (selectedCinemas.contains(cinema)) {
+            button.text = cinema.name
+            if (selectedCinemas.contains(cinema.name)) {
                 button.isSelected = true
                 button.setBackgroundResource(R.drawable.clicked_button)
             } else
@@ -41,11 +46,11 @@ class CinemaActivity : AppCompatActivity() {
                 if (button.isSelected) {
                     button.setBackgroundResource(R.drawable.unclicked_button)
                     button.isSelected = false
-                    selectedCinemas.remove(cinema)
+                    selectedCinemas.remove(cinema.name)
                 } else {
                     button.setBackgroundResource(R.drawable.clicked_button)
                     button.isSelected = true
-                    selectedCinemas.add(cinema)
+                    selectedCinemas.add(cinema.name)
                 }
             }
             ll.addView(button)
@@ -53,6 +58,18 @@ class CinemaActivity : AppCompatActivity() {
             spacer.layoutParams = ViewGroup.LayoutParams(10, 35)
             ll.addView(spacer)
         }
+    }
+
+    private fun createDisTextView(district: String, ll: LinearLayout) {
+        val districtText = TextView(this)
+        districtText.text = district
+        districtText.textSize = 20.0f
+        districtText.setTypeface(null, Typeface.BOLD)
+        districtText.gravity = android.view.Gravity.CENTER
+        ll.addView(districtText)
+        val spacer = Space(this)
+        spacer.layoutParams = ViewGroup.LayoutParams(10, 35)
+        ll.addView(spacer)
     }
 
     private fun setupButton() {
@@ -69,13 +86,20 @@ class CinemaActivity : AppCompatActivity() {
         }
     }
 
-    private fun getCinemas(): List<String> {
-        val cinemas: MutableList<String> = mutableListOf()
+    private fun getCinemas(): List<Cinema> {
+        val cinemas: MutableList<Cinema> = mutableListOf()
         for (screening in MainActivity.allScreenings) {
-            if (!cinemas.contains(screening.cinema)) {
-                cinemas.add(screening.cinema)
+            val tmpCinema = Cinema(screening.cinema, screening.district)
+            if (!cinemas.any { cinema -> cinema == tmpCinema }) {
+                cinemas.add(tmpCinema)
             }
         }
         return cinemas
+    }
+
+    class Cinema(val name: String, val district: String) {
+        override fun equals(other: Any?): Boolean {
+            return other is Cinema && other.name == name && other.district == district
+        }
     }
 }
