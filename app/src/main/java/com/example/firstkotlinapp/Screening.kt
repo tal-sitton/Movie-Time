@@ -17,12 +17,13 @@ class Screening(
     val date: String,
     val time: String,
     val city: String,
+    val district: String,
     val theater: String,
     val type: String,
     val url: String
 ) {
 
-    val cinema: String = "$city $theater"
+    val cinema: String = "$theater $city"
     var dateTime: LocalDateTime = LocalDateTime.MIN
     var dateTimeFormatted: String? = null
 
