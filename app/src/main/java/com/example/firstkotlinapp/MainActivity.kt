@@ -153,6 +153,17 @@ class MainActivity : AppCompatActivity() {
         createButtons(findViewById(R.id.gl))
     }
 
+    private var backPressedTime: Long = 0
+    override fun onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            this.finishAffinity()
+        } else {
+            Toast.makeText(baseContext, "Press the back button again to exit", Toast.LENGTH_SHORT)
+                .show()
+            backPressedTime = System.currentTimeMillis()
+        }
+    }
+
     private fun toast(message: String) {
         println(message)
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
