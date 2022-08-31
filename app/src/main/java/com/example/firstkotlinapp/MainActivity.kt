@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var allScreenings: Set<Screening> = setOf()
         var filteredCinemaScreenings: Set<Screening> = setOf()
         var filteredMoviesScreenings: Set<Screening> = setOf()
+        var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
     }
 
@@ -51,9 +52,7 @@ class MainActivity : AppCompatActivity() {
                 tmpAllScreenings.add(screening)
             }
         } else {
-            val intent: Intent = Intent(this, LoadingActivity::class.java)
-            intent.addFlags(FLAG_ACTIVITY_NO_ANIMATION)
-            startActivity(intent)
+            startActivity(Intent(this, LoadingActivity::class.java))
         }
         allScreenings = tmpAllScreenings.toSet()
     }
@@ -92,9 +91,14 @@ class MainActivity : AppCompatActivity() {
     private fun resetToDefault() {
         filteredCinemaScreenings = allScreenings
         filteredMoviesScreenings = allScreenings
-        filteredScreenings = allScreenings
         MovieActivity.selectedMovies.clear()
         CinemaActivity.selectedCinemas.clear()
+
+        filteredDateScreenings = allScreenings.filter { screening ->
+            DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
+        }.toSet()
+
+        filteredScreenings = filteredDateScreenings
     }
 
     private fun createButtons(grid: GridLayout) {
@@ -136,8 +140,14 @@ class MainActivity : AppCompatActivity() {
         } else
             filteredCinemaScreenings = allScreenings
 
+        filteredDateScreenings = allScreenings.filter { screening ->
+            DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
+        }.toSet()
+
         filteredScreenings =
-            filteredMoviesScreenings.intersect(filteredCinemaScreenings).toSet()
+            filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
+                filteredDateScreenings
+            ).toSet()
 
         createButtons(findViewById(R.id.gl))
     }

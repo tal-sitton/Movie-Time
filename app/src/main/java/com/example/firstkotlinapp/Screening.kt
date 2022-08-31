@@ -74,8 +74,6 @@ class Screening(
         )
         button.text = text
 
-        println(text)
-        println("BUTTON HEIGHTTT: ${button.height}")
         return button
     }
 
