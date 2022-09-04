@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 filteredCinemaScreenings = allScreenings
 
             filteredDateScreenings = allScreenings.filter { screening ->
-                DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
+                DateActivity.checkScreening(screening)
             }.toSet()
 
             filteredScreenings =
@@ -124,9 +124,10 @@ class MainActivity : AppCompatActivity() {
         filteredMoviesScreenings = allScreenings
         MovieActivity.selectedMovies.clear()
         CinemaActivity.selectedCinemas.clear()
+        DateActivity.default()
 
         filteredDateScreenings = allScreenings.filter { screening ->
-            DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
+            DateActivity.checkScreening(screening)
         }.toSet()
 
         filteredScreenings = filteredDateScreenings

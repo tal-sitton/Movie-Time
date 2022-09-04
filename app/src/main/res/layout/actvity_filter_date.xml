@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="היום" />
 
 
@@ -79,16 +79,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="כל היום" />
 
         <Button
-            android:id="@+id/TomorrowButton"
+            android:id="@+id/tomorrowButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="מחר" />
 
         <Button
@@ -97,16 +97,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="12:00" />
 
         <Button
-            android:id="@+id/nextTomorrowButton"
+            android:id="@+id/twoDaysButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="יום שלישי 6/9" />
 
         <Button
@@ -115,16 +115,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="12:00-15:00" />
 
         <Button
-            android:id="@+id/nextNextTomorrowButton"
+            android:id="@+id/threeDaysButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="יום רביעי 7/9" />
 
         <Button
@@ -133,16 +133,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="15:00-19:00" />
 
         <Button
-            android:id="@+id/nextNextNextTomorrowButton"
+            android:id="@+id/fourDaysButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="יום חמישי 8/9" />
 
         <Button
@@ -151,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:text="אחרי 19:00" />
 
     </GridLayout>
