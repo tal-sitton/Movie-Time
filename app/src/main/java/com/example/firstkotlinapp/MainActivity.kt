@@ -23,6 +23,35 @@ class MainActivity : AppCompatActivity() {
         var filteredMoviesScreenings: Set<Screening> = setOf()
         var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
+
+        fun filter() {
+            val selectedMovies = MovieActivity.selectedMovies
+            if (selectedMovies.isNotEmpty()) {
+                filteredMoviesScreenings =
+                    allScreenings.filter { screening ->
+                        selectedMovies.contains(screening.movie)
+                    }.toSet()
+            } else
+                filteredMoviesScreenings = allScreenings
+
+            val selectedCinemas = CinemaActivity.selectedCinemas
+            if (selectedCinemas.isNotEmpty()) {
+                filteredCinemaScreenings =
+                    allScreenings.filter { screening ->
+                        selectedCinemas.contains(screening.cinema)
+                    }.toSet()
+            } else
+                filteredCinemaScreenings = allScreenings
+
+            filteredDateScreenings = allScreenings.filter { screening ->
+                DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
+            }.toSet()
+
+            filteredScreenings =
+                filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
+                    filteredDateScreenings
+                ).toSet()
+        }
     }
 
     private fun jsonToList() {
@@ -71,6 +100,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent()
         intent.addFlags(FLAG_ACTIVITY_NO_ANIMATION)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
 
         movieButton.setOnClickListener {
             intent.setClass(this, MovieActivity::class.java)
@@ -123,33 +153,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        val selectedMovies = MovieActivity.selectedMovies
-        if (selectedMovies.isNotEmpty()) {
-            filteredMoviesScreenings =
-                allScreenings.filter { screening ->
-                    selectedMovies.contains(screening.movie)
-                }.toSet()
-        } else
-            filteredMoviesScreenings = allScreenings
-
-        val selectedCinemas = CinemaActivity.selectedCinemas
-        if (selectedCinemas.isNotEmpty()) {
-            filteredCinemaScreenings =
-                allScreenings.filter { screening ->
-                    selectedCinemas.contains(screening.cinema)
-                }.toSet()
-        } else
-            filteredCinemaScreenings = allScreenings
-
-        filteredDateScreenings = allScreenings.filter { screening ->
-            DateActivity.selectedDate.dayOfMonth == screening.dateTime.dayOfMonth
-        }.toSet()
-
-        filteredScreenings =
-            filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
-                filteredDateScreenings
-            ).toSet()
-
+        filter()
         createButtons(findViewById(R.id.gl))
     }
 

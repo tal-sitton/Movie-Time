@@ -1,12 +1,10 @@
 package com.example.firstkotlinapp
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Space
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -81,20 +79,41 @@ class CinemaActivity : AppCompatActivity() {
             )
         )
         mainButton.setOnClickListener {
-            finish()
-            overridePendingTransition(0, 0)
+            onBackPressed()
+        }
+        val dateButton: Button = findViewById(R.id.dateButton)
+        val movieButton: Button = findViewById(R.id.movieButton)
+
+        val intent = Intent()
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
+
+        dateButton.setOnClickListener {
+            intent.setClass(this, DateActivity::class.java)
+            MainActivity.filter()
+            startActivity(intent)
+        }
+        movieButton.setOnClickListener {
+            intent.setClass(this, MovieActivity::class.java)
+            MainActivity.filter()
+            startActivity(intent)
         }
     }
 
     private fun getCinemas(): List<Cinema> {
         val cinemas: MutableList<Cinema> = mutableListOf()
-        for (screening in MainActivity.filteredScreenings) {
+        for (screening in MainActivity.filteredMoviesScreenings.intersect(MainActivity.filteredDateScreenings)) {
             val tmpCinema = Cinema(screening.cinema, screening.district)
             if (!cinemas.any { cinema -> cinema == tmpCinema }) {
                 cinemas.add(tmpCinema)
             }
         }
         return cinemas
+    }
+
+    override fun onBackPressed() {
+        finish()
+        overridePendingTransition(0, 0)
     }
 
     class Cinema(val name: String, val district: String) {
