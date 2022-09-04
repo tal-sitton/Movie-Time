@@ -68,7 +68,7 @@ class MovieActivity : AppCompatActivity() {
 
     private fun getMovies(): List<String> {
         val movies: MutableList<String> = mutableListOf()
-        for (screening in MainActivity.allScreenings) {
+        for (screening in MainActivity.filteredScreenings) {
             if (!movies.contains(screening.movie)) {
                 movies.add(screening.movie)
             }

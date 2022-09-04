@@ -88,7 +88,7 @@ class CinemaActivity : AppCompatActivity() {
 
     private fun getCinemas(): List<Cinema> {
         val cinemas: MutableList<Cinema> = mutableListOf()
-        for (screening in MainActivity.allScreenings) {
+        for (screening in MainActivity.filteredScreenings) {
             val tmpCinema = Cinema(screening.cinema, screening.district)
             if (!cinemas.any { cinema -> cinema == tmpCinema }) {
                 cinemas.add(tmpCinema)
