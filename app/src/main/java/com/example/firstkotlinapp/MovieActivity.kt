@@ -62,8 +62,7 @@ class MovieActivity : AppCompatActivity() {
             )
         )
         movieButton.setOnClickListener {
-            finish()
-            overridePendingTransition(0, 0)
+            onBackPressed()
         }
 
         val dateButton: Button = findViewById(R.id.dateButton)
@@ -87,7 +86,7 @@ class MovieActivity : AppCompatActivity() {
 
     private fun getMovies(): List<String> {
         val movies: MutableList<String> = mutableListOf()
-        for (screening in MainActivity.filteredScreenings) {
+        for (screening in MainActivity.filteredCinemaScreenings.intersect(MainActivity.filteredDateScreenings)) {
             if (!movies.contains(screening.movie)) {
                 movies.add(screening.movie)
             }
@@ -96,7 +95,7 @@ class MovieActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        window.setWindowAnimations(0)
         finish()
+        overridePendingTransition(0, 0)
     }
 }
