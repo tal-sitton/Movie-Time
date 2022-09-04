@@ -21,10 +21,7 @@ class DateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actvity_filter)
-
-        val ll: LinearLayout = findViewById(R.id.ll)
-
+        setContentView(R.layout.actvity_filter_date)
     }
 
 }

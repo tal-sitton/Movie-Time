@@ -51,7 +51,7 @@ class Screening(
         button.textAlignment = ViewGroup.TEXT_ALIGNMENT_CENTER
 
         button.setBackgroundResource(R.drawable.movie_button)
-        button.setTextColor(context.resources.getColor(R.color.white, context.theme))
+        button.setTextColor(context.resources.getColor(R.color.black, context.theme))
 
         val text: Spannable =
             SpannableString("$movie ($type)\n\n$city\n$theater\n$dateTimeFormatted\n")
