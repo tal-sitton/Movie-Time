@@ -17,15 +17,15 @@ class CinemaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actvity_filter)
-        setupButton()
+        setupTopButtons()
 
         val cinemas: List<Cinema> = getCinemas()
         val ll: LinearLayout = findViewById(R.id.ll)
-        createMoviesButtons(cinemas, ll)
+        createCinemasButtons(cinemas, ll)
 
     }
 
-    private fun createMoviesButtons(cinemas: List<Cinema>, ll: LinearLayout) {
+    private fun createCinemasButtons(cinemas: List<Cinema>, ll: LinearLayout) {
         var district = cinemas[0].district
         createDisTextView(district, ll)
         for (cinema in cinemas) {
@@ -70,7 +70,7 @@ class CinemaActivity : AppCompatActivity() {
         ll.addView(spacer)
     }
 
-    private fun setupButton() {
+    private fun setupTopButtons() {
         val mainButton: Button = findViewById(R.id.cinemaButton)
         mainButton.setBackgroundColor(
             ContextCompat.getColor(

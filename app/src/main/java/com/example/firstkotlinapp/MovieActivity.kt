@@ -18,7 +18,7 @@ class MovieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actvity_filter)
-        setupButton()
+        setupTopButtons()
 
         val movies: List<String> = getMovies()
         val ll: LinearLayout = findViewById(R.id.ll)
@@ -53,7 +53,7 @@ class MovieActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupButton() {
+    private fun setupTopButtons() {
         val movieButton: Button = findViewById(R.id.movieButton)
         movieButton.setBackgroundColor(
             ContextCompat.getColor(
