@@ -1,12 +1,10 @@
 package com.example.firstkotlinapp
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Space
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -84,6 +82,23 @@ class CinemaActivity : AppCompatActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+        val dateButton: Button = findViewById(R.id.dateButton)
+        val movieButton: Button = findViewById(R.id.movieButton)
+
+        val intent = Intent()
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
+
+        dateButton.setOnClickListener {
+            intent.setClass(this, DateActivity::class.java)
+            MainActivity.filter()
+            startActivity(intent)
+        }
+        movieButton.setOnClickListener {
+            intent.setClass(this, MovieActivity::class.java)
+            MainActivity.filter()
+            startActivity(intent)
+        }
     }
 
     private fun getCinemas(): List<Cinema> {
@@ -95,6 +110,11 @@ class CinemaActivity : AppCompatActivity() {
             }
         }
         return cinemas
+    }
+
+    override fun onBackPressed() {
+        window.setWindowAnimations(0)
+        finish()
     }
 
     class Cinema(val name: String, val district: String) {
