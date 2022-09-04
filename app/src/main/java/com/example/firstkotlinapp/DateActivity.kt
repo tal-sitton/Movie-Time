@@ -10,9 +10,7 @@ import java.time.DayOfWeek
 import java.time.LocalDateTime
 
 class DateActivity : AppCompatActivity() {
-    /*
-    TODO THIS ONE IS BIT DIFFICULT
-     */
+
     companion object {
         var selectedDay: Int = LocalDateTime.now().dayOfMonth
         var selectedStartHour: Int = LocalDateTime.now().hour
@@ -21,7 +19,8 @@ class DateActivity : AppCompatActivity() {
 
         fun checkScreening(screening: Screening): Boolean {
             val date = screening.dateTime
-            return date.dayOfMonth == selectedDay && date.hour >= selectedStartHour && date.hour <= selectedEndHour
+            return date.dayOfMonth == selectedDay && date.hour >= selectedStartHour &&
+                    (date.hour < selectedEndHour || (date.hour == selectedEndHour && date.minute == 0))
         }
 
         fun default() {
@@ -59,6 +58,7 @@ class DateActivity : AppCompatActivity() {
         pressedHour?.setBackgroundColor(this.getColor(R.color.purple_500))
 
         setupDateButtons()
+        setupHourButtons()
     }
 
     private fun setupDateButtons() {
@@ -89,7 +89,6 @@ class DateActivity : AppCompatActivity() {
         pressedDayID = button.id
         pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
         selectedDay = dateTime.dayOfMonth
-
     }
 
     private fun genText(dateTime: LocalDateTime): String {
@@ -102,6 +101,32 @@ class DateActivity : AppCompatActivity() {
             DayOfWeek.FRIDAY -> "שישי"
             DayOfWeek.SATURDAY -> "שבת"
         } + " " + dateTime.dayOfMonth + "/" + dateTime.monthValue
+    }
+
+    private fun setupHourButtons() {
+        val allDay = findViewById<Button>(R.id.allDayButton)
+        allDay.setOnClickListener { hourClickListener(allDay, 0, 24) }
+
+        val before12 = findViewById<Button>(R.id.before12Button)
+        before12.setOnClickListener { hourClickListener(before12, 0, 12) }
+
+        val till15 = findViewById<Button>(R.id.till15Button)
+        till15.setOnClickListener { hourClickListener(till15, 12, 15) }
+
+        val till19 = findViewById<Button>(R.id.till19Button)
+        till19.setOnClickListener { hourClickListener(till19, 15, 19) }
+
+        val after19 = findViewById<Button>(R.id.after19Button)
+        after19.setOnClickListener { hourClickListener(after19, 19, 24) }
+    }
+
+    private fun hourClickListener(button: Button, start: Int, end: Int) {
+        pressedHour?.setBackgroundColor(this.getColor(R.color.purple_200))
+        pressedHour = button
+        pressedHourID = button.id
+        pressedHour?.setBackgroundColor(this.getColor(R.color.purple_500))
+        selectedStartHour = start
+        selectedEndHour = end
     }
 
     private fun setupTopButtons() {
