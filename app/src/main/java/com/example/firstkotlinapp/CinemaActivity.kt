@@ -3,6 +3,8 @@ package com.example.firstkotlinapp
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -114,6 +116,21 @@ class CinemaActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finish()
         overridePendingTransition(0, 0)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_manu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.action_reset) {
+            MainActivity.resetToDefault()
+            MainActivity.filter()
+            recreate()
+            true
+        } else
+            super.onOptionsItemSelected(item)
     }
 
     class Cinema(val name: String, val district: String) {
