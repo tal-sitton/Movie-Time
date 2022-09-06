@@ -67,7 +67,6 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/AD"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/yellow_placeholder"

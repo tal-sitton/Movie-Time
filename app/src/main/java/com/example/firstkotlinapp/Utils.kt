@@ -3,6 +3,7 @@ package com.example.firstkotlinapp
 import android.content.Context
 import android.content.Intent
 import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
@@ -47,6 +48,7 @@ class Utils {
                     (context as AppCompatActivity).runOnUiThread {
                         context.findViewById<ProgressBar>(R.id.progressBar).visibility =
                             ProgressBar.INVISIBLE
+                        context.findViewById<TextView>(R.id.error).visibility = TextView.VISIBLE
                         Toast.makeText(context, ex.message, Toast.LENGTH_LONG).show()
                     }
                 }

@@ -7,10 +7,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.GridLayout
-import android.widget.Space
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import java.time.LocalDateTime
@@ -138,6 +135,12 @@ class MainActivity : AppCompatActivity() {
     private fun createButtons(grid: GridLayout) {
         grid.removeAllViewsInLayout()
         var i = 1
+        val notFound: TextView = findViewById(R.id.noMovieFound)
+        if (filteredScreenings.isEmpty())
+            notFound.visibility = TextView.VISIBLE
+        else
+            notFound.visibility = TextView.INVISIBLE
+
         for (screening in filteredScreenings) {
             val button = screening.createButton(this)
             grid.addView(button)
