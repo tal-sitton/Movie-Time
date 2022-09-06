@@ -4,6 +4,8 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.GridLayout
@@ -51,6 +53,20 @@ class MainActivity : AppCompatActivity() {
                 filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
                     filteredDateScreenings
                 ).toSet()
+        }
+
+        fun resetToDefault() {
+            filteredCinemaScreenings = allScreenings
+            filteredMoviesScreenings = allScreenings
+            MovieActivity.selectedMovies.clear()
+            CinemaActivity.selectedCinemas.clear()
+            DateActivity.default()
+
+            filteredDateScreenings = allScreenings.filter { screening ->
+                DateActivity.checkScreening(screening)
+            }.toSet()
+
+            filteredScreenings = filteredDateScreenings
         }
     }
 
@@ -119,20 +135,6 @@ class MainActivity : AppCompatActivity() {
         createButtons(findViewById(R.id.gl))
     }
 
-    private fun resetToDefault() {
-        filteredCinemaScreenings = allScreenings
-        filteredMoviesScreenings = allScreenings
-        MovieActivity.selectedMovies.clear()
-        CinemaActivity.selectedCinemas.clear()
-        DateActivity.default()
-
-        filteredDateScreenings = allScreenings.filter { screening ->
-            DateActivity.checkScreening(screening)
-        }.toSet()
-
-        filteredScreenings = filteredDateScreenings
-    }
-
     private fun createButtons(grid: GridLayout) {
         grid.removeAllViewsInLayout()
         var i = 1
@@ -167,6 +169,21 @@ class MainActivity : AppCompatActivity() {
                 .show()
             backPressedTime = System.currentTimeMillis()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_manu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.action_reset) {
+            resetToDefault()
+            filter()
+            createButtons(findViewById(R.id.gl))
+            true
+        } else
+            super.onOptionsItemSelected(item)
     }
 
     private fun toast(message: String) {
