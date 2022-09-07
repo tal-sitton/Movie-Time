@@ -157,7 +157,6 @@
     </GridLayout>
 
     <TextView
-        android:id="@+id/AD"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@color/yellow_placeholder"
