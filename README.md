@@ -12,6 +12,7 @@
 
 אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט.
 
+---
 ### The app that saves you time.
 
 Instead of wasting your time searching the web for every single cinema in your area for a specific movie, just download the app, and you have all the information you need in the palm of your hand.
