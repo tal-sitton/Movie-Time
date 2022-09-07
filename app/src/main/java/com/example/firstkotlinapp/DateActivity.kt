@@ -38,11 +38,9 @@ class DateActivity : AppCompatActivity() {
 
     private var pressedDay: Button? = null
     private var pressedHour: Button? = null
-    private var grid: GridLayout? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        grid = findViewById(R.id.grid)
         setContentView(R.layout.actvity_filter_date)
         setupTopButtons()
 
