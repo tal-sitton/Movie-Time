@@ -66,5 +66,34 @@ class Utils {
             }
         }
 
+        fun advanceStringListContains(list: List<String>, str: String): Boolean {
+            for (s in list) {
+                if (s == str || (s[0] == str[0] && editDistance(s, str) < 2))
+                    return true
+            }
+            return false
+        }
+
+        private fun editDistance(str1: String, str2: String): Int {
+            // i == 0
+            // i == 0
+            val costs = IntArray(str2.length + 1)
+            for (j in costs.indices) costs[j] = j
+            for (i in 1..str1.length) {
+                // j == 0; nw = lev(i - 1, j)
+                costs[0] = i
+                var nw = i - 1
+                for (j in 1..str2.length) {
+                    val cj = Math.min(
+                        1 + Math.min(costs[j], costs[j - 1]),
+                        if (str1[i - 1] == str2[j - 1]) nw else nw + 1
+                    )
+                    nw = costs[j]
+                    costs[j] = cj
+                }
+            }
+            return costs[str2.length]
+        }
+
     }
 }
