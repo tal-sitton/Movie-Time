@@ -68,7 +68,7 @@ class Utils {
 
         fun advanceStringListContains(list: List<String>, str: String): Boolean {
             for (s in list) {
-                if (s == str || (s[0] == str[0] && editDistance(s, str) < 2))
+                if (s == str || (s[0] == str[0] && editDistance(s, str) < 3))
                     return true
             }
             return false
