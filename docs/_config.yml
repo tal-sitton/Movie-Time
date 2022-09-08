@@ -1,2 +1,5 @@
 remote_theme: pages-themes/cayman
 title: Movie Time
+show_downloads: true
+github:
+  download_app: https://tacospin.com
