@@ -24,6 +24,9 @@ Don't want to watch the movie today? pick a different date, or maybe a different
 After you filtered the results and found what you wanted, all you need to do is click the button on the screening, and it will take you right to the page of the cinema.
 Now what's left is for you to purchase the tickets, grab a bucket of popcorn and enjoy the movie.
 
+---
+<div align="center">
 <img alt = "main screen dark mode" src="https://imgur.com/IhNfEJa.png" height="400"> <img alt = "screening selection dark mode" src="https://imgur.com/NPCfq7G.png" height="400"> <img alt = "cinema selection dark mode" src="https://imgur.com/e4korLa.png" height="400"> <img alt = "movie selection dark mode" src="https://imgur.com/jrwQsCr.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/zwl6Qca.png" height="400">
 
 <img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"><img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
+</div>
