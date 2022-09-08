@@ -28,5 +28,6 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 <div align="center">
 <img alt = "main screen dark mode" src="https://imgur.com/IhNfEJa.png" height="400"> <img alt = "screening selection dark mode" src="https://imgur.com/NPCfq7G.png" height="400"> <img alt = "cinema selection dark mode" src="https://imgur.com/e4korLa.png" height="400"> <img alt = "movie selection dark mode" src="https://imgur.com/jrwQsCr.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/zwl6Qca.png" height="400">
 
+  
 <img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"><img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
 </div>
