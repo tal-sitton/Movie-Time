@@ -1,8 +1,7 @@
 # Movie Time
+<h3 dir="rtl"> האפליקציה שחוסכת לך זמן! </h3>
 
-### האפליקציה שחוסכת לך זמן!
-
-במקום לבזבז זמן על חיפושים אינוספיים בין כל אתרי רשתות הקולנוע השונות, רק כדי למצוא סרט מעניין לראות, הגיע פתרון חדש - הורידו את האפליקציה וכל המידע שאתם צריכים מרוכז במקום אחד!
+<div dir="rtl"> במקום לבזבז זמן על חיפושים אינוספיים בין כל אתרי רשתות הקולנוע השונות, רק כדי למצוא סרט מעניין לראות, הגיע פתרון חדש - הורידו את האפליקציה וכל המידע שאתם צריכים מרוכז במקום אחד!
 
 בעזרת האפליקציה, תוכלו לראות את הסרטים שמוקרנים היום, תוכלו לסנן את התוצאות לפי סרטים מסויימים, או לפי בתי קולנוע שאתם מעדיפים, והכל במקום אחד.
 
@@ -10,7 +9,7 @@
 
 אתם יכולים גם לסנן לפי חלקים שונים של היום.
 
-אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!
+אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!</div>
 
 ---
 ### The app that saves you time!
@@ -24,3 +23,13 @@ Don't want to watch the movie today? pick a different date, or maybe a different
 
 After you filtered the results and found what you wanted, all you need to do is click the button on the screening, and it will take you right to the page of the cinema.
 Now what's left is for you to purchase the tickets, grab a bucket of popcorn and enjoy the movie.
+
+---
+<div align="center">
+<img alt = "main screen dark mode" src="https://imgur.com/IhNfEJa.png" height="400"> <img alt = "screening selection dark mode" src="https://imgur.com/NPCfq7G.png" height="400"> <img alt = "cinema selection dark mode" src="https://imgur.com/e4korLa.png" height="400"> <img alt = "movie selection dark mode" src="https://imgur.com/jrwQsCr.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/zwl6Qca.png" height="400">
+</div>
+
+<div align="center">
+<img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"><img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
+</div>
+
