@@ -28,7 +28,6 @@ class Screening(
     var dateTimeFormatted: String? = null
 
     init {
-        println("Screening: $movie, $date, $time, $city, $theater, $type, $url")
         val day = date.split("-")[0].toInt()
         val month = date.split("-")[1].toInt()
         val year = date.split("-")[2].toInt()

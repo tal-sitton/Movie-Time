@@ -9,5 +9,4 @@
     <color name="black">#FFFFFFFF</color>
     <color name="filter_unclicked">#40E0D0</color>
     <color name="filter_clicked">#008080</color>
-    <color name="yellow_placeholder">#FFF01F</color>
 </resources>
