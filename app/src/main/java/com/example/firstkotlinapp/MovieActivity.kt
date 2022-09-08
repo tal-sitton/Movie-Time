@@ -89,10 +89,11 @@ class MovieActivity : AppCompatActivity() {
     private fun getMovies(): List<String> {
         val movies: MutableList<String> = mutableListOf()
         for (screening in MainActivity.filteredCinemaScreenings.intersect(MainActivity.filteredDateScreenings)) {
-            if (!movies.contains(screening.movie)) {
+            if (!Utils.advanceStringListContains(movies, screening.movie)) {
                 movies.add(screening.movie)
             }
         }
+        movies.sort()
         return movies
     }
 
