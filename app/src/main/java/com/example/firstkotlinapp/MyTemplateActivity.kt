@@ -35,5 +35,4 @@ open class MyTemplateActivity : AppCompatActivity() {
             else -> onOptionsItemSelected(item)
         }
     }
-
 }
