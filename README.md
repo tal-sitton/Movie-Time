@@ -26,6 +26,17 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 
 ---
 <div align="center">
+  פרוייקט זה הוא פרוייקט עם קוד פתוח, ללא רווח. תרומות יתקבלו בברכה.
+  <br>
+  This project is open-source, donations are welcomed
+  <br>
+  <a href = "https://www.paypal.com/donate/?hosted_button_id=QFJWKB7U7Y8VL" target="_blank">
+    <img alt = "donate" src="https://i.imgur.com/pyqq4Ka.png.png" height="100">
+  </a>
+</div>
+
+---
+<div align="center">
 <img alt = "main screen dark mode" src="https://imgur.com/IhNfEJa.png" height="400"> <img alt = "screening selection dark mode" src="https://imgur.com/NPCfq7G.png" height="400"> <img alt = "cinema selection dark mode" src="https://imgur.com/e4korLa.png" height="400"> <img alt = "movie selection dark mode" src="https://imgur.com/jrwQsCr.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/zwl6Qca.png" height="400">
 </div>
 
