@@ -12,6 +12,8 @@
 אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!
 </div>
 
+[לסרבר](https://github.com/tal-sitton/Movie-Time-Server)
+
 ---
 ### The app that saves you time!
 
@@ -24,6 +26,8 @@ Don't want to watch the movie today? pick a different date, or maybe a different
 
 After you filtered the results and found what you wanted, all you need to do is click the button on the screening, and it will take you right to the page of the cinema.
 Now what's left is for you to purchase the tickets, grab a bucket of popcorn and enjoy the movie.
+
+[To the server](https://github.com/tal-sitton/Movie-Time-Server)
 
 ---
 <div align="center">
