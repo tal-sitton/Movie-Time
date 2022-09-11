@@ -2,16 +2,12 @@ package com.example.firstkotlinapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Button
-import android.widget.GridLayout
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import java.time.DayOfWeek
 import java.time.LocalDateTime
 
-class DateActivity : AppCompatActivity() {
+class DateActivity : MyTemplateActivity() {
 
     companion object {
         var selectedDay: Int = LocalDateTime.now().dayOfMonth
@@ -157,26 +153,6 @@ class DateActivity : AppCompatActivity() {
             MainActivity.filter()
             startActivity(intent)
         }
-    }
-
-    override fun onBackPressed() {
-        finish()
-        overridePendingTransition(0, 0)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_manu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (item.itemId == R.id.action_reset) {
-            MainActivity.resetToDefault()
-            MainActivity.filter()
-            recreate()
-            true
-        } else
-            super.onOptionsItemSelected(item)
     }
 
 }

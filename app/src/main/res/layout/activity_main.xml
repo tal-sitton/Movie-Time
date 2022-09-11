@@ -80,16 +80,4 @@
         app:layout_constraintStart_toStartOf="@id/scrl"
         app:layout_constraintTop_toTopOf="@+id/scrl" />
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="@color/yellow_placeholder"
-        android:text="AD PLACEHOLDER"
-        android:textAlignment="center"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

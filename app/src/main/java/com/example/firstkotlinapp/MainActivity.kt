@@ -4,17 +4,14 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.net.Uri
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : MyTemplateActivity() {
 
     companion object {
         var allScreenings: Set<Screening> = setOf()
@@ -172,25 +169,5 @@ class MainActivity : AppCompatActivity() {
                 .show()
             backPressedTime = System.currentTimeMillis()
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_manu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (item.itemId == R.id.action_reset) {
-            resetToDefault()
-            filter()
-            createButtons(findViewById(R.id.gl))
-            true
-        } else
-            super.onOptionsItemSelected(item)
-    }
-
-    private fun toast(message: String) {
-        println(message)
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

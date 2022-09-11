@@ -7,5 +7,10 @@
         android:icon="@drawable/ic_reset_filters"
         android:title="איפוס סינון"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_info"
+        android:title="מידע"
+        app:showAsAction="ifRoom" />
 
 </menu>

@@ -13,6 +13,7 @@ import java.io.OutputStreamWriter
 import java.net.URL
 import java.net.UnknownHostException
 import java.util.concurrent.Executors
+import kotlin.math.min
 
 class Utils {
     companion object {
@@ -68,7 +69,7 @@ class Utils {
 
         fun advanceStringListContains(list: List<String>, str: String): Boolean {
             for (s in list) {
-                if (s == str || (s[0] == str[0] && editDistance(s, str) < 2))
+                if (s == str || (s[0] == str[0] && editDistance(s, str) < 3))
                     return true
             }
             return false
@@ -84,8 +85,8 @@ class Utils {
                 costs[0] = i
                 var nw = i - 1
                 for (j in 1..str2.length) {
-                    val cj = Math.min(
-                        1 + Math.min(costs[j], costs[j - 1]),
+                    val cj = min(
+                        1 + min(costs[j], costs[j - 1]),
                         if (str1[i - 1] == str2[j - 1]) nw else nw + 1
                     )
                     nw = costs[j]
