@@ -9,7 +9,8 @@
 
 אתם יכולים גם לסנן לפי חלקים שונים של היום.
 
-אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!</div>
+אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעט תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!
+</div>
 
 ---
 ### The app that saves you time!
@@ -26,7 +27,7 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 
 ---
 <div align="center">
-  פרוייקט זה הוא פרוייקט עם קוד פתוח, ללא רווח. תרומות יתקבלו בברכה.
+  פרוייקט זה הוא פרוייקט עם קוד פתוח, ללא רווח. תרומות יתקבלו בברכה
   <br>
   This project is open-source, donations are welcomed
   <br>
@@ -43,4 +44,3 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 <div align="center">
 <img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"> <img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
 </div>
-

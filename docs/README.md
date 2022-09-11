@@ -28,7 +28,7 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 
 ---
 <div align="center">
-  פרוייקט זה הוא פרוייקט עם קוד פתוח, ללא רווח. תרומות יתקבלו בברכה.
+  פרוייקט זה הוא פרוייקט עם קוד פתוח, ללא רווח. תרומות יתקבלו בברכה
   <br>
   This project is open-source, donations are welcomed
   <br>
