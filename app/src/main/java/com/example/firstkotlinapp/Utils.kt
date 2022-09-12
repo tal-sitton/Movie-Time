@@ -96,5 +96,12 @@ class Utils {
             return costs[str2.length]
         }
 
+        fun measureTime(method: () -> Unit) {
+            val startTime = System.currentTimeMillis()
+            method()
+            val endTime = System.currentTimeMillis()
+            println(method.toString() + (endTime - startTime))
+        }
+
     }
 }

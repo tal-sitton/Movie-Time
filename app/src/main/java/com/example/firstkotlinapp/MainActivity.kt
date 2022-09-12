@@ -23,7 +23,7 @@ class MainActivity : MyTemplateActivity() {
         var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
 
-        fun filter() {
+        fun filter(): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
             if (selectedMovies.isNotEmpty()) {
                 filteredMoviesScreenings =
@@ -46,10 +46,16 @@ class MainActivity : MyTemplateActivity() {
                 DateActivity.checkScreening(screening)
             }.toSet()
 
-            filteredScreenings =
+            val newFilteredScreenings =
                 filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
                     filteredDateScreenings
                 ).toSet()
+
+            if (newFilteredScreenings != filteredScreenings) {
+                filteredScreenings = newFilteredScreenings
+                return true
+            }
+            return false
         }
 
         fun resetToDefault() {
@@ -163,8 +169,8 @@ class MainActivity : MyTemplateActivity() {
     override fun onRestart() {
         super.onRestart()
         dateButton?.text = DateActivity.selectedDatStr
-        filter()
-        createButtons(findViewById(R.id.gl))
+        if (filter())
+            createButtons(findViewById(R.id.gl))
     }
 
     private var backPressedTime: Long = 0
