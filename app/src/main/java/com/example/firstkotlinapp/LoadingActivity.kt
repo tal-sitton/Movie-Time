@@ -16,12 +16,12 @@ class LoadingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_loading)
 
         val now: LocalDateTime = LocalDateTime.now()
-        val json: JSONObject? = Utils.loadJSONFromFile(this)
+        val json: JSONObject? = JSONUtils.loadJSONFromFile(this)
         if (json != null) {
             val lastUpdate = json.getString("time")
             if (lastUpdate.split("-")[0].toInt() != now.dayOfMonth) {
                 findViewById<ProgressBar>(R.id.progressBar).visibility = ProgressBar.VISIBLE
-                Utils.updateJSON(this)
+                JSONUtils.updateJSON(this)
             } else {
                 Handler(Looper.getMainLooper()).postDelayed({
                     this.startActivity(Intent(this, MainActivity::class.java))
@@ -29,7 +29,7 @@ class LoadingActivity : AppCompatActivity() {
             }
         } else {
             findViewById<ProgressBar>(R.id.progressBar).visibility = ProgressBar.VISIBLE
-            Utils.updateJSON(this)
+            JSONUtils.updateJSON(this)
         }
     }
 }
