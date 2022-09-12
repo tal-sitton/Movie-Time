@@ -30,6 +30,7 @@ class JSONUtils {
                 val screenings = json.getJSONArray("Screenings")
                 for (i in 0 until screenings.length()) {
                     val screeningInfo = screenings.getJSONObject(i)
+                    println("KEYS:: " + screeningInfo.keys())
                     val date = screeningInfo.getString("date")
                     val theater = screeningInfo.getString("cinema")
                     val location = screeningInfo.getString("location")
@@ -38,9 +39,21 @@ class JSONUtils {
                     val type = screeningInfo.getString("type")
                     val time = screeningInfo.getString("time")
                     val url = screeningInfo.getString("link")
+                    val coords = screeningInfo.getJSONArray("coords")
 
                     val screening =
-                        Screening(title, date, time, location, district, theater, type, url)
+                        Screening(
+                            title,
+                            date,
+                            time,
+                            location,
+                            district,
+                            theater,
+                            type,
+                            url,
+                            coords.getDouble(0),
+                            coords.getDouble(1)
+                        )
 
                     if (screening.dateTime.isBefore(LocalDateTime.now())) {
                         continue

@@ -1,5 +1,7 @@
 package com.example.firstkotlinapp
 
+import android.content.Context
+import android.widget.Toast
 import kotlin.math.min
 
 class Utils {
@@ -39,6 +41,10 @@ class Utils {
             method()
             val endTime = System.currentTimeMillis()
             println(method.toString() + (endTime - startTime))
+        }
+
+        fun showToast(context: Context, message: String) {
+            Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
         }
 
     }

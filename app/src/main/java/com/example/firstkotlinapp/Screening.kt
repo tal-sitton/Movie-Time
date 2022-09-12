@@ -20,7 +20,9 @@ class Screening(
     val district: String,
     val theater: String,
     val type: String,
-    val url: String
+    val url: String,
+    val latitude: Double,
+    val longitude: Double
 ) {
 
     val cinema: String = "$theater $city"

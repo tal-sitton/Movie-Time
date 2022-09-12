@@ -1,13 +1,19 @@
 package com.example.firstkotlinapp
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Typeface
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Space
-import android.widget.TextView
+import android.widget.*
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.app.ActivityCompat
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 class CinemaActivity : MyTemplateActivity() {
 
@@ -15,24 +21,36 @@ class CinemaActivity : MyTemplateActivity() {
         val selectedCinemas: MutableList<String> = mutableListOf("")
     }
 
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+
+    private var cinemas: MutableList<Cinema> = mutableListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actvity_filter)
+        setContentView(R.layout.actvity_filter_cinema)
         setupTopButtons()
+        getCinemas()
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        val cinemas: List<Cinema> = getCinemas()
-        val ll: LinearLayout = findViewById(R.id.ll)
-        createCinemasButtons(cinemas, ll)
-
+        sortBy(findViewById(R.id.check))
     }
 
-    private fun createCinemasButtons(cinemas: List<Cinema>, ll: LinearLayout) {
+    private fun createCinemasButtons(ll: LinearLayout, sortDistricts: Boolean) {
+        ll.removeAllViewsInLayout()
+        if (sortDistricts)
+            getCinemas()
+
         var district = cinemas[0].district
-        createDisTextView(district, ll)
+
+        if (sortDistricts)
+            createDisTextView(district, ll)
+
         for (cinema in cinemas) {
-            if (cinema.district != district) {
-                district = cinema.district
-                createDisTextView(district, ll)
+            if (sortDistricts) {
+                if (cinema.district != district) {
+                    district = cinema.district
+                    createDisTextView(district, ll)
+                }
             }
             val button = Button(this)
             button.text = cinema.name
@@ -99,9 +117,14 @@ class CinemaActivity : MyTemplateActivity() {
     }
 
     private fun getCinemas(): List<Cinema> {
-        val cinemas: MutableList<Cinema> = mutableListOf()
+        cinemas = mutableListOf()
         for (screening in MainActivity.filteredMoviesScreenings.intersect(MainActivity.filteredDateScreenings)) {
-            val tmpCinema = Cinema(screening.cinema, screening.district)
+            val tmpCinema = Cinema(
+                screening.cinema,
+                screening.district,
+                screening.latitude,
+                screening.longitude
+            )
             if (!cinemas.any { cinema -> cinema == tmpCinema }) {
                 cinemas.add(tmpCinema)
             }
@@ -109,9 +132,66 @@ class CinemaActivity : MyTemplateActivity() {
         return cinemas
     }
 
-    class Cinema(val name: String, val district: String) {
+    class Cinema(
+        val name: String,
+        val district: String,
+        val latitude: Double,
+        val longitude: Double
+    ) {
         override fun equals(other: Any?): Boolean {
             return other is Cinema && other.name == name && other.district == district
         }
     }
+
+
+    fun sortBy(view: View) {
+        view as CheckBox
+        if (view.isChecked)
+            getLastKnownLocation()
+        else
+            createCinemasButtons(findViewById(R.id.ll), true)
+
+
+    }
+
+    private fun getLastKnownLocation() {
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestPermissionLauncher.launch(
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            )
+            return
+        }
+        fusedLocationClient.lastLocation
+            .addOnSuccessListener { location ->
+                if (location != null) {
+                    sortByLocation(location.latitude, location.longitude)
+                    createCinemasButtons(findViewById(R.id.ll), false)
+                }
+            }
+    }
+
+    private fun sortByLocation(latitude: Double, longitude: Double) {
+        cinemas.sortBy { cinema ->
+            sqrt(
+                (cinema.latitude - latitude).pow(2.0) + (cinema.longitude - longitude).pow(2.0)
+            )
+        }
+    }
+
+    private val requestPermissionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted: Boolean ->
+            if (isGranted)
+                getLastKnownLocation()
+            else {
+                val box: CheckBox = findViewById(R.id.check)
+                box.isSelected = false
+                Utils.showToast(this, "Permission denied")
+            }
+        }
 }
