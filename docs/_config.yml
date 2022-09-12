@@ -1,3 +1,20 @@
-remote_theme: pages-themes/cayman
+remote_theme: tuur29/pages-themes-cayman
 title: Movie Time
 markdown: kramdown
+
+color:
+  header: "#000"
+  gradient_left: "#e53935"
+  gradient_right: "#f57c00"
+  
+darkmode: true
+hide_first_title: true
+logo_url: https://imgur.com/XUqSIS4.png
+syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
+
+show_downloads: true
+buttons:
+  zip_url: https://www.tacospin.com
+  zip_title: Download latest release
+  zip_hide: false
+  tar_hide: true
