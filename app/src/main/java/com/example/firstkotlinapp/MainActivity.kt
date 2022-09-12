@@ -58,6 +58,7 @@ class MainActivity : MyTemplateActivity() {
         fun resetToDefault() {
             filteredCinemaScreenings = allScreenings
             filteredMoviesScreenings = allScreenings
+            filteredTypeScreenings = allScreenings
             MovieActivity.selectedMovies.clear()
             CinemaActivity.selectedCinemas.clear()
             DateActivity.default()
@@ -167,7 +168,7 @@ class MainActivity : MyTemplateActivity() {
                 }.toSet()
         } else
             filteredTypeScreenings = allScreenings
-        
+
         onRestart()
     }
 }
