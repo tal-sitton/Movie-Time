@@ -6,59 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MovieActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="יום ושעה"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
+    <include
         android:id="@+id/topLL"
-        android:layout_width="358dp"
-        android:layout_height="67dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        android:useDefaultMargins="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/movieButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/top_buttons"
-            android:gravity="center"
-            android:text="סרט"
-            android:textColor="@color/real_white" />
-
-        <TextView
-            android:id="@+id/dateButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/top_buttons"
-            android:gravity="center"
-            android:text="יום ושעה"
-            android:textColor="@color/real_white" />
-
-        <TextView
-            android:id="@+id/cinemaButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_weight="1"
-            android:background="@drawable/top_buttons"
-            android:gravity="center"
-            android:text="קולנוע"
-            android:textColor="@color/real_white" />
-
-    </LinearLayout>
+        layout="@layout/common_layout" />
 
     <GridLayout
         android:layout_width="wrap_content"
