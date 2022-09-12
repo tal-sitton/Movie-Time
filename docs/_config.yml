@@ -4,7 +4,9 @@ markdown: kramdown
 
 darkmode: true
 hide_first_title: true
+show_downloads: true
 buttons:
   zip_url: tacospin.com
   zip_title: zip Title
   zip_hide: false
+  tar_hide: true
