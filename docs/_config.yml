@@ -15,6 +15,6 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 show_downloads: true
 buttons:
   zip_url: https://www.tacospin.com
-  zip_title: download latest release
+  zip_title: Download latest release
   zip_hide: false
   tar_hide: true
