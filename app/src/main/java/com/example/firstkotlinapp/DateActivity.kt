@@ -3,7 +3,7 @@ package com.example.firstkotlinapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.core.content.ContextCompat
+import android.widget.TextView
 import java.time.DayOfWeek
 import java.time.LocalDateTime
 
@@ -11,6 +11,7 @@ class DateActivity : MyTemplateActivity() {
 
     companion object {
         var selectedDay: Int = LocalDateTime.now().dayOfMonth
+        var selectedDatStr: String = "היום"
         var selectedStartHour: Int = LocalDateTime.now().hour
         var selectedEndHour = 24
         var restarted = false
@@ -85,6 +86,8 @@ class DateActivity : MyTemplateActivity() {
         pressedDayID = button.id
         pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
         selectedDay = dateTime.dayOfMonth
+        selectedDatStr = button.text.toString()
+        mainButton?.text = selectedDatStr
     }
 
     private fun genText(dateTime: LocalDateTime): String {
@@ -125,19 +128,16 @@ class DateActivity : MyTemplateActivity() {
         selectedEndHour = end
     }
 
+    private var mainButton: TextView? = null
     private fun setupTopButtons() {
-        val mainButton: Button = findViewById(R.id.dateButton)
-        mainButton.setBackgroundColor(
-            ContextCompat.getColor(
-                applicationContext,
-                R.color.purple_700
-            )
-        )
-        mainButton.setOnClickListener {
+        mainButton = findViewById(R.id.dateButton)
+        mainButton?.setBackgroundResource(R.drawable.top_buttons_clicked)
+        mainButton?.text = selectedDatStr
+        mainButton?.setOnClickListener {
             onBackPressed()
         }
-        val cinemaButton: Button = findViewById(R.id.cinemaButton)
-        val movieButton: Button = findViewById(R.id.movieButton)
+        val cinemaButton: TextView = findViewById(R.id.cinemaButton)
+        val movieButton: TextView = findViewById(R.id.movieButton)
 
         val intent = Intent()
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)

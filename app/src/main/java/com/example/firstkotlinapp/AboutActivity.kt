@@ -11,12 +11,9 @@ class AboutActivity : MyTemplateActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
-        val intent = Intent(this, MainActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-
         val mainActivityButton: Button = findViewById(R.id.backButton)
         mainActivityButton.setOnClickListener {
-            startActivity(intent)
+            onBackPressed()
         }
 
         val supportButton: ImageView = findViewById(R.id.supportButton)

@@ -4,11 +4,9 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import org.json.JSONObject
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 
 class MainActivity : MyTemplateActivity() {
@@ -19,8 +17,10 @@ class MainActivity : MyTemplateActivity() {
         var filteredMoviesScreenings: Set<Screening> = setOf()
         var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
+        var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
+        var filteredTypeScreenings: Set<Screening> = setOf()
 
-        fun filter() {
+        fun filter(): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
             if (selectedMovies.isNotEmpty()) {
                 filteredMoviesScreenings =
@@ -43,10 +43,16 @@ class MainActivity : MyTemplateActivity() {
                 DateActivity.checkScreening(screening)
             }.toSet()
 
-            filteredScreenings =
+            val newFilteredScreenings =
                 filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
                     filteredDateScreenings
-                ).toSet()
+                ).intersect(filteredTypeScreenings).toSet()
+
+            if (newFilteredScreenings != filteredScreenings) {
+                filteredScreenings = newFilteredScreenings
+                return true
+            }
+            return false
         }
 
         fun resetToDefault() {
@@ -64,49 +70,24 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
-    private fun jsonToList() {
-        DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")
-
-        val json: JSONObject? = Utils.loadJSONFromFile(this)
-        print(json)
-        val tmpAllScreenings: MutableList<Screening> = mutableListOf()
-        if (json != null) {
-            val screenings = json.getJSONArray("Screenings")
-            for (i in 0 until screenings.length()) {
-                val screeningInfo = screenings.getJSONObject(i)
-                val date = screeningInfo.getString("date")
-                val theater = screeningInfo.getString("cinema")
-                val location = screeningInfo.getString("location")
-                val district = screeningInfo.getString("district")
-                val title = screeningInfo.getString("title")
-                val type = screeningInfo.getString("type")
-                val time = screeningInfo.getString("time")
-                val url = screeningInfo.getString("link")
-
-                val screening = Screening(title, date, time, location, district, theater, type, url)
-
-                if (screening.dateTime.isBefore(LocalDateTime.now())) {
-                    continue
-                }
-
-                tmpAllScreenings.add(screening)
-            }
-        } else {
-            startActivity(Intent(this, LoadingActivity::class.java))
-        }
-        allScreenings = tmpAllScreenings.toSet()
-    }
+    private var dateButton: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        jsonToList()
+        JSONUtils.jsonToList(this)
         resetToDefault()
 
-        val movieButton: Button = findViewById(R.id.movieButton)
-        val dateButton: Button = findViewById(R.id.dateButton)
-        val cinemaButton: Button = findViewById(R.id.cinemaButton)
+        setupTopActivityButtons()
+
+        createButtons(findViewById(R.id.gl))
+    }
+
+    private fun setupTopActivityButtons() {
+        val movieButton: TextView = findViewById(R.id.movieButton)
+        dateButton = findViewById(R.id.dateButton)
+        val cinemaButton: TextView = findViewById(R.id.cinemaButton)
 
         val intent = Intent()
         intent.addFlags(FLAG_ACTIVITY_NO_ANIMATION)
@@ -117,16 +98,16 @@ class MainActivity : MyTemplateActivity() {
             startActivity(intent)
         }
 
-        dateButton.setOnClickListener {
+        dateButton?.setOnClickListener {
             intent.setClass(this, DateActivity::class.java)
             startActivity(intent)
         }
+        dateButton?.text = DateActivity.selectedDatStr
+
         cinemaButton.setOnClickListener {
             intent.setClass(this, CinemaActivity::class.java)
             startActivity(intent)
         }
-
-        createButtons(findViewById(R.id.gl))
     }
 
     private fun createButtons(grid: GridLayout) {
@@ -156,8 +137,9 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        filter()
-        createButtons(findViewById(R.id.gl))
+        dateButton?.text = DateActivity.selectedDatStr
+        if (filter())
+            createButtons(findViewById(R.id.gl))
     }
 
     private var backPressedTime: Long = 0
@@ -169,5 +151,23 @@ class MainActivity : MyTemplateActivity() {
                 .show()
             backPressedTime = System.currentTimeMillis()
         }
+    }
+
+    fun screeningTypeFilter(view: View) {
+        view as CheckBox
+        if (view.isChecked)
+            selectedScreeningTypes.add(view.text.toString())
+        else
+            selectedScreeningTypes.remove(view.text.toString())
+
+        if (selectedScreeningTypes.isNotEmpty()) {
+            filteredTypeScreenings =
+                allScreenings.filter { screening ->
+                    selectedScreeningTypes.contains(screening.type)
+                }.toSet()
+        } else
+            filteredTypeScreenings = allScreenings
+        
+        onRestart()
     }
 }

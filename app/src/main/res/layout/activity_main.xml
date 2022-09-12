@@ -6,43 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <include
         android:id="@+id/topLL"
-        android:layout_width="358dp"
-        android:layout_height="67dp"
+        layout="@layout/common_layout" />
+
+    <LinearLayout
+        android:id="@+id/topScreeningType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:useDefaultMargins="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/topLL">
 
-        <Button
-            android:id="@+id/movieButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="סרט" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="2D" />
 
-        <Button
-            android:id="@+id/dateButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="יום ושעה" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="3D" />
 
-        <Button
-            android:id="@+id/cinemaButton"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="קולנוע" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="IMAX" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="VIP" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="SCREENX" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="screeningTypeFilter"
+            android:text="4DX" />
 
     </LinearLayout>
 
@@ -56,7 +71,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLL">
+        app:layout_constraintTop_toBottomOf="@+id/topScreeningType">
 
         <GridLayout
             android:id="@+id/gl"
