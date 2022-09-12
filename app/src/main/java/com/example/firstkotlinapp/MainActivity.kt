@@ -5,7 +5,10 @@ import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.net.Uri
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.GridLayout
+import android.widget.Space
+import android.widget.TextView
+import android.widget.Toast
 import org.json.JSONObject
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -97,6 +100,7 @@ class MainActivity : MyTemplateActivity() {
         allScreenings = tmpAllScreenings.toSet()
     }
 
+    private var dateButton: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -104,9 +108,9 @@ class MainActivity : MyTemplateActivity() {
         jsonToList()
         resetToDefault()
 
-        val movieButton: Button = findViewById(R.id.movieButton)
-        val dateButton: Button = findViewById(R.id.dateButton)
-        val cinemaButton: Button = findViewById(R.id.cinemaButton)
+        val movieButton: TextView = findViewById(R.id.movieButton)
+        dateButton = findViewById(R.id.dateButton)
+        val cinemaButton: TextView = findViewById(R.id.cinemaButton)
 
         val intent = Intent()
         intent.addFlags(FLAG_ACTIVITY_NO_ANIMATION)
@@ -117,10 +121,12 @@ class MainActivity : MyTemplateActivity() {
             startActivity(intent)
         }
 
-        dateButton.setOnClickListener {
+        dateButton?.setOnClickListener {
             intent.setClass(this, DateActivity::class.java)
             startActivity(intent)
         }
+        dateButton?.text = DateActivity.selectedDatStr
+
         cinemaButton.setOnClickListener {
             intent.setClass(this, CinemaActivity::class.java)
             startActivity(intent)
@@ -156,6 +162,7 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
+        dateButton?.text = DateActivity.selectedDatStr
         filter()
         createButtons(findViewById(R.id.gl))
     }

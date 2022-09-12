@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Space
-import androidx.core.content.ContextCompat
+import android.widget.TextView
 
 class MovieActivity : MyTemplateActivity() {
 
@@ -53,19 +53,16 @@ class MovieActivity : MyTemplateActivity() {
     }
 
     private fun setupTopButtons() {
-        val movieButton: Button = findViewById(R.id.movieButton)
-        movieButton.setBackgroundColor(
-            ContextCompat.getColor(
-                applicationContext,
-                R.color.purple_700
-            )
-        )
+        val movieButton: TextView = findViewById(R.id.movieButton)
+        movieButton.setBackgroundResource(R.drawable.top_buttons_clicked)
         movieButton.setOnClickListener {
             onBackPressed()
         }
 
-        val dateButton: Button = findViewById(R.id.dateButton)
-        val cinemaButton: Button = findViewById(R.id.cinemaButton)
+        val dateButton: TextView = findViewById(R.id.dateButton)
+        val cinemaButton: TextView = findViewById(R.id.cinemaButton)
+
+        dateButton.text = DateActivity.selectedDatStr
 
         val intent = Intent()
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)

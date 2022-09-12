@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Space
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 
 class CinemaActivity : MyTemplateActivity() {
 
@@ -73,18 +72,15 @@ class CinemaActivity : MyTemplateActivity() {
     }
 
     private fun setupTopButtons() {
-        val mainButton: Button = findViewById(R.id.cinemaButton)
-        mainButton.setBackgroundColor(
-            ContextCompat.getColor(
-                applicationContext,
-                R.color.purple_700
-            )
-        )
+        val mainButton: TextView = findViewById(R.id.cinemaButton)
+        mainButton.setBackgroundResource(R.drawable.top_buttons_clicked)
         mainButton.setOnClickListener {
             onBackPressed()
         }
-        val dateButton: Button = findViewById(R.id.dateButton)
-        val movieButton: Button = findViewById(R.id.movieButton)
+        val dateButton: TextView = findViewById(R.id.dateButton)
+        val movieButton: TextView = findViewById(R.id.movieButton)
+
+        dateButton.text = DateActivity.selectedDatStr
 
         val intent = Intent()
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)

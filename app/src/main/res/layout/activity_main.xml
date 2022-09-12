@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="יום ושעה"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/topLL"
         android:layout_width="358dp"
@@ -18,31 +26,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <TextView
             android:id="@+id/movieButton"
             android:layout_width="0dp"
             android:layout_height="65dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="סרט" />
+            android:background="@drawable/top_buttons"
+            android:gravity="center"
+            android:text="סרט"
+            android:textColor="@color/real_white" />
 
-        <Button
+        <TextView
             android:id="@+id/dateButton"
             android:layout_width="0dp"
             android:layout_height="65dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="יום ושעה" />
+            android:background="@drawable/top_buttons"
+            android:gravity="center"
+            android:text="יום ושעה"
+            android:textColor="@color/real_white" />
 
-        <Button
+        <TextView
             android:id="@+id/cinemaButton"
             android:layout_width="0dp"
             android:layout_height="65dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="קולנוע" />
+            android:background="@drawable/top_buttons"
+            android:gravity="center"
+            android:text="קולנוע"
+            android:textColor="@color/real_white" />
 
     </LinearLayout>
 
