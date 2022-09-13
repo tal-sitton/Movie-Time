@@ -2,6 +2,7 @@ package com.example.firstkotlinapp
 
 import android.content.Context
 import android.graphics.Typeface
+import android.location.Location
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.RelativeSizeSpan
@@ -21,8 +22,7 @@ class Screening(
     val theater: String,
     val type: String,
     val url: String,
-    val latitude: Double,
-    val longitude: Double
+    val location: Location
 ) {
 
     val cinema: String = "$theater $city"

@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Typeface
+import android.location.Location
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +13,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import kotlin.math.pow
-import kotlin.math.sqrt
 
 class CinemaActivity : MyTemplateActivity() {
 
@@ -122,8 +121,7 @@ class CinemaActivity : MyTemplateActivity() {
             val tmpCinema = Cinema(
                 screening.cinema,
                 screening.district,
-                screening.latitude,
-                screening.longitude
+                screening.location,
             )
             if (!cinemas.any { cinema -> cinema == tmpCinema }) {
                 cinemas.add(tmpCinema)
@@ -135,8 +133,7 @@ class CinemaActivity : MyTemplateActivity() {
     class Cinema(
         val name: String,
         val district: String,
-        val latitude: Double,
-        val longitude: Double
+        val location: Location
     ) {
         override fun equals(other: Any?): Boolean {
             return other is Cinema && other.name == name && other.district == district
@@ -168,17 +165,15 @@ class CinemaActivity : MyTemplateActivity() {
         fusedLocationClient.lastLocation
             .addOnSuccessListener { location ->
                 if (location != null) {
-                    sortByLocation(location.latitude, location.longitude)
+                    sortByLocation(location)
                     createCinemasButtons(findViewById(R.id.ll), false)
                 }
             }
     }
 
-    private fun sortByLocation(latitude: Double, longitude: Double) {
+    private fun sortByLocation(myLocation: Location) {
         cinemas.sortBy { cinema ->
-            sqrt(
-                (cinema.latitude - latitude).pow(2.0) + (cinema.longitude - longitude).pow(2.0)
-            )
+            myLocation.distanceTo(cinema.location)
         }
     }
 

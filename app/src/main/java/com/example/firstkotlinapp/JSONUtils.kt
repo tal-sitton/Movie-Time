@@ -2,6 +2,7 @@ package com.example.firstkotlinapp
 
 import android.content.Context
 import android.content.Intent
+import android.location.Location
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -51,8 +52,10 @@ class JSONUtils {
                             theater,
                             type,
                             url,
-                            coords.getDouble(0),
-                            coords.getDouble(1)
+                            Location(title).apply {
+                                latitude = coords.getDouble(0)
+                                longitude = coords.getDouble(1)
+                            }
                         )
 
                     if (screening.dateTime.isBefore(LocalDateTime.now())) {
