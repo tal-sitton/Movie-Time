@@ -6,6 +6,9 @@ import android.content.pm.PackageManager
 import android.graphics.Typeface
 import android.location.Location
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.os.Message
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -13,6 +16,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import java.util.concurrent.Executors
 
 class CinemaActivity : MyTemplateActivity() {
 
@@ -135,6 +139,8 @@ class CinemaActivity : MyTemplateActivity() {
         val district: String,
         val location: Location
     ) {
+        var distance: Int = 0
+
         override fun equals(other: Any?): Boolean {
             return other is Cinema && other.name == name && other.district == district
         }
@@ -151,6 +157,13 @@ class CinemaActivity : MyTemplateActivity() {
 
     }
 
+    private val mHandler = object : Handler() {
+
+        override fun handleMessage(msg: Message) {
+            createCinemasButtons(findViewById(R.id.ll), false)
+        }
+    }
+
     private fun getLastKnownLocation() {
         if (ActivityCompat.checkSelfPermission(
                 this,
@@ -165,16 +178,21 @@ class CinemaActivity : MyTemplateActivity() {
         fusedLocationClient.lastLocation
             .addOnSuccessListener { location ->
                 if (location != null) {
-                    sortByLocation(location)
-                    createCinemasButtons(findViewById(R.id.ll), false)
+                    Executors.newSingleThreadExecutor().execute {
+                        sortByLocation(location, mHandler)
+                    }
                 }
             }
     }
 
-    private fun sortByLocation(myLocation: Location) {
-        cinemas.sortBy { cinema ->
-            myLocation.distanceTo(cinema.location)
+    private fun sortByLocation(myLocation: Location, mHandler: Handler) {
+        Looper.prepare()
+        if (cinemas[0].distance == 0) {
+            Utils.calcDistance(myLocation, cinemas)
         }
+        cinemas.sortBy { cinema -> cinema.distance }
+        mHandler.sendEmptyMessage(0)
+        Utils.showToast(this, "מויין לפי מרחק")
     }
 
     private val requestPermissionLauncher =
@@ -185,8 +203,8 @@ class CinemaActivity : MyTemplateActivity() {
                 getLastKnownLocation()
             else {
                 val box: CheckBox = findViewById(R.id.check)
-                box.isSelected = false
-                Utils.showToast(this, "Permission denied")
+                box.isChecked = false
+                Utils.showToast(this, "לא ניתנה גישה למיקום")
             }
         }
 }

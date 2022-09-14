@@ -31,7 +31,6 @@ class JSONUtils {
                 val screenings = json.getJSONArray("Screenings")
                 for (i in 0 until screenings.length()) {
                     val screeningInfo = screenings.getJSONObject(i)
-                    println("KEYS:: " + screeningInfo.keys())
                     val date = screeningInfo.getString("date")
                     val theater = screeningInfo.getString("cinema")
                     val location = screeningInfo.getString("location")
