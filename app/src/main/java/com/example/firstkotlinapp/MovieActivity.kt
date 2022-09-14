@@ -16,7 +16,7 @@ class MovieActivity : MyTemplateActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actvity_filter)
+        setContentView(R.layout.actvity_filter_movie)
         setupTopButtons()
 
         val movies: List<String> = getMovies()
@@ -90,6 +90,5 @@ class MovieActivity : MyTemplateActivity() {
         movies.sort()
         return movies
     }
-
 
 }
