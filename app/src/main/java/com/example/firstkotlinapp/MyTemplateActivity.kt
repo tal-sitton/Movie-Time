@@ -3,6 +3,7 @@ package com.example.firstkotlinapp
 import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 
 open class MyTemplateActivity : AppCompatActivity() {
@@ -20,9 +21,11 @@ open class MyTemplateActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_reset -> {
+                item.actionView = ProgressBar(this)
                 MainActivity.resetToDefault()
                 MainActivity.filter()
                 recreate()
+                item.actionView.postDelayed({ item.actionView = null }, 1)
                 true
             }
             R.id.action_about -> {
