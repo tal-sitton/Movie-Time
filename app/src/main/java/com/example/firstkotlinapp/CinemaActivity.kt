@@ -158,7 +158,7 @@ class CinemaActivity : MyTemplateActivity() {
 
     }
 
-    private val mHandler = object : Handler() {
+    private val mHandler = object : Handler(Looper.getMainLooper()) {
 
         override fun handleMessage(msg: Message) {
             createCinemasButtons(findViewById(R.id.ll), false)
