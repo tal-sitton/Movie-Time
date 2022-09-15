@@ -58,6 +58,7 @@ class MovieActivity : MyTemplateActivity() {
         movieButton.setOnClickListener {
             onBackPressed()
         }
+        movieButton.text = "אישור"
 
         val dateButton: TextView = findViewById(R.id.dateButton)
         val cinemaButton: TextView = findViewById(R.id.cinemaButton)
