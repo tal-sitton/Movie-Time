@@ -14,7 +14,7 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 
 show_downloads: true
 buttons:
-  zip_url: https://www.tacospin.com
-  zip_title: Download latest release
+  zip_url: https://github.com/tal-sitton/Movie-Time/releases/download/v0.5-beta/Movie.Time.apk
+  zip_title: Download The App
   zip_hide: false
   tar_hide: true
