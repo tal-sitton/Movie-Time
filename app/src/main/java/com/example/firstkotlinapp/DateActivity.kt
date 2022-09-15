@@ -27,6 +27,7 @@ class DateActivity : MyTemplateActivity() {
             selectedStartHour = LocalDateTime.now().hour
             selectedEndHour = 24
             restarted = true
+            selectedDatStr= "היום"
         }
 
         private var pressedDayID: Int = 0
