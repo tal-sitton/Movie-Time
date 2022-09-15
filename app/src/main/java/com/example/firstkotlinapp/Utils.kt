@@ -61,7 +61,7 @@ class Utils {
             val json = JSONObject(url.readText())
             val dist = json.getJSONArray("distances").getJSONArray(0)
             for (i in 0 until dist.length() - 1) {
-                targetCinemas[i].distance = dist.getInt(i + 1)
+                targetCinemas[i].distance = dist.getDouble(i + 1)
             }
 
         }
