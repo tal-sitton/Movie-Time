@@ -77,8 +77,7 @@ class MainActivity : MyTemplateActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Utils.showToast(this, "onCreate")
-        val scrl: ScrollView = findViewById(R.id.scrl)
+        scrl = findViewById(R.id.scrl)
         scrl.smoothScrollTo(0, 0)
 
         JSONUtils.jsonToList(this)
@@ -153,7 +152,7 @@ class MainActivity : MyTemplateActivity() {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             this.finishAffinity()
         } else {
-            Toast.makeText(baseContext, "Press the back button again to exit", Toast.LENGTH_SHORT)
+            Toast.makeText(baseContext, "לחץ שנית בכדי לסגור את האפליקציה", Toast.LENGTH_SHORT)
                 .show()
             backPressedTime = System.currentTimeMillis()
         }

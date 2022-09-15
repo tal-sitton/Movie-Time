@@ -71,9 +71,7 @@ class Utils {
             targetCinemas.forEach { cinema ->
                 url += "${cinema.location.longitude},${cinema.location.latitude};"
             }
-            url = url.dropLast(1)
-            println("URL: $url")
-            return url
+            return url.dropLast(1)
         }
 
     }

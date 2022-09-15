@@ -18,24 +18,7 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/FirstKotlinapp/app/src/main/res/layout/actvity_movie.xml" value="0.1936725096194955" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/FirstKotlinapp/app/src/main/res/layout/content_main.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/FirstKotlinapp/app/src/main/res/layout/fragment_first.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/border.xml" value="0.3625" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/clicked_button.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/movie_button.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/top_buttons.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/drawable/top_buttons_clicked.xml" value="0.3635" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/font/.xml" value="0.17699871740059855" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/activity_about.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/activity_loading.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/actvity_filter.xml" value="0.25" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/actvity_filter_cinema.xml" value="0.33" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/actvity_filter_date.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/layout/common_layout.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/menu/main_manu.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/menu/my_menu.xml" value="0.33" />
-        <entry key="..\:/Users/User/StudioProjects/Movie-Time/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1935" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/FirstKotlinapp/app/src/main/res/menu/main_manu.xml" value="0.20521590423257802" />
       </map>
     </option>
   </component>
