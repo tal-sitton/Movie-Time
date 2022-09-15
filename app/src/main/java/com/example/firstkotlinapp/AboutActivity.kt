@@ -27,17 +27,12 @@ class AboutActivity : MyTemplateActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_reset -> {
-                MainActivity.resetToDefault()
-                MainActivity.filter()
-                recreate()
-                true
-            }
             R.id.action_about -> {
                 onBackPressed()
                 true
             }
-            else -> onOptionsItemSelected(item)
+            else ->
+                super.onOptionsItemSelected(item)
         }
     }
 }
