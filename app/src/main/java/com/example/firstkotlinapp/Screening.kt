@@ -7,6 +7,7 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
+import android.text.style.UnderlineSpan
 import android.view.ViewGroup
 import android.widget.TextView
 import java.time.LocalDateTime
@@ -27,7 +28,7 @@ class Screening(
 
     val cinema: String = "$theater $city"
     var dateTime: LocalDateTime = LocalDateTime.MIN
-    var dateTimeFormatted: String? = null
+    var timeFormatted: String
 
     init {
         val day = date.split("-")[0].toInt()
@@ -36,8 +37,8 @@ class Screening(
         val hour = time.split(":")[0].toInt()
         val minute = time.split(":")[1].toInt()
         dateTime = LocalDateTime.of(year, month, day, hour, minute)
-        dateTimeFormatted =
-            dateTime.format(DateTimeFormatter.ofPattern("HH:mm - dd.MM"))
+        timeFormatted =
+            dateTime.format(DateTimeFormatter.ofPattern("HH:mm"))
     }
 
     override fun toString(): String {
@@ -55,24 +56,36 @@ class Screening(
         button.setTextColor(context.resources.getColor(R.color.black, context.theme))
 
         val text: Spannable =
-            SpannableString("$movie ($type)\n\n$city\n$theater\n$dateTimeFormatted\n")
+            SpannableString("$timeFormatted\n\n$movie ($type)\n\n$city\n$theater")
+        text.setSpan(
+            UnderlineSpan(),
+            text.indexOf(timeFormatted),
+            timeFormatted.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
         text.setSpan(
             StyleSpan(Typeface.BOLD),
-            0,
-            "$movie ($type)".length,
-            Spannable.SPAN_INCLUSIVE_INCLUSIVE
+            text.indexOf(timeFormatted),
+            timeFormatted.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        text.setSpan(
+            StyleSpan(Typeface.BOLD),
+            text.indexOf(movie),
+            text.indexOf(type) + type.length + 1,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         text.setSpan(
             RelativeSizeSpan(1.15f),
-            0,
-            "$movie ($type)".length,
-            Spannable.SPAN_INCLUSIVE_INCLUSIVE
+            text.indexOf(movie),
+            text.indexOf(type) + type.length + 1,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         text.setSpan(
             StyleSpan(Typeface.BOLD),
-            "$movie ($type)".length + 2,
-            "$movie ($type)".length + 1 + "$city\n\n$theater".length,
-            Spannable.SPAN_INCLUSIVE_INCLUSIVE
+            text.indexOf(city),
+            text.indexOf(theater),
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         button.text = text
 
