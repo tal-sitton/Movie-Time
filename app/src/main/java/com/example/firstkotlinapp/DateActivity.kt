@@ -27,7 +27,7 @@ class DateActivity : MyTemplateActivity() {
             selectedStartHour = LocalDateTime.now().hour
             selectedEndHour = 24
             restarted = true
-            selectedDatStr= "היום"
+            selectedDatStr = "היום"
         }
 
         private var pressedDayID: Int = 0
@@ -88,7 +88,6 @@ class DateActivity : MyTemplateActivity() {
         pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
         selectedDay = dateTime.dayOfMonth
         selectedDatStr = button.text.toString()
-        mainButton?.text = selectedDatStr
     }
 
     private fun genText(dateTime: LocalDateTime): String {
@@ -129,12 +128,11 @@ class DateActivity : MyTemplateActivity() {
         selectedEndHour = end
     }
 
-    private var mainButton: TextView? = null
     private fun setupTopButtons() {
-        mainButton = findViewById(R.id.dateButton)
-        mainButton?.setBackgroundResource(R.drawable.top_buttons_clicked)
-        mainButton?.text = selectedDatStr
-        mainButton?.setOnClickListener {
+        val mainButton: TextView = findViewById(R.id.dateButton)
+        mainButton.setBackgroundResource(R.drawable.top_buttons_clicked)
+        mainButton.text = "אישור"
+        mainButton.setOnClickListener {
             onBackPressed()
         }
         val cinemaButton: TextView = findViewById(R.id.cinemaButton)
