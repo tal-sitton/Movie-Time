@@ -32,7 +32,7 @@ open class MyTemplateActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
-            else -> onOptionsItemSelected(item)
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
