@@ -73,9 +73,13 @@ class MainActivity : MyTemplateActivity() {
 
     private var dateButton: TextView? = null
 
+    private lateinit var scrl: ScrollView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Utils.showToast(this, "onCreate")
+        val scrl: ScrollView = findViewById(R.id.scrl)
+        scrl.smoothScrollTo(0, 0)
 
         JSONUtils.jsonToList(this)
         resetToDefault()
@@ -138,6 +142,7 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
+        scrl.scrollTo(0, 0)
         dateButton?.text = DateActivity.selectedDatStr
         if (filter())
             createButtons(findViewById(R.id.gl))
