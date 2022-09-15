@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 open class MyTemplateActivity : AppCompatActivity() {
 
-    private lateinit var menu: Menu
     override fun onBackPressed() {
         finish()
         overridePendingTransition(0, 0)
@@ -16,7 +15,6 @@ open class MyTemplateActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_manu, menu)
-        this.menu = menu!!
         return true
     }
 
