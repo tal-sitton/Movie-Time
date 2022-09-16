@@ -1,4 +1,4 @@
-package com.example.firstkotlinapp
+package com.example.movietime
 
 import android.Manifest
 import android.content.Intent
