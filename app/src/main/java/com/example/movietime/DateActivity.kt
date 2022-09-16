@@ -135,10 +135,20 @@ class DateActivity : MyTemplateActivity() {
                 allDay.setBackgroundColor(this.getColor(R.color.purple_500))
             }
         } else {
-            selectedHour.remove(Hour.ALL_DAY)
-            allDay.setBackgroundColor(this.getColor(R.color.purple_200))
-            selectedHour.add(hour)
-            button.setBackgroundColor(this.getColor(R.color.purple_500))
+            if (hour == Hour.ALL_DAY) {
+                selectedHour.clear()
+                selectedHour.add(Hour.ALL_DAY)
+                allDay.setBackgroundColor(this.getColor(R.color.purple_500))
+                findViewById<Button>(R.id.before12Button).setBackgroundColor(this.getColor(R.color.purple_200))
+                findViewById<Button>(R.id.till15Button).setBackgroundColor(this.getColor(R.color.purple_200))
+                findViewById<Button>(R.id.till19Button).setBackgroundColor(this.getColor(R.color.purple_200))
+                findViewById<Button>(R.id.after19Button).setBackgroundColor(this.getColor(R.color.purple_200))
+            } else {
+                selectedHour.remove(Hour.ALL_DAY)
+                allDay.setBackgroundColor(this.getColor(R.color.purple_200))
+                selectedHour.add(hour)
+                button.setBackgroundColor(this.getColor(R.color.purple_500))
+            }
         }
     }
 
