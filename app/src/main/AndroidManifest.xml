@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.firstkotlinapp">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -17,7 +16,7 @@
         android:theme="@style/Theme.FirstKotlinApp"
         tools:targetApi="31">
         <activity
-            android:name=".LoadingActivity"
+            android:name="com.example.movietime.LoadingActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -27,23 +26,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.movietime.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MovieActivity"
+            android:name="com.example.movietime.MovieActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CinemaActivity"
+            android:name="com.example.movietime.CinemaActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DateActivity"
+            android:name="com.example.movietime.DateActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AboutActivity"
+            android:name="com.example.movietime.AboutActivity"
             android:exported="false" />
     </application>
 

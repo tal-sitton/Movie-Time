@@ -1,4 +1,4 @@
-package com.example.firstkotlinapp
+package com.example.movietime
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Space
 import android.widget.TextView
+import com.example.movietime.R
 
 class MovieActivity : MyTemplateActivity() {
 

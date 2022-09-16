@@ -1,4 +1,4 @@
-package com.example.firstkotlinapp
+package com.example.movietime
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,48 +12,43 @@ class DateActivity : MyTemplateActivity() {
     companion object {
         var selectedDay: Int = LocalDateTime.now().dayOfMonth
         var selectedDatStr: String = "היום"
-        var selectedStartHour: Int = LocalDateTime.now().hour
-        var selectedEndHour = 24
-        var restarted = false
+        val selectedHour: MutableList<Hour> = mutableListOf(Hour.ALL_DAY)
+        var restarted = true
 
         fun checkScreening(screening: Screening): Boolean {
             val date = screening.dateTime
-            return date.dayOfMonth == selectedDay && date.hour >= selectedStartHour &&
-                    (date.hour < selectedEndHour || (date.hour == selectedEndHour && date.minute == 0))
+            return date.dayOfMonth == selectedDay && selectedHour.any { it.between(date) }
         }
 
         fun default() {
             selectedDay = LocalDateTime.now().dayOfMonth
-            selectedStartHour = LocalDateTime.now().hour
-            selectedEndHour = 24
+            selectedHour.clear()
+            selectedHour.add(Hour.ALL_DAY)
             restarted = true
             selectedDatStr = "היום"
         }
 
         private var pressedDayID: Int = 0
-        private var pressedHourID: Int = 0
     }
 
     private var pressedDay: Button? = null
-    private var pressedHour: Button? = null
+    private lateinit var allDay: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actvity_filter_date)
         setupTopButtons()
+        allDay = findViewById(R.id.allDayButton)
 
         if (restarted) {
             pressedDayID = R.id.todayButton
-            pressedHourID = R.id.allDayButton
-            restarted = false
+            allDay.setBackgroundColor(this.getColor(R.color.purple_500))
         }
         if (pressedDay == null) {
             pressedDay = findViewById(pressedDayID)
-            pressedHour = findViewById(pressedHourID)
         }
 
         pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
-        pressedHour?.setBackgroundColor(this.getColor(R.color.purple_500))
 
         setupDateButtons()
         setupHourButtons()
@@ -104,28 +99,47 @@ class DateActivity : MyTemplateActivity() {
 
     private fun setupHourButtons() {
         val allDay = findViewById<Button>(R.id.allDayButton)
-        allDay.setOnClickListener { hourClickListener(allDay, 0, 24) }
+        configButton(allDay, Hour.ALL_DAY)
 
         val before12 = findViewById<Button>(R.id.before12Button)
-        before12.setOnClickListener { hourClickListener(before12, 0, 12) }
+        configButton(before12, Hour.BEFORE_12)
 
         val till15 = findViewById<Button>(R.id.till15Button)
-        till15.setOnClickListener { hourClickListener(till15, 12, 15) }
+        configButton(till15, Hour.TILL_15)
 
         val till19 = findViewById<Button>(R.id.till19Button)
-        till19.setOnClickListener { hourClickListener(till19, 15, 19) }
+        configButton(till19, Hour.TILL_19)
 
         val after19 = findViewById<Button>(R.id.after19Button)
-        after19.setOnClickListener { hourClickListener(after19, 19, 24) }
+        configButton(after19, Hour.AFTER_19)
+        restarted = false
     }
 
-    private fun hourClickListener(button: Button, start: Int, end: Int) {
-        pressedHour?.setBackgroundColor(this.getColor(R.color.purple_200))
-        pressedHour = button
-        pressedHourID = button.id
-        pressedHour?.setBackgroundColor(this.getColor(R.color.purple_500))
-        selectedStartHour = start
-        selectedEndHour = end
+    private fun configButton(button: Button, hour: Hour) {
+        if (!restarted) {
+            if (selectedHour.contains(hour)) {
+                button.setBackgroundColor(this.getColor(R.color.purple_500))
+            } else {
+                button.setBackgroundColor(this.getColor(R.color.purple_200))
+            }
+        }
+        button.setOnClickListener { hourClickListener(button, hour) }
+    }
+
+    private fun hourClickListener(button: Button, hour: Hour) {
+        if (selectedHour.contains(hour)) {
+            selectedHour.remove(hour)
+            button.setBackgroundColor(this.getColor(R.color.purple_200))
+            if (selectedHour.isEmpty()) {
+                selectedHour.add(Hour.ALL_DAY)
+                allDay.setBackgroundColor(this.getColor(R.color.purple_500))
+            }
+        } else {
+            selectedHour.remove(Hour.ALL_DAY)
+            allDay.setBackgroundColor(this.getColor(R.color.purple_200))
+            selectedHour.add(hour)
+            button.setBackgroundColor(this.getColor(R.color.purple_500))
+        }
     }
 
     private fun setupTopButtons() {
@@ -151,6 +165,18 @@ class DateActivity : MyTemplateActivity() {
             intent.setClass(this, MovieActivity::class.java)
             MainActivity.filter()
             startActivity(intent)
+        }
+    }
+
+    enum class Hour(val start: Int, val end: Int) {
+        ALL_DAY(0, 24), BEFORE_12(0, 12), TILL_15(12, 15), TILL_19(15, 19), AFTER_19(19, 24);
+
+        fun between(date: LocalDateTime): Boolean {
+            return date.hour >= start && (date.hour < end || (date.hour == end && date.minute == 0))
+        }
+
+        override fun toString(): String {
+            return "$start:00 - $end:00"
         }
     }
 

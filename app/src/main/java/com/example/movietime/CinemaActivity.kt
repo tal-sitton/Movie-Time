@@ -1,4 +1,4 @@
-package com.example.firstkotlinapp
+package com.example.movietime
 
 import android.Manifest
 import android.content.Intent
@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
+import com.example.movietime.R
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import java.net.UnknownHostException

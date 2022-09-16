@@ -1,4 +1,4 @@
-package com.example.firstkotlinapp
+package com.example.movietime
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION

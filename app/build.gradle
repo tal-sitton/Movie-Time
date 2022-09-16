@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.firstkotlinapp"
+        applicationId "com.example.movietime"
         minSdk 26
         targetSdk 32
         versionCode 1
@@ -32,6 +32,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.example.movietime'
 }
 
 dependencies {
