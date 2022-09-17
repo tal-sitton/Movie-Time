@@ -17,7 +17,7 @@
         android:alignmentMode="alignBounds"
         android:background="@drawable/border"
         android:columnCount="2"
-        android:layoutDirection="rtl"
+        android:rotationY="180"
         android:useDefaultMargins="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,26 +27,12 @@
         app:layout_constraintVertical_bias="0.081">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/white"
-            android:text="יום"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            style="@style/DateTimeTitle"
+            android:text="יום" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/white"
-            android:text="שעה"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            style="@style/DateTimeTitle"
+            android:text="שעה" />
 
         <Button
             android:id="@+id/todayButton"
@@ -55,6 +41,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="היום" />
 
 
@@ -65,6 +52,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="כל היום" />
 
         <Button
@@ -74,6 +62,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="מחר" />
 
         <Button
@@ -83,6 +72,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="לפני 12:00" />
 
         <Button
@@ -92,6 +82,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="יום שלישי 6/9" />
 
         <Button
@@ -101,6 +92,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="12:00-15:00" />
 
         <Button
@@ -110,6 +102,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="יום רביעי 7/9" />
 
         <Button
@@ -119,6 +112,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="15:00-19:00" />
 
         <Button
@@ -128,6 +122,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="יום חמישי 8/9" />
 
         <Button
@@ -137,6 +132,7 @@
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             android:backgroundTint="@color/purple_200"
+            android:rotationY="180"
             android:text="אחרי 19:00" />
 
     </GridLayout>

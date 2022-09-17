@@ -51,6 +51,7 @@ class Screening(
         button.width = 330
         button.minHeight = 442
         button.gravity = Gravity.CENTER_HORIZONTAL
+        button.rotationY = 180f
 
         button.setBackgroundResource(R.drawable.movie_button)
         button.setTextColor(context.resources.getColor(R.color.black, context.theme))
