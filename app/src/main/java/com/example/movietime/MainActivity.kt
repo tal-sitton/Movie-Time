@@ -17,10 +17,11 @@ class MainActivity : MyTemplateActivity() {
         var filteredMoviesScreenings: Set<Screening> = setOf()
         var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
+        var prevFilteredScreenings: Set<Screening> = setOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
         var filteredTypeScreenings: Set<Screening> = setOf()
 
-        fun filter(): Boolean {
+        fun filter(fromMain: Boolean = false): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
             if (selectedMovies.isNotEmpty()) {
                 filteredMoviesScreenings =
@@ -50,6 +51,9 @@ class MainActivity : MyTemplateActivity() {
 
             if (newFilteredScreenings != filteredScreenings) {
                 filteredScreenings = newFilteredScreenings
+            }
+            if (fromMain && filteredScreenings != prevFilteredScreenings) {
+                prevFilteredScreenings = newFilteredScreenings
                 return true
             }
             return false
@@ -143,7 +147,7 @@ class MainActivity : MyTemplateActivity() {
         super.onRestart()
         scrl.scrollTo(0, 0)
         dateButton?.text = DateActivity.selectedDatStr
-        if (filter())
+        if (filter(true))
             createButtons(findViewById(R.id.gl))
     }
 
