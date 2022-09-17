@@ -12,9 +12,9 @@ import android.widget.*
 class MainActivity : MyTemplateActivity() {
 
     companion object {
-        var allScreenings: Set<Screening> = setOf()
+        var allScreenings: List<Screening> = listOf()
         var filteredCinemaScreenings: Set<Screening> = setOf()
-        var filteredMoviesScreenings: Set<Screening> = setOf()
+        var filteredMoviesScreenings: List<Screening> = listOf()
         var filteredDateScreenings: Set<Screening> = setOf()
         var filteredScreenings: Set<Screening> = setOf()
         var prevFilteredScreenings: Set<Screening> = setOf()
@@ -23,13 +23,12 @@ class MainActivity : MyTemplateActivity() {
 
         fun filter(fromMain: Boolean = false): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
-            if (selectedMovies.isNotEmpty()) {
-                filteredMoviesScreenings =
-                    allScreenings.filter { screening ->
-                        selectedMovies.contains(screening.movie)
-                    }.toSet()
+            filteredMoviesScreenings = if (selectedMovies.isNotEmpty()) {
+                allScreenings.filter { screening ->
+                    selectedMovies.contains(screening.movie)
+                }
             } else
-                filteredMoviesScreenings = allScreenings
+                allScreenings
 
             val selectedCinemas = CinemaActivity.selectedCinemas
             if (selectedCinemas.isNotEmpty()) {
@@ -38,7 +37,7 @@ class MainActivity : MyTemplateActivity() {
                         selectedCinemas.contains(screening.cinema)
                     }.toSet()
             } else
-                filteredCinemaScreenings = allScreenings
+                filteredCinemaScreenings = allScreenings.toSet()
 
             filteredDateScreenings = allScreenings.filter { screening ->
                 DateActivity.checkScreening(screening)
@@ -60,9 +59,9 @@ class MainActivity : MyTemplateActivity() {
         }
 
         fun resetToDefault() {
-            filteredCinemaScreenings = allScreenings
+            filteredCinemaScreenings = allScreenings.toSet()
             filteredMoviesScreenings = allScreenings
-            filteredTypeScreenings = allScreenings
+            filteredTypeScreenings = allScreenings.toSet()
             MovieActivity.selectedMovies.clear()
             CinemaActivity.selectedCinemas.clear()
             DateActivity.default()
@@ -175,7 +174,7 @@ class MainActivity : MyTemplateActivity() {
                     selectedScreeningTypes.contains(screening.type)
                 }.toSet()
         } else
-            filteredTypeScreenings = allScreenings
+            filteredTypeScreenings = allScreenings.toSet()
 
         onRestart()
     }
