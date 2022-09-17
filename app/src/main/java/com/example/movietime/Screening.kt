@@ -8,7 +8,7 @@ import android.text.SpannableString
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
 import android.text.style.UnderlineSpan
-import android.view.ViewGroup
+import android.view.Gravity
 import android.widget.TextView
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -50,7 +50,7 @@ class Screening(
         val button = TextView(context)
         button.width = 330
         button.minHeight = 442
-        button.textAlignment = ViewGroup.TEXT_ALIGNMENT_CENTER
+        button.gravity = Gravity.CENTER_HORIZONTAL
 
         button.setBackgroundResource(R.drawable.movie_button)
         button.setTextColor(context.resources.getColor(R.color.black, context.theme))
