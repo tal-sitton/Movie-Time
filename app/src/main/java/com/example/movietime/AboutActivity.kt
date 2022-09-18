@@ -14,7 +14,7 @@ class AboutActivity : MyTemplateActivity() {
 
         val mainActivityButton: Button = findViewById(R.id.backButton)
         mainActivityButton.setOnClickListener {
-            onBackPressed()
+            onBackPressedCallback.handleOnBackPressed()
         }
 
         val supportButton: ImageView = findViewById(R.id.supportButton)
@@ -27,7 +27,7 @@ class AboutActivity : MyTemplateActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_about) {
-            onBackPressed()
+            onBackPressedCallback.handleOnBackPressed()
             return true
         }
         return super.onOptionsItemSelected(item)

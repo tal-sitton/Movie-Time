@@ -97,7 +97,7 @@ class CinemaActivity : MyTemplateActivity() {
         val mainButton: TextView = findViewById(R.id.cinemaButton)
         mainButton.setBackgroundResource(R.drawable.top_buttons_clicked)
         mainButton.setOnClickListener {
-            onBackPressed()
+            onBackPressedCallback.handleOnBackPressed()
         }
         mainButton.text = "אישור"
         val dateButton: TextView = findViewById(R.id.dateButton)

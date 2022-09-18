@@ -1,16 +1,25 @@
 package com.example.movietime
 
 import android.content.Intent
+import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ProgressBar
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 
 open class MyTemplateActivity : AppCompatActivity() {
 
-    override fun onBackPressed() {
-        finish()
-        overridePendingTransition(0, 0)
+    open val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            finish()
+            overridePendingTransition(0, 0)
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -25,7 +34,7 @@ open class MyTemplateActivity : AppCompatActivity() {
                 MainActivity.resetToDefault()
                 MainActivity.filter()
                 recreate()
-                item.actionView.postDelayed({ item.actionView = null }, 1)
+                (item.actionView as ProgressBar).postDelayed({ item.actionView = null }, 1)
                 true
             }
             R.id.action_about -> {

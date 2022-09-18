@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.widget.*
+import androidx.activity.OnBackPressedCallback
 
 
 class MainActivity : MyTemplateActivity() {
@@ -72,6 +73,7 @@ class MainActivity : MyTemplateActivity() {
             }.toSet()
 
             filteredScreenings = filteredDateScreenings.toList()
+            prevFilteredScreenings = filteredScreenings
         }
     }
 
@@ -123,9 +125,10 @@ class MainActivity : MyTemplateActivity() {
         grid.removeAllViewsInLayout()
         var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
-        if (filteredScreenings.isEmpty())
+        if (filteredScreenings.isEmpty()) {
             notFound.visibility = TextView.VISIBLE
-        else
+            return
+        } else
             notFound.visibility = TextView.INVISIBLE
 
         var prevDay = filteredScreenings.elementAt(0).dateTime.dayOfMonth
@@ -169,6 +172,7 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
+        Utils.showToast(this, "onRestart")
         scrl.scrollTo(0, 0)
         dateButton?.text = DateActivity.selectedDatStr
         if (filter(true))
@@ -176,13 +180,16 @@ class MainActivity : MyTemplateActivity() {
     }
 
     private var backPressedTime: Long = 0
-    override fun onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            this.finishAffinity()
-        } else {
-            Toast.makeText(baseContext, "לחץ שנית בכדי לסגור את האפליקציה", Toast.LENGTH_SHORT)
-                .show()
-            backPressedTime = System.currentTimeMillis()
+
+    override val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            if (backPressedTime + 2000 > System.currentTimeMillis()) {
+                finishAffinity()
+            } else {
+                Toast.makeText(baseContext, "לחץ שנית בכדי לסגור את האפליקציה", Toast.LENGTH_SHORT)
+                    .show()
+                backPressedTime = System.currentTimeMillis()
+            }
         }
     }
 
