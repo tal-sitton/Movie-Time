@@ -10,45 +10,65 @@ import java.time.LocalDateTime
 class DateActivity : MyTemplateActivity() {
 
     companion object {
-        var selectedDay: Int = LocalDateTime.now().dayOfMonth
+        var selectedDays: MutableList<Int> = mutableListOf(LocalDateTime.now().dayOfMonth)
         var selectedDatStr: String = "היום"
         val selectedHour: MutableList<Hour> = mutableListOf(Hour.ALL_DAY)
         var restarted = true
 
         fun checkScreening(screening: Screening): Boolean {
             val date = screening.dateTime
-            return date.dayOfMonth == selectedDay && selectedHour.any { it.between(date) }
+            return date.dayOfMonth in selectedDays && selectedHour.any { it.between(date) }
         }
 
         fun default() {
-            selectedDay = LocalDateTime.now().dayOfMonth
+            selectedDays = mutableListOf(LocalDateTime.now().dayOfMonth)
             selectedHour.clear()
             selectedHour.add(Hour.ALL_DAY)
             restarted = true
             selectedDatStr = "היום"
         }
 
-        private var pressedDayID: Int = 0
+        private fun genText(dateTime: LocalDateTime, addDate: Boolean = true): String {
+            var out = "יום " + when (dateTime.dayOfWeek) {
+                DayOfWeek.SUNDAY -> "ראשון"
+                DayOfWeek.MONDAY -> "שני"
+                DayOfWeek.TUESDAY -> "שלישי"
+                DayOfWeek.WEDNESDAY -> "רביעי"
+                DayOfWeek.THURSDAY -> "חמישי"
+                DayOfWeek.FRIDAY -> "שישי"
+                DayOfWeek.SATURDAY -> "שבת"
+            }
+            return if (addDate) out + " " + dateTime.dayOfMonth + "/" + dateTime.monthValue else out
+        }
+
+        fun genTextForSelected(day: Int, addDate: Boolean = true): String {
+            return when (day) {
+                LocalDateTime.now().dayOfMonth -> "היום"
+                LocalDateTime.now().plusDays(1).dayOfMonth -> "מחר"
+                in 1 until LocalDateTime.now().dayOfMonth -> genText(
+                    LocalDateTime.now().plusMonths(1).withDayOfMonth(day), addDate
+                )
+                else ->
+                    genText(LocalDateTime.now().withDayOfMonth(day), addDate)
+            }
+        }
+
     }
 
-    private var pressedDay: Button? = null
     private lateinit var allDay: Button
+    private lateinit var today: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actvity_filter_date)
         setupTopButtons()
         allDay = findViewById(R.id.allDayButton)
+        today = findViewById(R.id.todayButton)
 
         if (restarted) {
-            pressedDayID = R.id.todayButton
             allDay.setBackgroundColor(this.getColor(R.color.purple_500))
+            today.setBackgroundColor(this.getColor(R.color.purple_500))
         }
-        if (pressedDay == null) {
-            pressedDay = findViewById(pressedDayID)
-        }
-
-        pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
 
         setupDateButtons()
         setupHourButtons()
@@ -58,64 +78,75 @@ class DateActivity : MyTemplateActivity() {
         val now = LocalDateTime.now()
 
         val today = findViewById<Button>(R.id.todayButton)
-        today.setOnClickListener { dayClickListener(today, now) }
+        configDayButton(today, now)
 
         val tomorrow = findViewById<Button>(R.id.tomorrowButton)
-        tomorrow.setOnClickListener { dayClickListener(tomorrow, now.plusDays(1)) }
+        configDayButton(tomorrow, now.plusDays(1))
 
         val twoDays = findViewById<Button>(R.id.twoDaysButton)
         twoDays.text = genText(now.plusDays(2))
-        twoDays.setOnClickListener { dayClickListener(twoDays, now.plusDays(2)) }
+        configDayButton(twoDays, now.plusDays(2))
 
         val threeDays = findViewById<Button>(R.id.threeDaysButton)
         threeDays.text = genText(now.plusDays(3))
-        threeDays.setOnClickListener { dayClickListener(threeDays, now.plusDays(3)) }
+        configDayButton(threeDays, now.plusDays(3))
 
         val fourDays = findViewById<Button>(R.id.fourDaysButton)
         fourDays.text = genText(now.plusDays(4))
-        fourDays.setOnClickListener { dayClickListener(fourDays, now.plusDays(4)) }
+        configDayButton(fourDays, now.plusDays(4))
     }
 
-    private fun dayClickListener(button: Button, dateTime: LocalDateTime) {
-        pressedDay?.setBackgroundColor(this.getColor(R.color.purple_200))
-        pressedDay = button
-        pressedDayID = button.id
-        pressedDay?.setBackgroundColor(this.getColor(R.color.purple_500))
-        selectedDay = dateTime.dayOfMonth
-        selectedDatStr = button.text.toString()
+    private fun configDayButton(button: Button, datetime: LocalDateTime) {
+        if (!restarted) {
+            if (selectedDays.contains(datetime.dayOfMonth)) {
+                button.setBackgroundColor(this.getColor(R.color.purple_500))
+            } else {
+                button.setBackgroundColor(this.getColor(R.color.purple_200))
+            }
+        }
+        button.setOnClickListener { dayClickListener(button, datetime) }
     }
 
-    private fun genText(dateTime: LocalDateTime): String {
-        return "יום " + when (dateTime.dayOfWeek) {
-            DayOfWeek.SUNDAY -> "ראשון"
-            DayOfWeek.MONDAY -> "שני"
-            DayOfWeek.TUESDAY -> "שלישי"
-            DayOfWeek.WEDNESDAY -> "רביעי"
-            DayOfWeek.THURSDAY -> "חמישי"
-            DayOfWeek.FRIDAY -> "שישי"
-            DayOfWeek.SATURDAY -> "שבת"
-        } + " " + dateTime.dayOfMonth + "/" + dateTime.monthValue
+    private fun dayClickListener(button: Button, datetime: LocalDateTime) {
+        val day = datetime.dayOfMonth
+        val nowDay = LocalDateTime.now().dayOfMonth
+        if (selectedDays.contains(day)) {
+            selectedDays.remove(day)
+            button.setBackgroundColor(this.getColor(R.color.purple_200))
+            if (selectedDays.isEmpty()) {
+                selectedDays.add(nowDay)
+                today.setBackgroundColor(this.getColor(R.color.purple_500))
+            }
+        } else {
+            selectedDays.add(day)
+            button.setBackgroundColor(this.getColor(R.color.purple_500))
+        }
+        if (selectedDays.size == 1) {
+            selectedDatStr = genTextForSelected(selectedDays[0])
+        } else {
+            selectedDatStr = "מספר ימים"
+        }
     }
 
     private fun setupHourButtons() {
         val allDay = findViewById<Button>(R.id.allDayButton)
-        configButton(allDay, Hour.ALL_DAY)
+        configHourButton(allDay, Hour.ALL_DAY)
 
         val before12 = findViewById<Button>(R.id.before12Button)
-        configButton(before12, Hour.BEFORE_12)
+        configHourButton(before12, Hour.BEFORE_12)
 
         val till15 = findViewById<Button>(R.id.till15Button)
-        configButton(till15, Hour.TILL_15)
+        configHourButton(till15, Hour.TILL_15)
 
         val till19 = findViewById<Button>(R.id.till19Button)
-        configButton(till19, Hour.TILL_19)
+        configHourButton(till19, Hour.TILL_19)
 
         val after19 = findViewById<Button>(R.id.after19Button)
-        configButton(after19, Hour.AFTER_19)
+        configHourButton(after19, Hour.AFTER_19)
         restarted = false
     }
 
-    private fun configButton(button: Button, hour: Hour) {
+    private fun configHourButton(button: Button, hour: Hour) {
         if (!restarted) {
             if (selectedHour.contains(hour)) {
                 button.setBackgroundColor(this.getColor(R.color.purple_500))
