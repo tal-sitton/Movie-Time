@@ -9,6 +9,7 @@ import android.view.Gravity
 import android.view.View
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
+import java.time.LocalDateTime
 
 
 class MainActivity : MyTemplateActivity() {
@@ -71,6 +72,16 @@ class MainActivity : MyTemplateActivity() {
             filteredDateScreenings = allScreenings.filter { screening ->
                 DateActivity.checkScreening(screening)
             }.toSet()
+
+            if (filteredDateScreenings.isEmpty()) {
+                DateActivity.selectedDays.clear()
+                DateActivity.selectedDays.add(LocalDateTime.now().plusDays(1).dayOfMonth)
+                DateActivity.restarted = false
+                DateActivity.selectedDatStr = "מחר"
+                filteredDateScreenings = allScreenings.filter { screening ->
+                    DateActivity.checkScreening(screening)
+                }.toSet()
+            }
 
             filteredScreenings = filteredDateScreenings.toList()
             prevFilteredScreenings = filteredScreenings
@@ -172,7 +183,6 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        Utils.showToast(this, "onRestart")
         scrl.scrollTo(0, 0)
         dateButton?.text = DateActivity.selectedDatStr
         if (filter(true))
