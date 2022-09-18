@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.widget.*
+import androidx.activity.OnBackPressedCallback
+import java.time.LocalDateTime
 
 
 class MainActivity : MyTemplateActivity() {
@@ -71,7 +73,18 @@ class MainActivity : MyTemplateActivity() {
                 DateActivity.checkScreening(screening)
             }.toSet()
 
+            if (filteredDateScreenings.isEmpty()) {
+                DateActivity.selectedDays.clear()
+                DateActivity.selectedDays.add(LocalDateTime.now().plusDays(1).dayOfMonth)
+                DateActivity.restarted = false
+                DateActivity.selectedDatStr = "מחר"
+                filteredDateScreenings = allScreenings.filter { screening ->
+                    DateActivity.checkScreening(screening)
+                }.toSet()
+            }
+
             filteredScreenings = filteredDateScreenings.toList()
+            prevFilteredScreenings = filteredScreenings
         }
     }
 
@@ -123,9 +136,10 @@ class MainActivity : MyTemplateActivity() {
         grid.removeAllViewsInLayout()
         var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
-        if (filteredScreenings.isEmpty())
+        if (filteredScreenings.isEmpty()) {
             notFound.visibility = TextView.VISIBLE
-        else
+            return
+        } else
             notFound.visibility = TextView.INVISIBLE
 
         var prevDay = filteredScreenings.elementAt(0).dateTime.dayOfMonth
@@ -176,13 +190,16 @@ class MainActivity : MyTemplateActivity() {
     }
 
     private var backPressedTime: Long = 0
-    override fun onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            this.finishAffinity()
-        } else {
-            Toast.makeText(baseContext, "לחץ שנית בכדי לסגור את האפליקציה", Toast.LENGTH_SHORT)
-                .show()
-            backPressedTime = System.currentTimeMillis()
+
+    override val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            if (backPressedTime + 2000 > System.currentTimeMillis()) {
+                finishAffinity()
+            } else {
+                Toast.makeText(baseContext, "לחץ שנית בכדי לסגור את האפליקציה", Toast.LENGTH_SHORT)
+                    .show()
+                backPressedTime = System.currentTimeMillis()
+            }
         }
     }
 
