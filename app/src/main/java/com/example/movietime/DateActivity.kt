@@ -78,37 +78,36 @@ class DateActivity : MyTemplateActivity() {
         val now = LocalDateTime.now()
 
         val today = findViewById<Button>(R.id.todayButton)
-        configDayButton(today, now)
+        configDayButton(today, now.dayOfMonth)
 
         val tomorrow = findViewById<Button>(R.id.tomorrowButton)
-        configDayButton(tomorrow, now.plusDays(1))
+        configDayButton(tomorrow, now.plusDays(1).dayOfMonth)
 
         val twoDays = findViewById<Button>(R.id.twoDaysButton)
         twoDays.text = genText(now.plusDays(2))
-        configDayButton(twoDays, now.plusDays(2))
+        configDayButton(twoDays, now.plusDays(2).dayOfMonth)
 
         val threeDays = findViewById<Button>(R.id.threeDaysButton)
         threeDays.text = genText(now.plusDays(3))
-        configDayButton(threeDays, now.plusDays(3))
+        configDayButton(threeDays, now.plusDays(3).dayOfMonth)
 
         val fourDays = findViewById<Button>(R.id.fourDaysButton)
         fourDays.text = genText(now.plusDays(4))
-        configDayButton(fourDays, now.plusDays(4))
+        configDayButton(fourDays, now.plusDays(4).dayOfMonth)
     }
 
-    private fun configDayButton(button: Button, datetime: LocalDateTime) {
+    private fun configDayButton(button: Button, day: Int) {
         if (!restarted) {
-            if (selectedDays.contains(datetime.dayOfMonth)) {
+            if (selectedDays.contains(day)) {
                 button.setBackgroundColor(this.getColor(R.color.purple_500))
             } else {
                 button.setBackgroundColor(this.getColor(R.color.purple_200))
             }
         }
-        button.setOnClickListener { dayClickListener(button, datetime) }
+        button.setOnClickListener { dayClickListener(button, day) }
     }
 
-    private fun dayClickListener(button: Button, datetime: LocalDateTime) {
-        val day = datetime.dayOfMonth
+    private fun dayClickListener(button: Button, day: Int) {
         val nowDay = LocalDateTime.now().dayOfMonth
         if (selectedDays.contains(day)) {
             selectedDays.remove(day)
