@@ -66,7 +66,7 @@ class JSONUtils {
             } else {
                 context.startActivity(Intent(context, LoadingActivity::class.java))
             }
-            MainActivity.allScreenings = tmpAllScreenings.sortedBy { it.dateTime }
+            MainActivity.allScreenings = tmpAllScreenings
         }
 
         fun loadJSONFromFile(context: Context): JSONObject? {

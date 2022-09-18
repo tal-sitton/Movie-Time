@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter
 
 class Screening(
     val movie: String,
-    val date: String,
+    date: String,
     val time: String,
     val city: String,
     val district: String,

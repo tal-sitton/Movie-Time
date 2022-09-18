@@ -76,7 +76,7 @@
             android:id="@+id/gl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="5"
+            android:columnCount="3"
             android:orientation="horizontal"
             android:rotationY="180" />
     </ScrollView>
