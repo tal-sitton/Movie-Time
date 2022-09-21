@@ -48,8 +48,6 @@ class Screening(
 
     fun createButton(context: Context): TextView {
         val button = TextView(context)
-        button.width = 330
-        button.minHeight = 442
         button.gravity = Gravity.CENTER_HORIZONTAL
         button.rotationY = 180f
 

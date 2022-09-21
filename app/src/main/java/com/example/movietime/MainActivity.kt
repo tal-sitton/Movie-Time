@@ -4,7 +4,9 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.graphics.Typeface
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.View
 import android.widget.*
@@ -156,6 +158,14 @@ class MainActivity : MyTemplateActivity() {
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
                 startActivity(browserIntent)
             }
+            button.minHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
+            button.width = resources.getDimensionPixelSize(R.dimen.screening_width)
+
+            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
+                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
+            }
+            button.width = metrics.widthPixels / 3 - 8 * 3
             if (i % 3 != 0) {
                 val params = GridLayout.LayoutParams()
                 params.setMargins(0, 0, 8, 15)

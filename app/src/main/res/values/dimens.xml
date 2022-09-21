@@ -1,1 +1,4 @@
-<resources></resources>
+<resources>
+    <dimen name="screening_height">160dp</dimen>
+    <dimen name="screening_width">120dp</dimen>
+</resources>
