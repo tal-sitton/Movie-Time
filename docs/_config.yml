@@ -18,5 +18,5 @@ buttons:
   zip_title: Download The App
   zip_hide: false
   tar_title: Download The App From Goole Play Store
-  tar_url: https://tacospin.com/
-  tar_hide: true
+  tar_url: https://play.google.com/store/apps/details?id=com.talsitton.movietime
+  tar_hide: false
