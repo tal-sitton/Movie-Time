@@ -44,6 +44,9 @@ class CinemaActivity : MyTemplateActivity() {
         if (sortDistricts)
             getCinemas()
 
+        if (cinemas.isEmpty())
+            return
+        
         var district = cinemas[0].district
 
         if (sortDistricts)
@@ -189,6 +192,8 @@ class CinemaActivity : MyTemplateActivity() {
 
     private fun sortByLocation(myLocation: Location, mHandler: Handler) {
         Looper.prepare()
+        if (cinemas.isEmpty())
+            return
         if (cinemas[0].distance == 0.0) {
             try {
                 Utils.calcDistance(myLocation, cinemas)
