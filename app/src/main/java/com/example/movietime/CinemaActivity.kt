@@ -44,9 +44,9 @@ class CinemaActivity : MyTemplateActivity() {
         if (sortDistricts)
             getCinemas()
 
-        if (cinemas.isEmpty()) {
+        if (cinemas.isEmpty())
             return
-        }
+        
         var district = cinemas[0].district
 
         if (sortDistricts)
