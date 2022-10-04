@@ -14,7 +14,7 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 
 show_downloads: true
 buttons:
-  zip_url: https://github.com/tal-sitton/Movie-Time/releases/download/v1.0/Movie-Time.apk
+  zip_url: https://github.com/tal-sitton/Movie-Time/releases/download/v1.0.1/movie-time.apk
   zip_title: Download The App
   zip_hide: true
   tar_title: Download The App
