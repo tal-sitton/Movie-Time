@@ -82,8 +82,8 @@ class Screening(
         )
         text.setSpan(
             StyleSpan(Typeface.BOLD),
-            text.indexOf(city),
-            text.indexOf(theater),
+            text.lastIndexOf(city),
+            text.lastIndexOf(theater),
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         button.text = text
