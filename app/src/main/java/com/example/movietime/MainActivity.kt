@@ -101,8 +101,8 @@ class MainActivity : MyTemplateActivity() {
     private val screen = Rect(
         0,
         0,
-        Resources.getSystem().displayMetrics.widthPixels + 1080,
-        Resources.getSystem().displayMetrics.heightPixels + 1080
+        Resources.getSystem().displayMetrics.widthPixels,
+        Resources.getSystem().displayMetrics.heightPixels
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -178,9 +178,6 @@ class MainActivity : MyTemplateActivity() {
         }
 
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
-//        for (view in grid.allViews) {
-//            view.visibility = View.INVISIBLE
-//        }
         grid.removeAllViewsInLayout()
         var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
@@ -206,12 +203,8 @@ class MainActivity : MyTemplateActivity() {
             }
 
             button.minHeight = buttonHeight
-
-//            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
-//                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
-//            }
             button.width = buttonWidth
+
             if (i % 3 != 0) {
                 val params = GridLayout.LayoutParams()
                 params.setMargins(0, 0, 8, 15)
