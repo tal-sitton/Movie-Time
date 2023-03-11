@@ -13,17 +13,20 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     
     - name: Build Android App
-      uses: sparkfabrik/android-build-action@v1.2.0
+      uses: sparkfabrik/android-build-action@v1.3.4
       with:
         project-path: .
         output-path: movie-time.apk
         browserstack-upload: false
+        ruby-version: "2.7.5"
+        bundler-version: "2.3.26"
+        fastlane-env: "debug"
         
     - name: save artifacts  
       uses: actions/upload-artifact@v3
