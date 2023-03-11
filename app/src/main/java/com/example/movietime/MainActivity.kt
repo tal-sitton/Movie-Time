@@ -101,8 +101,8 @@ class MainActivity : MyTemplateActivity() {
     private val screen = Rect(
         0,
         0,
-        Resources.getSystem().displayMetrics.widthPixels,
-        Resources.getSystem().displayMetrics.heightPixels
+        Resources.getSystem().displayMetrics.widthPixels + 1080,
+        Resources.getSystem().displayMetrics.heightPixels + 1080
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -119,11 +119,17 @@ class MainActivity : MyTemplateActivity() {
 
         grid.viewTreeObserver.addOnScrollChangedListener(OnScrollChangedListener {
             for (view in grid.allViews) {
-                view.isEnabled = isVisible(view) && view is TextView
+                val visible = isVisible(view)
+                view.isActivated = visible
+                view.isEnabled = visible
+                view.isClickable = visible
+                view.isFocusable = visible
+                view.isContextClickable = visible
             }
         })
         createButtons(grid)
     }
+
 
     private fun isVisible(view: View): Boolean {
         val actualPosition = Rect()
@@ -157,11 +163,24 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
+    private var buttonHeight = 0
+    private var buttonWidth = 0
+
     private fun createButtons(grid: GridLayout) {
-        filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
-        for (view in grid.allViews) {
-            view.isEnabled = false
+        if (buttonHeight == 0) {
+            buttonHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
         }
+        if (buttonWidth == 0) {
+            buttonWidth = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
+                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
+            }.widthPixels / 3 - 8 * 3
+        }
+
+        filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
+//        for (view in grid.allViews) {
+//            view.visibility = View.INVISIBLE
+//        }
         grid.removeAllViewsInLayout()
         var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
@@ -185,15 +204,14 @@ class MainActivity : MyTemplateActivity() {
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
                 startActivity(browserIntent)
             }
-            button.minHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
-            button.width = resources.getDimensionPixelSize(R.dimen.screening_width)
-            button.isEnabled = false
 
-            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
-                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
-            }
-            button.width = metrics.widthPixels / 3 - 8 * 3
+            button.minHeight = buttonHeight
+
+//            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+//                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
+//                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
+//            }
+            button.width = buttonWidth
             if (i % 3 != 0) {
                 val params = GridLayout.LayoutParams()
                 params.setMargins(0, 0, 8, 15)
