@@ -2,6 +2,8 @@ package com.example.movietime
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
+import android.content.res.Resources
+import android.graphics.Rect
 import android.graphics.Typeface
 import android.net.Uri
 import android.os.Build
@@ -9,8 +11,10 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.View
+import android.view.ViewTreeObserver.OnScrollChangedListener
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
+import androidx.core.view.allViews
 import java.time.LocalDateTime
 
 
@@ -93,6 +97,14 @@ class MainActivity : MyTemplateActivity() {
     private var dateButton: TextView? = null
 
     private lateinit var scrl: ScrollView
+
+    private val screen = Rect(
+        0,
+        0,
+        Resources.getSystem().displayMetrics.widthPixels,
+        Resources.getSystem().displayMetrics.heightPixels
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -103,8 +115,26 @@ class MainActivity : MyTemplateActivity() {
         resetToDefault()
 
         setupTopActivityButtons()
+        val grid: GridLayout = findViewById(R.id.gl)
 
-        createButtons(findViewById(R.id.gl))
+        grid.viewTreeObserver.addOnScrollChangedListener(OnScrollChangedListener {
+            for (view in grid.allViews) {
+                val visible = isVisible(view)
+                view.isActivated = visible
+                view.isEnabled = visible
+                view.isClickable = visible
+                view.isFocusable = visible
+                view.isContextClickable = visible
+            }
+        })
+        createButtons(grid)
+    }
+
+
+    private fun isVisible(view: View): Boolean {
+        val actualPosition = Rect()
+        view.getGlobalVisibleRect(actualPosition)
+        return actualPosition.intersect(screen)
     }
 
     private fun setupTopActivityButtons() {
@@ -133,7 +163,20 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
+    private var buttonHeight = 0
+    private var buttonWidth = 0
+
     private fun createButtons(grid: GridLayout) {
+        if (buttonHeight == 0) {
+            buttonHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
+        }
+        if (buttonWidth == 0) {
+            buttonWidth = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
+                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
+            }.widthPixels / 3 - 8 * 3
+        }
+
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         grid.removeAllViewsInLayout()
         var i = 1
@@ -158,14 +201,10 @@ class MainActivity : MyTemplateActivity() {
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
                 startActivity(browserIntent)
             }
-            button.minHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
-            button.width = resources.getDimensionPixelSize(R.dimen.screening_width)
 
-            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
-                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
-            }
-            button.width = metrics.widthPixels / 3 - 8 * 3
+            button.minHeight = buttonHeight
+            button.width = buttonWidth
+
             if (i % 3 != 0) {
                 val params = GridLayout.LayoutParams()
                 params.setMargins(0, 0, 8, 15)
