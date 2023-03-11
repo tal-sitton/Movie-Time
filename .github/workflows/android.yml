@@ -19,7 +19,7 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build Android App
-      uses: sparkfabrik/android-build-action@v1.2.0
+      uses: sparkfabrik/android-build-action@v1.3.4
       with:
         project-path: .
         output-path: movie-time.apk
