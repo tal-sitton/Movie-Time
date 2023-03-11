@@ -24,6 +24,9 @@ jobs:
         project-path: .
         output-path: movie-time.apk
         browserstack-upload: false
+        ruby-version: "2.7.5"
+        bundler-version: "2.3.26"
+        fastlane-env: "debug"
         
     - name: save artifacts  
       uses: actions/upload-artifact@v3
