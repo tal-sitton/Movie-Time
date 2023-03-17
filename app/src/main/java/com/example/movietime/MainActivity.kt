@@ -11,11 +11,15 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.View
-import android.view.ViewTreeObserver.OnScrollChangedListener
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
-import androidx.core.view.allViews
+import androidx.core.view.ViewCompat
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.time.LocalDateTime
+import kotlin.math.max
+import kotlin.math.min
 
 
 class MainActivity : MyTemplateActivity() {
@@ -29,6 +33,10 @@ class MainActivity : MyTemplateActivity() {
         var prevFilteredScreenings: List<Screening> = listOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
         var filteredTypeScreenings: Set<Screening> = setOf()
+        const val STARTING_ROWS = 100
+        const val LOADING_ROWS_CHUNK = 100
+        const val SCREENING_PER_ROW = 3
+        var endRow = STARTING_ROWS
 
         fun filter(fromMain: Boolean = false): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
@@ -97,44 +105,68 @@ class MainActivity : MyTemplateActivity() {
     private var dateButton: TextView? = null
 
     private lateinit var scrl: ScrollView
-
-    private val screen = Rect(
-        0,
-        0,
-        Resources.getSystem().displayMetrics.widthPixels,
-        Resources.getSystem().displayMetrics.heightPixels
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        endRow = STARTING_ROWS
         scrl = findViewById(R.id.scrl)
         scrl.smoothScrollTo(0, 0)
+
+        scrl.setOnScrollChangeListener(onScroll)
+
+        ViewCompat.setNestedScrollingEnabled(scrl, false);
+        ViewCompat.setNestedScrollingEnabled(findViewById(R.id.gl), false);
 
         JSONUtils.jsonToList(this)
         resetToDefault()
 
         setupTopActivityButtons()
-        val grid: GridLayout = findViewById(R.id.gl)
 
-        grid.viewTreeObserver.addOnScrollChangedListener(OnScrollChangedListener {
-            for (view in grid.allViews) {
-                val visible = isVisible(view)
-                view.isActivated = visible
-                view.isEnabled = visible
-                view.isClickable = visible
-                view.isFocusable = visible
-                view.isContextClickable = visible
-            }
-        })
-        createButtons(grid)
+        createButtons(findViewById(R.id.gl))
     }
 
 
     private fun isVisible(view: View): Boolean {
+        val screen = Rect(
+            0,
+            0,
+            Resources.getSystem().displayMetrics.widthPixels,
+            Resources.getSystem().displayMetrics.heightPixels
+        )
         val actualPosition = Rect()
         view.getGlobalVisibleRect(actualPosition)
         return actualPosition.intersect(screen)
+    }
+
+    private val onScroll =
+        View.OnScrollChangeListener { _, _, _, _, _ ->
+            GlobalScope.launch(Dispatchers.Main) {
+                onGridScroll()
+            }
+
+        }
+
+    private suspend fun onGridScroll() {
+        val grid = findViewById<GridLayout>(R.id.gl)
+        val abovePosition = (endRow - (LOADING_ROWS_CHUNK * 2)) * SCREENING_PER_ROW
+
+        val aboveScreening = grid.getChildAt(abovePosition) as? TextView
+        val lastScreening =
+            grid.getChildAt((endRow - 3) * SCREENING_PER_ROW) as? TextView
+
+        if (lastScreening != null && isVisible(lastScreening)) {
+            endRow =
+                min(
+                    endRow + SCREENING_PER_ROW * LOADING_ROWS_CHUNK,
+                    (filteredScreenings.size - 1) / SCREENING_PER_ROW
+                )
+            createButtons(grid)
+        } else {
+            if (aboveScreening != null && isVisible(aboveScreening)) {
+                endRow = max(endRow - SCREENING_PER_ROW * LOADING_ROWS_CHUNK, STARTING_ROWS)
+                createButtons(grid)
+            }
+        }
     }
 
     private fun setupTopActivityButtons() {
@@ -163,20 +195,7 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
-    private var buttonHeight = 0
-    private var buttonWidth = 0
-
     private fun createButtons(grid: GridLayout) {
-        if (buttonHeight == 0) {
-            buttonHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
-        }
-        if (buttonWidth == 0) {
-            buttonWidth = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
-                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
-            }.widthPixels / 3 - 8 * 3
-        }
-
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         grid.removeAllViewsInLayout()
         var i = 1
@@ -191,21 +210,34 @@ class MainActivity : MyTemplateActivity() {
         if (DateActivity.selectedDays.size > 1)
             genDateTitle(prevDay, grid)
 
-        for (screening in filteredScreenings) {
+        val screenings = filteredScreenings.subList(
+            0,
+            minOf(
+                endRow * SCREENING_PER_ROW,
+                filteredScreenings.size
+            )
+        )
+
+        for (screening in screenings) {
             if (prevDay != screening.dateTime.dayOfMonth) {
                 genDateTitle(screening.dateTime.dayOfMonth, grid)
                 prevDay = screening.dateTime.dayOfMonth
             }
+
             val button = screening.createButton(this)
             button.setOnClickListener {
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
                 startActivity(browserIntent)
             }
+            button.minHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
+            button.width = resources.getDimensionPixelSize(R.dimen.screening_width)
 
-            button.minHeight = buttonHeight
-            button.width = buttonWidth
-
-            if (i % 3 != 0) {
+            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
+                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
+            }
+            button.width = metrics.widthPixels / 3 - 8 * 3
+            if (i % SCREENING_PER_ROW != 0) {
                 val params = GridLayout.LayoutParams()
                 params.setMargins(0, 0, 8, 15)
                 button.layoutParams = params
@@ -232,10 +264,11 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        scrl.scrollTo(0, 0)
+        endRow = STARTING_ROWS
         dateButton?.text = DateActivity.selectedDatStr
         if (filter(true))
             createButtons(findViewById(R.id.gl))
+        scrl.scrollTo(0, 0)
     }
 
     private var backPressedTime: Long = 0
