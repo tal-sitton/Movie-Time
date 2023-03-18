@@ -9,7 +9,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.view.View
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.ViewGroup
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
@@ -34,25 +35,60 @@ class CinemaActivity : MyTemplateActivity() {
         setContentView(R.layout.actvity_filter_cinema)
         setupTopButtons()
         getCinemas()
+        println(cinemas)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        sortBy(findViewById(R.id.check))
+        val sortByDistanceBox = findViewById<CheckBox>(R.id.sort)
+
+        sortByDistanceBox.setOnCheckedChangeListener { _, isChecked ->
+            sortBy(isChecked)
+            createCinemasButtons(findViewById(R.id.ll), !isChecked, filterCinemas())
+        }
+
+        sortBy(sortByDistanceBox.isChecked)
+        createCinemasButtons(findViewById(R.id.ll), !sortByDistanceBox.isChecked, cinemas)
+
+        val search = findViewById<EditText>(R.id.search)
+
+        search.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(text: Editable?) {
+                sortBy(sortByDistanceBox.isChecked)
+                val availableCinemas = filterCinemas()
+                createCinemasButtons(
+                    findViewById(R.id.ll),
+                    !sortByDistanceBox.isChecked,
+                    availableCinemas
+                )
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        })
     }
 
-    private fun createCinemasButtons(ll: LinearLayout, sortDistricts: Boolean) {
-        ll.removeAllViewsInLayout()
-        if (sortDistricts)
-            getCinemas()
+    private fun filterCinemas(): MutableList<Cinema> {
+        val search = findViewById<EditText>(R.id.search)
+        val text = search.text.toString().trim()
+        val availableCinemas = cinemas.filter { cinema -> cinema.name.contains(text) }
+        return availableCinemas.toMutableList()
+    }
 
-        if (cinemas.isEmpty())
+    private fun createCinemasButtons(
+        ll: LinearLayout,
+        sortDistricts: Boolean,
+        availableCinemas: MutableList<Cinema>
+    ) {
+        ll.removeAllViewsInLayout()
+
+        if (availableCinemas.isEmpty())
             return
-        
-        var district = cinemas[0].district
+
+        var district = availableCinemas[0].district
 
         if (sortDistricts)
             createDisTextView(district, ll)
 
-        for (cinema in cinemas) {
+        for (cinema in availableCinemas) {
             if (sortDistricts) {
                 if (cinema.district != district) {
                     district = cinema.district
@@ -152,20 +188,21 @@ class CinemaActivity : MyTemplateActivity() {
     }
 
 
-    fun sortBy(view: View) {
-        view as CheckBox
-        if (view.isChecked)
+    private fun sortBy(byDistance: Boolean) {
+        if (byDistance)
             getLastKnownLocation()
         else
-            createCinemasButtons(findViewById(R.id.ll), true)
-
-
+            cinemas.sortBy { cinema -> cinema.district }
     }
 
     private val mHandler = object : Handler(Looper.getMainLooper()) {
 
         override fun handleMessage(msg: Message) {
-            createCinemasButtons(findViewById(R.id.ll), false)
+            createCinemasButtons(
+                findViewById(R.id.ll),
+                !findViewById<CheckBox>(R.id.sort).isChecked,
+                filterCinemas()
+            )
         }
     }
 
@@ -205,7 +242,6 @@ class CinemaActivity : MyTemplateActivity() {
         }
         cinemas.sortBy { cinema -> cinema.distance }
         mHandler.sendEmptyMessage(0)
-        Utils.showToast(this, "מויין לפי מרחק")
     }
 
     private val requestPermissionLauncher =
@@ -215,7 +251,7 @@ class CinemaActivity : MyTemplateActivity() {
             if (isGranted)
                 getLastKnownLocation()
             else {
-                val box: CheckBox = findViewById(R.id.check)
+                val box: CheckBox = findViewById(R.id.sort)
                 box.isChecked = false
                 Utils.showToast(this, "לא ניתנה גישה למיקום")
             }

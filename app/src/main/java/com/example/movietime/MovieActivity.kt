@@ -2,11 +2,10 @@ package com.example.movietime
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Space
-import android.widget.TextView
+import android.widget.*
 
 class MovieActivity : MyTemplateActivity() {
 
@@ -23,9 +22,25 @@ class MovieActivity : MyTemplateActivity() {
         val ll: LinearLayout = findViewById(R.id.ll)
         createMoviesButtons(movies, ll)
 
+        val search = findViewById<EditText>(R.id.search)
+        search.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(text: Editable?) {
+                val availableMovies = filterMovies(movies)
+                createMoviesButtons(availableMovies, ll)
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        })
+    }
+
+    private fun filterMovies(movies: List<String>): List<String> {
+        val search = findViewById<EditText>(R.id.search)
+        return movies.filter { it.contains(search.text.toString()) }
     }
 
     private fun createMoviesButtons(movies: List<String>, ll: LinearLayout) {
+        ll.removeAllViewsInLayout()
         for (movie in movies) {
             val button = Button(this)
             button.text = movie
