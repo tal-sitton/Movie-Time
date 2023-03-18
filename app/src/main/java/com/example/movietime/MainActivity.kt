@@ -148,7 +148,7 @@ class MainActivity : MyTemplateActivity() {
 
     private suspend fun onGridScroll() {
         val grid = findViewById<GridLayout>(R.id.gl)
-        val abovePosition = (endRow - (LOADING_ROWS_CHUNK * 2)) * SCREENING_PER_ROW
+        val abovePosition = ((endRow - (LOADING_ROWS_CHUNK * 1.5)) * SCREENING_PER_ROW).toInt()
 
         val aboveScreening = grid.getChildAt(abovePosition) as? TextView
         val lastScreening =
@@ -157,13 +157,13 @@ class MainActivity : MyTemplateActivity() {
         if (lastScreening != null && isVisible(lastScreening)) {
             endRow =
                 min(
-                    endRow + SCREENING_PER_ROW * LOADING_ROWS_CHUNK,
+                    endRow + LOADING_ROWS_CHUNK,
                     (filteredScreenings.size - 1) / SCREENING_PER_ROW
                 )
             createButtons(grid)
         } else {
             if (aboveScreening != null && isVisible(aboveScreening)) {
-                endRow = max(endRow - SCREENING_PER_ROW * LOADING_ROWS_CHUNK, STARTING_ROWS)
+                endRow = max(endRow - LOADING_ROWS_CHUNK, STARTING_ROWS)
                 createButtons(grid)
             }
         }
