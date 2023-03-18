@@ -55,14 +55,15 @@ class CinemaActivity : MyTemplateActivity() {
             override fun afterTextChanged(text: Editable?) {
                 sortBy(sortByDistanceBox.isChecked)
                 val availableCinemas = filterCinemas()
-                createCinemasButtons(findViewById(R.id.ll), !sortByDistanceBox.isChecked, availableCinemas)
+                createCinemasButtons(
+                    findViewById(R.id.ll),
+                    !sortByDistanceBox.isChecked,
+                    availableCinemas
+                )
             }
 
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
     }
 
