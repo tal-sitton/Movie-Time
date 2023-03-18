@@ -46,7 +46,7 @@ class CinemaActivity : MyTemplateActivity() {
         }
 
         sortBy(sortByDistanceBox.isChecked)
-        createCinemasButtons(findViewById(R.id.ll), !sortByDistanceBox.isChecked, cinemas)
+        createCinemasButtons(findViewById(R.id.ll), !sortByDistanceBox.isChecked, filterCinemas())
 
         val search = findViewById<EditText>(R.id.search)
 
@@ -69,8 +69,14 @@ class CinemaActivity : MyTemplateActivity() {
     private fun filterCinemas(): MutableList<Cinema> {
         val search = findViewById<EditText>(R.id.search)
         val text = search.text.toString().trim()
-        val availableCinemas = cinemas.filter { cinema -> cinema.name.contains(text) }
-        return availableCinemas.toMutableList()
+        val availableCinemas =
+            cinemas.filter { cinema -> cinema.name.contains(text) }.toMutableList()
+        availableCinemas.sortWith(
+            compareBy(
+                { !selectedCinemas.contains(it.name) },
+                { availableCinemas.indexOf(it) })
+        )
+        return availableCinemas
     }
 
     private fun createCinemasButtons(
@@ -83,16 +89,28 @@ class CinemaActivity : MyTemplateActivity() {
         if (availableCinemas.isEmpty())
             return
 
-        var district = availableCinemas[0].district
+        var district = ""
 
-        if (sortDistricts)
-            createDisTextView(district, ll)
+        var createChoicesTitle = false
+        var createDistanceTitle = false
 
         for (cinema in availableCinemas) {
-            if (sortDistricts) {
-                if (cinema.district != district) {
-                    district = cinema.district
-                    createDisTextView(district, ll)
+            if (selectedCinemas.contains(cinema.name)) {
+                if (!createChoicesTitle) {
+                    createDisTextView("הבחירות שלך", ll)
+                    createChoicesTitle = true
+                }
+            } else {
+                if (sortDistricts) {
+                    if (cinema.district != district) {
+                        district = cinema.district
+                        createDisTextView(district, ll)
+                    }
+                } else {
+                    if (!createDistanceTitle) {
+                        createDisTextView("בתי קולנוע זמינים בקרבך", ll)
+                        createDistanceTitle = true
+                    }
                 }
             }
             val button = Button(this)
@@ -112,6 +130,7 @@ class CinemaActivity : MyTemplateActivity() {
                     button.isSelected = true
                     selectedCinemas.add(cinema.name)
                 }
+                mHandler.sendEmptyMessage(0)
             }
             ll.addView(button)
             val spacer = Space(this)
@@ -192,7 +211,7 @@ class CinemaActivity : MyTemplateActivity() {
         if (byDistance)
             getLastKnownLocation()
         else
-            cinemas.sortBy { cinema -> cinema.district }
+            cinemas.sortWith(compareBy({ it.district }, { it.name }))
     }
 
     private val mHandler = object : Handler(Looper.getMainLooper()) {
