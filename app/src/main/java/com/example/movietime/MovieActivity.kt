@@ -41,7 +41,8 @@ class MovieActivity : MyTemplateActivity() {
 
     private fun createMoviesButtons(movies: List<String>, ll: LinearLayout) {
         ll.removeAllViewsInLayout()
-        for (movie in movies) {
+        val showMovies = movies.sortedWith(compareBy { !selectedMovies.contains(it) })
+        for (movie in showMovies) {
             val button = Button(this)
             button.text = movie
             if (selectedMovies.contains(movie)) {
@@ -59,6 +60,7 @@ class MovieActivity : MyTemplateActivity() {
                     button.isSelected = true
                     selectedMovies.add(movie)
                 }
+                createMoviesButtons(showMovies, ll)
             }
             ll.addView(button)
             val spacer = Space(this)
