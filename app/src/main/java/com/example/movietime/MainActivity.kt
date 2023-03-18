@@ -146,7 +146,7 @@ class MainActivity : MyTemplateActivity() {
 
         }
 
-    private fun onGridScroll() {
+    private suspend fun onGridScroll() {
         val grid = findViewById<GridLayout>(R.id.gl)
         val abovePosition = ((endRow - (LOADING_ROWS_CHUNK * 1.5)) * SCREENING_PER_ROW).toInt()
 
