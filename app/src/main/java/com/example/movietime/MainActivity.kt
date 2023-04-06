@@ -33,8 +33,8 @@ class MainActivity : MyTemplateActivity() {
         var prevFilteredScreenings: List<Screening> = listOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
         var filteredTypeScreenings: Set<Screening> = setOf()
-        const val STARTING_ROWS = 100
-        const val LOADING_ROWS_CHUNK = 100
+        const val STARTING_ROWS = 50
+        const val LOADING_ROWS_CHUNK = 50
         const val SCREENING_PER_ROW = 3
         var endRow = STARTING_ROWS
 
@@ -138,10 +138,16 @@ class MainActivity : MyTemplateActivity() {
         return actualPosition.intersect(screen)
     }
 
+    var lastScreeningY = 0f
+
     private val onScroll =
-        View.OnScrollChangeListener { _, _, _, _, _ ->
+        View.OnScrollChangeListener { _, _, scrollY, _, _ ->
             GlobalScope.launch(Dispatchers.Main) {
-                onGridScroll()
+                println(scrollY)
+                println(lastScreeningY)
+                if (scrollY + 300 > lastScreeningY) {
+                    onGridScroll()
+                }
             }
 
         }
@@ -153,6 +159,8 @@ class MainActivity : MyTemplateActivity() {
         val aboveScreening = grid.getChildAt(abovePosition) as? TextView
         val lastScreening =
             grid.getChildAt((endRow - 3) * SCREENING_PER_ROW) as? TextView
+
+        lastScreeningY = lastScreening?.y ?: 0f
 
         if (lastScreening != null && isVisible(lastScreening)) {
             endRow =

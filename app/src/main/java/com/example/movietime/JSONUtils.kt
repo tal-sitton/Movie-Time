@@ -40,6 +40,7 @@ class JSONUtils {
                     val time = screeningInfo.getString("time")
                     val url = screeningInfo.getString("link")
                     val coords = screeningInfo.getJSONArray("coords")
+                    val dubbed = screeningInfo.getBoolean("dubbed")
 
                     val screening =
                         Screening(
@@ -54,7 +55,8 @@ class JSONUtils {
                             Location(title).apply {
                                 latitude = coords.getDouble(0)
                                 longitude = coords.getDouble(1)
-                            }
+                            },
+                            dubbed
                         )
 
                     if (screening.dateTime.isBefore(LocalDateTime.now())) {
