@@ -6,11 +6,25 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
+import androidx.appcompat.widget.SwitchCompat
 
-class AboutActivity : MyTemplateActivity() {
+class SettingsActivity : MyTemplateActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
+
+        val allowDubbedSetting = getSharedPreferences("preferences", MODE_PRIVATE)
+        val allowDubbedButton: SwitchCompat = findViewById(R.id.allowDubbed)
+
+        allowDubbedButton.isChecked = allowDubbedSetting.getBoolean("allowDubbed", true)
+
+        allowDubbedButton.setOnCheckedChangeListener { _, isChecked ->
+            val editor = allowDubbedSetting.edit()
+            editor.putBoolean("allowDubbed", isChecked)
+            editor.apply()
+            recreate()
+        }
 
         val mainActivityButton: Button = findViewById(R.id.backButton)
         mainActivityButton.setOnClickListener {
@@ -26,7 +40,7 @@ class AboutActivity : MyTemplateActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.action_about) {
+        if (item.itemId == R.id.action_settings) {
             onBackPressedCallback.handleOnBackPressed()
             return true
         }

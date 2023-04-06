@@ -2,6 +2,7 @@ package com.example.movietime
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
+import android.content.SharedPreferences
 import android.content.res.Resources
 import android.graphics.Rect
 import android.graphics.Typeface
@@ -105,12 +106,23 @@ class MainActivity : MyTemplateActivity() {
     private var dateButton: TextView? = null
 
     private lateinit var scrl: ScrollView
+
+    private lateinit var settings: SharedPreferences
+    private var allowDubbed = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         endRow = STARTING_ROWS
+
+        settings = getSharedPreferences("preferences", MODE_PRIVATE)
+        allowDubbed = settings.getBoolean("allowDubbed", true)
+
         scrl = findViewById(R.id.scrl)
         scrl.smoothScrollTo(0, 0)
+
+        scrl.fullScroll(View.FOCUS_DOWN)
+        scrl.isSmoothScrollingEnabled = true
 
         scrl.setOnScrollChangeListener(onScroll)
 
@@ -141,15 +153,12 @@ class MainActivity : MyTemplateActivity() {
     var lastScreeningY = 0f
 
     private val onScroll =
-        View.OnScrollChangeListener { _, _, scrollY, _, _ ->
+        View.OnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
             GlobalScope.launch(Dispatchers.Main) {
-                println(scrollY)
-                println(lastScreeningY)
-                if (scrollY + 300 > lastScreeningY) {
+                if (scrollY + 500 > lastScreeningY || scrollY < oldScrollY) {
                     onGridScroll()
                 }
             }
-
         }
 
     private suspend fun onGridScroll() {
@@ -204,6 +213,10 @@ class MainActivity : MyTemplateActivity() {
     }
 
     private fun createButtons(grid: GridLayout) {
+        allowDubbed = settings.getBoolean("allowDubbed", true)
+        if (!allowDubbed)
+            filteredScreenings = filteredScreenings.filter { !it.dubbed }.toSet().toList()
+
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         grid.removeAllViewsInLayout()
         var i = 1
@@ -274,7 +287,7 @@ class MainActivity : MyTemplateActivity() {
         super.onRestart()
         endRow = STARTING_ROWS
         dateButton?.text = DateActivity.selectedDatStr
-        if (filter(true))
+        if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
             createButtons(findViewById(R.id.gl))
         scrl.scrollTo(0, 0)
     }

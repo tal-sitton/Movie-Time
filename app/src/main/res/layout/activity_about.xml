@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    tools:context=".SettingsActivity">
 
     <Button
 
@@ -39,6 +39,36 @@
 
             <TextView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="העדפות משתמש"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/allowDubbed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:checked="true"
+                android:text="הראה סרטים מדובבים" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="אודות האפליקציה"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/about_app" />
 
@@ -66,6 +96,7 @@
                     android:text="למידע נוסף ותמיכה ביוצרים:"
                     android:textStyle="bold" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
