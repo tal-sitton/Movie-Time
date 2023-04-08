@@ -12,7 +12,7 @@ class SettingsActivity : MyTemplateActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about)
+        setContentView(R.layout.activity_settings)
 
         val allowDubbedSetting = getSharedPreferences("preferences", MODE_PRIVATE)
         val allowDubbedButton: SwitchCompat = findViewById(R.id.allowDubbed)
