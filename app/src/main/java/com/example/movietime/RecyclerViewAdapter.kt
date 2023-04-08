@@ -6,7 +6,6 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Space
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -16,7 +15,6 @@ class RecyclerViewAdapter internal constructor(context: Context, data: List<Recy
     private val mData: List<Recyclable>
     private val mContext: Context
     private val mInflater: LayoutInflater
-    private var mClickListener: ItemClickListener? = null
 
     // data is passed into the constructor
     init {
@@ -69,36 +67,18 @@ class RecyclerViewAdapter internal constructor(context: Context, data: List<Recy
     }
 
     // stores and recycles views as they are scrolled off screen
-    inner class ViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView),
-        View.OnClickListener {
+    inner class ViewHolder internal constructor(itemView: View) :
+        RecyclerView.ViewHolder(itemView) {
         var myTextView: TextView
 
         init {
-            myTextView = itemView.findViewById(R.id.screening_button)
-            itemView.setOnClickListener(this)
+            myTextView = itemView.findViewById(R.id.recyclable)
             myTextView.minHeight =
                 mContext.resources.getDimensionPixelSize(R.dimen.screening_height)
             myTextView.width =
                 mContext.resources.getDimensionPixelSize(R.dimen.screening_width)
         }
 
-        override fun onClick(view: View?) {
-            if (mClickListener != null) mClickListener!!.onItemClick(view, adapterPosition)
-        }
-    }
-
-    fun getItem(id: Int): Recyclable {
-        return mData[id]
-    }
-
-    // allows clicks events to be caught
-    fun setClickListener(itemClickListener: ItemClickListener?) {
-        mClickListener = itemClickListener
-    }
-
-    // parent activity will implement this method to respond to click events
-    interface ItemClickListener {
-        fun onItemClick(view: View?, position: Int)
     }
 
     companion object {

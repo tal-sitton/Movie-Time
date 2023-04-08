@@ -4,6 +4,8 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
@@ -106,14 +108,14 @@ class MainActivity : MyTemplateActivity() {
         recycler.layoutManager =
             androidx.recyclerview.widget.GridLayoutManager(this, SCREENING_PER_ROW)
 
-        recycler.smoothScrollToPosition(0)
-
         JSONUtils.jsonToList(this)
         resetToDefault()
 
         setupTopActivityButtons()
 
         createButtons(recycler)
+
+        Handler(Looper.getMainLooper()).postDelayed({ recycler.scrollToPosition(0) }, 1)
     }
 
 
@@ -191,7 +193,8 @@ class MainActivity : MyTemplateActivity() {
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
             createButtons(recycler)
-        recycler.smoothScrollToPosition(0)
+
+        Handler(Looper.getMainLooper()).postDelayed({ recycler.scrollToPosition(0) }, 1)
     }
 
     private var backPressedTime: Long = 0
