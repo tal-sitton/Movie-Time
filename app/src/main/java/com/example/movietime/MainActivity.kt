@@ -3,24 +3,14 @@ package com.example.movietime
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.content.SharedPreferences
-import android.content.res.Resources
-import android.graphics.Rect
-import android.graphics.Typeface
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
-import android.util.DisplayMetrics
-import android.view.Gravity
 import android.view.View
-import android.widget.*
+import android.widget.CheckBox
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
-import androidx.core.view.ViewCompat
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import androidx.recyclerview.widget.RecyclerView
 import java.time.LocalDateTime
-import kotlin.math.max
-import kotlin.math.min
 
 
 class MainActivity : MyTemplateActivity() {
@@ -34,10 +24,7 @@ class MainActivity : MyTemplateActivity() {
         var prevFilteredScreenings: List<Screening> = listOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
         var filteredTypeScreenings: Set<Screening> = setOf()
-        const val STARTING_ROWS = 50
-        const val LOADING_ROWS_CHUNK = 50
         const val SCREENING_PER_ROW = 3
-        var endRow = STARTING_ROWS
 
         fun filter(fromMain: Boolean = false): Boolean {
             val selectedMovies = MovieActivity.selectedMovies
@@ -105,86 +92,30 @@ class MainActivity : MyTemplateActivity() {
 
     private var dateButton: TextView? = null
 
-    private lateinit var scrl: ScrollView
-
     private lateinit var settings: SharedPreferences
     private var allowDubbed = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        endRow = STARTING_ROWS
 
         settings = getSharedPreferences("preferences", MODE_PRIVATE)
         allowDubbed = settings.getBoolean("allowDubbed", true)
 
-        scrl = findViewById(R.id.scrl)
-        scrl.smoothScrollTo(0, 0)
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.layoutManager =
+            androidx.recyclerview.widget.GridLayoutManager(this, SCREENING_PER_ROW)
 
-        scrl.fullScroll(View.FOCUS_DOWN)
-        scrl.isSmoothScrollingEnabled = true
-
-        scrl.setOnScrollChangeListener(onScroll)
-
-        ViewCompat.setNestedScrollingEnabled(scrl, false);
-        ViewCompat.setNestedScrollingEnabled(findViewById(R.id.gl), false);
+        recycler.scrollToPosition(0)
 
         JSONUtils.jsonToList(this)
         resetToDefault()
 
         setupTopActivityButtons()
 
-        createButtons(findViewById(R.id.gl))
+        createButtons(recycler)
     }
 
-
-    private fun isVisible(view: View): Boolean {
-        val screen = Rect(
-            0,
-            0,
-            Resources.getSystem().displayMetrics.widthPixels,
-            Resources.getSystem().displayMetrics.heightPixels
-        )
-        val actualPosition = Rect()
-        view.getGlobalVisibleRect(actualPosition)
-        return actualPosition.intersect(screen)
-    }
-
-    var lastScreeningY = 0f
-
-    private val onScroll =
-        View.OnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
-            GlobalScope.launch(Dispatchers.Main) {
-                if (scrollY + 500 > lastScreeningY || scrollY < oldScrollY) {
-                    onGridScroll()
-                }
-            }
-        }
-
-    private suspend fun onGridScroll() {
-        val grid = findViewById<GridLayout>(R.id.gl)
-        val abovePosition = ((endRow - (LOADING_ROWS_CHUNK * 1.5)) * SCREENING_PER_ROW).toInt()
-
-        val aboveScreening = grid.getChildAt(abovePosition) as? TextView
-        val lastScreening =
-            grid.getChildAt((endRow - 3) * SCREENING_PER_ROW) as? TextView
-
-        lastScreeningY = lastScreening?.y ?: 0f
-
-        if (lastScreening != null && isVisible(lastScreening)) {
-            endRow =
-                min(
-                    endRow + LOADING_ROWS_CHUNK,
-                    (filteredScreenings.size - 1) / SCREENING_PER_ROW
-                )
-            createButtons(grid)
-        } else {
-            if (aboveScreening != null && isVisible(aboveScreening)) {
-                endRow = max(endRow - LOADING_ROWS_CHUNK, STARTING_ROWS)
-                createButtons(grid)
-            }
-        }
-    }
 
     private fun setupTopActivityButtons() {
         val movieButton: TextView = findViewById(R.id.movieButton)
@@ -212,13 +143,13 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
-    private fun createButtons(grid: GridLayout) {
+    private fun createButtons(recycler: RecyclerView) {
         allowDubbed = settings.getBoolean("allowDubbed", true)
         if (!allowDubbed)
             filteredScreenings = filteredScreenings.filter { !it.dubbed }.toSet().toList()
 
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
-        grid.removeAllViewsInLayout()
+        recycler.removeAllViewsInLayout()
         var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
         if (filteredScreenings.isEmpty()) {
@@ -228,68 +159,38 @@ class MainActivity : MyTemplateActivity() {
             notFound.visibility = TextView.INVISIBLE
 
         var prevDay = filteredScreenings.elementAt(0).dateTime.dayOfMonth
-        if (DateActivity.selectedDays.size > 1)
-            genDateTitle(prevDay, grid)
+        val screenings: MutableList<Recyclable> = mutableListOf()
 
-        val screenings = filteredScreenings.subList(
-            0,
-            minOf(
-                endRow * SCREENING_PER_ROW,
-                filteredScreenings.size
-            )
-        )
+        if (DateActivity.selectedDays.size > 1) {
+            addDateTitle(prevDay, screenings)
+        }
 
-        for (screening in screenings) {
-            if (prevDay != screening.dateTime.dayOfMonth) {
-                genDateTitle(screening.dateTime.dayOfMonth, grid)
+        for (screening in filteredScreenings) {
+            if (screening.dateTime.dayOfMonth != prevDay) {
+                while (screenings.size % SCREENING_PER_ROW != 0) {
+                    screenings.add(RecyclableSpace())
+                }
+                addDateTitle(screening.dateTime.dayOfMonth, screenings)
                 prevDay = screening.dateTime.dayOfMonth
             }
-
-            val button = screening.createButton(this)
-            button.setOnClickListener {
-                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
-                startActivity(browserIntent)
-            }
-            button.minHeight = resources.getDimensionPixelSize(R.dimen.screening_height)
-            button.width = resources.getDimensionPixelSize(R.dimen.screening_width)
-
-            val metrics = when (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                true -> DisplayMetrics().also { display?.getRealMetrics(it) }
-                false -> DisplayMetrics().also { windowManager.defaultDisplay.getMetrics(it) }
-            }
-            button.width = metrics.widthPixels / 3 - 8 * 3
-            if (i % SCREENING_PER_ROW != 0) {
-                val params = GridLayout.LayoutParams()
-                params.setMargins(0, 0, 8, 15)
-                button.layoutParams = params
-            }
-            grid.addView(button)
-            i++
+            screenings.add(screening)
         }
+
+        recycler.adapter = RecyclerViewAdapter(this, screenings)
     }
 
-    private fun genDateTitle(day: Int, grid: GridLayout) {
-        val dayTitle = TextView(this)
-        dayTitle.text = DateActivity.genTextForSelected(day, false)
-        dayTitle.textSize = 20f
-        dayTitle.rotationY = 180f
-        dayTitle.gravity = Gravity.CENTER_HORIZONTAL
-        dayTitle.setTypeface(null, Typeface.BOLD)
-        while (grid.childCount % 3 != 0) {
-            grid.addView(Space(this))
-        }
-        grid.addView(dayTitle)
-        grid.addView(Space(this))
-        grid.addView(Space(this))
+    private fun addDateTitle(day: Int, screenings: MutableList<Recyclable>) {
+        screenings.add(Title(DateActivity.genTextForSelected(day, false)))
+        screenings.add(RecyclableSpace())
+        screenings.add(RecyclableSpace())
     }
 
     override fun onRestart() {
         super.onRestart()
-        endRow = STARTING_ROWS
         dateButton?.text = DateActivity.selectedDatStr
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
-            createButtons(findViewById(R.id.gl))
-        scrl.scrollTo(0, 0)
+            createButtons(findViewById(R.id.recycler))
+        findViewById<RecyclerView>(R.id.recycler).scrollToPosition(0)
     }
 
     private var backPressedTime: Long = 0
