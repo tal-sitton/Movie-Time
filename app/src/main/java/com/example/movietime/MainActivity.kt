@@ -188,9 +188,10 @@ class MainActivity : MyTemplateActivity() {
     override fun onRestart() {
         super.onRestart()
         dateButton?.text = DateActivity.selectedDatStr
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
-            createButtons(findViewById(R.id.recycler))
-        findViewById<RecyclerView>(R.id.recycler).smoothScrollToPosition(0)
+            createButtons(recycler)
+        recycler.smoothScrollToPosition(0)
     }
 
     private var backPressedTime: Long = 0
