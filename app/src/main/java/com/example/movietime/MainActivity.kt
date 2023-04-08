@@ -2,6 +2,7 @@ package com.example.movietime
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
+import android.content.SharedPreferences
 import android.content.res.Resources
 import android.graphics.Rect
 import android.graphics.Typeface
@@ -33,8 +34,8 @@ class MainActivity : MyTemplateActivity() {
         var prevFilteredScreenings: List<Screening> = listOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
         var filteredTypeScreenings: Set<Screening> = setOf()
-        const val STARTING_ROWS = 100
-        const val LOADING_ROWS_CHUNK = 100
+        const val STARTING_ROWS = 50
+        const val LOADING_ROWS_CHUNK = 50
         const val SCREENING_PER_ROW = 3
         var endRow = STARTING_ROWS
 
@@ -105,12 +106,23 @@ class MainActivity : MyTemplateActivity() {
     private var dateButton: TextView? = null
 
     private lateinit var scrl: ScrollView
+
+    private lateinit var settings: SharedPreferences
+    private var allowDubbed = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         endRow = STARTING_ROWS
+
+        settings = getSharedPreferences("preferences", MODE_PRIVATE)
+        allowDubbed = settings.getBoolean("allowDubbed", true)
+
         scrl = findViewById(R.id.scrl)
         scrl.smoothScrollTo(0, 0)
+
+        scrl.fullScroll(View.FOCUS_DOWN)
+        scrl.isSmoothScrollingEnabled = true
 
         scrl.setOnScrollChangeListener(onScroll)
 
@@ -138,12 +150,15 @@ class MainActivity : MyTemplateActivity() {
         return actualPosition.intersect(screen)
     }
 
-    private val onScroll =
-        View.OnScrollChangeListener { _, _, _, _, _ ->
-            GlobalScope.launch(Dispatchers.Main) {
-                onGridScroll()
-            }
+    var lastScreeningY = 0f
 
+    private val onScroll =
+        View.OnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
+            GlobalScope.launch(Dispatchers.Main) {
+                if (scrollY + 500 > lastScreeningY || scrollY < oldScrollY) {
+                    onGridScroll()
+                }
+            }
         }
 
     private suspend fun onGridScroll() {
@@ -153,6 +168,8 @@ class MainActivity : MyTemplateActivity() {
         val aboveScreening = grid.getChildAt(abovePosition) as? TextView
         val lastScreening =
             grid.getChildAt((endRow - 3) * SCREENING_PER_ROW) as? TextView
+
+        lastScreeningY = lastScreening?.y ?: 0f
 
         if (lastScreening != null && isVisible(lastScreening)) {
             endRow =
@@ -196,6 +213,10 @@ class MainActivity : MyTemplateActivity() {
     }
 
     private fun createButtons(grid: GridLayout) {
+        allowDubbed = settings.getBoolean("allowDubbed", true)
+        if (!allowDubbed)
+            filteredScreenings = filteredScreenings.filter { !it.dubbed }.toSet().toList()
+
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         grid.removeAllViewsInLayout()
         var i = 1
@@ -266,7 +287,7 @@ class MainActivity : MyTemplateActivity() {
         super.onRestart()
         endRow = STARTING_ROWS
         dateButton?.text = DateActivity.selectedDatStr
-        if (filter(true))
+        if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
             createButtons(findViewById(R.id.gl))
         scrl.scrollTo(0, 0)
     }

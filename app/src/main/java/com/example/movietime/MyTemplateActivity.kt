@@ -37,8 +37,8 @@ open class MyTemplateActivity : AppCompatActivity() {
                 (item.actionView as ProgressBar).postDelayed({ item.actionView = null }, 1)
                 true
             }
-            R.id.action_about -> {
-                val intent = Intent(this, AboutActivity::class.java)
+            R.id.action_settings -> {
+                val intent = Intent(this, SettingsActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
                 startActivity(intent)

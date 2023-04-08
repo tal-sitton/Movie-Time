@@ -8,9 +8,9 @@
         android:title="איפוס סינון"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_about"
-        android:icon="@drawable/ic_info"
-        android:title="מידע"
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="הגדרות"
         app:showAsAction="ifRoom" />
 
 </menu>

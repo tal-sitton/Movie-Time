@@ -23,12 +23,14 @@ class Screening(
     val theater: String,
     val type: String,
     val url: String,
-    val location: Location
+    val location: Location,
+    val dubbed: Boolean
 ) {
 
     val cinema: String = "$theater $city"
     var dateTime: LocalDateTime = LocalDateTime.MIN
     var timeFormatted: String
+    private val dubbedText: String = if (dubbed) "- מדובב " else ""
 
     init {
         val day = date.split("-")[0].toInt()
@@ -37,12 +39,11 @@ class Screening(
         val hour = time.split(":")[0].toInt()
         val minute = time.split(":")[1].toInt()
         dateTime = LocalDateTime.of(year, month, day, hour, minute)
-        timeFormatted =
-            dateTime.format(DateTimeFormatter.ofPattern("HH:mm"))
+        timeFormatted = dateTime.format(DateTimeFormatter.ofPattern("HH:mm"))
     }
 
     override fun toString(): String {
-        return "Screening: $movie, $dateTime, $city, $theater, $type, $url"
+        return "Screening: $movie, $dateTime, $city, $theater, $type, $dubbed, $url"
     }
 
 
@@ -55,7 +56,7 @@ class Screening(
         button.setTextColor(context.resources.getColor(R.color.black, context.theme))
 
         val text: Spannable =
-            SpannableString("$timeFormatted\n\n$movie ($type)\n\n$city\n$theater")
+            SpannableString("$timeFormatted\n\n$movie $dubbedText($type)\n\n$city\n$theater")
         text.setSpan(
             UnderlineSpan(),
             text.indexOf(timeFormatted),
