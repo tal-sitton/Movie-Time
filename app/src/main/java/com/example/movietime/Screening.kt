@@ -1,6 +1,5 @@
 package com.example.movietime
 
-import android.content.Context
 import android.graphics.Typeface
 import android.location.Location
 import android.text.Spannable
@@ -8,8 +7,6 @@ import android.text.SpannableString
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
 import android.text.style.UnderlineSpan
-import android.view.Gravity
-import android.widget.TextView
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -22,10 +19,10 @@ class Screening(
     val district: String,
     val theater: String,
     val type: String,
-    val url: String,
+    override val url: String,
     val location: Location,
     val dubbed: Boolean
-) {
+) : Recyclable {
 
     val cinema: String = "$theater $city"
     var dateTime: LocalDateTime = LocalDateTime.MIN
@@ -47,14 +44,7 @@ class Screening(
     }
 
 
-    fun createButton(context: Context): TextView {
-        val button = TextView(context)
-        button.gravity = Gravity.CENTER_HORIZONTAL
-        button.rotationY = 180f
-
-        button.setBackgroundResource(R.drawable.movie_button)
-        button.setTextColor(context.resources.getColor(R.color.black, context.theme))
-
+    override fun createText(): Spannable {
         val text: Spannable =
             SpannableString("$timeFormatted\n\n$movie $dubbedText($type)\n\n$city\n$theater")
         text.setSpan(
@@ -87,9 +77,7 @@ class Screening(
             text.lastIndexOf(theater),
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
-        button.text = text
-
-        return button
+        return text
     }
 
 }
