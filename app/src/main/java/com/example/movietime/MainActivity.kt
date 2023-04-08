@@ -106,7 +106,7 @@ class MainActivity : MyTemplateActivity() {
         recycler.layoutManager =
             androidx.recyclerview.widget.GridLayoutManager(this, SCREENING_PER_ROW)
 
-        recycler.scrollToPosition(0)
+        recycler.smoothScrollToPosition(0)
 
         JSONUtils.jsonToList(this)
         resetToDefault()
@@ -190,7 +190,7 @@ class MainActivity : MyTemplateActivity() {
         dateButton?.text = DateActivity.selectedDatStr
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
             createButtons(findViewById(R.id.recycler))
-        findViewById<RecyclerView>(R.id.recycler).scrollToPosition(0)
+        findViewById<RecyclerView>(R.id.recycler).smoothScrollToPosition(0)
     }
 
     private var backPressedTime: Long = 0
