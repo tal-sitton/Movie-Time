@@ -43,7 +43,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.movietime.SettingsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
