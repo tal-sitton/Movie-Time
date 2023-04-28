@@ -7,6 +7,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="black_with_opacity">#B2000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="real_white">#FFFFFFFF</color>
     <color name="filter_unclicked">#40E0D0</color>
