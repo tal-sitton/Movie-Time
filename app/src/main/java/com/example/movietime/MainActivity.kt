@@ -3,21 +3,29 @@ package com.example.movietime
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.CheckBox
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.time.LocalDateTime
 
 
 class MainActivity : MyTemplateActivity() {
 
     companion object {
+        var allMovies: Map<String, Movie> = mapOf()
         var allScreenings: List<Screening> = listOf()
         var filteredCinemaScreenings: Set<Screening> = setOf()
         var filteredMoviesScreenings: List<Screening> = listOf()
@@ -189,6 +197,7 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
+        closeScreening()
         dateButton?.text = DateActivity.selectedDatStr
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
@@ -201,6 +210,10 @@ class MainActivity : MyTemplateActivity() {
 
     override val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
+            val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+            if (popUp.visibility == View.VISIBLE) {
+                return closeScreening()
+            }
             if (backPressedTime + 2000 > System.currentTimeMillis()) {
                 finishAffinity()
             } else {
@@ -227,5 +240,41 @@ class MainActivity : MyTemplateActivity() {
             filteredTypeScreenings = allScreenings.toSet()
 
         onRestart()
+    }
+
+    fun openScreening(screening: Screening) {
+        val movie: Movie = allMovies[screening.movie]!!
+        findViewById<TextView>(R.id.movieTitle).text = movie.title
+        findViewById<TextView>(R.id.plot).text = movie.description
+        findViewById<TextView>(R.id.movieRating).text = movie.rating
+        findViewById<TextView>(R.id.screeningInfo).text = screening.createInfo()
+
+        findViewById<TextView>(R.id.order).setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
+            startActivity(browserIntent)
+        }
+
+        CoroutineScope(Dispatchers.Default).launch {
+            movie.generatePoster(findViewById(R.id.poster), this@MainActivity)
+        }
+
+        val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+        popUp.visibility = ConstraintLayout.VISIBLE
+    }
+
+    fun closeScreening() {
+        val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+        popUp.visibility = ConstraintLayout.INVISIBLE
+
+        findViewById<TextView>(R.id.order).setOnClickListener {
+            // disable click to prevent mistakes
+        }
+
+        findViewById<ImageView>(R.id.poster).setImageDrawable(
+            ContextCompat.getDrawable(
+                this,
+                R.drawable.baseline_image_24
+            )
+        )
     }
 }

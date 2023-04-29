@@ -1,7 +1,11 @@
 package com.example.movietime
 
 import android.content.Context
+import android.content.res.Resources
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.location.Location
+import android.util.TypedValue
 import android.widget.Toast
 import org.json.JSONObject
 import java.net.URL
@@ -74,5 +78,18 @@ class Utils {
             return url.dropLast(1)
         }
 
+        fun downloadImage(url: String): Bitmap {
+            val inputStream = URL(url).openStream()
+            return BitmapFactory.decodeStream(inputStream)
+        }
+
+        fun dpToPx(context: Context, dp: Int): Float {
+            val r: Resources = context.resources
+            return TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                dp.toFloat(),
+                r.displayMetrics
+            )
+        }
     }
 }
