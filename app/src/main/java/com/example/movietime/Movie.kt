@@ -21,7 +21,7 @@ class Movie(
 ) {
     private var poster: RoundedBitmapDrawable? = null
 
-    fun generatePoster(view: ImageView, context: Context) {
+    private fun generatePoster(view: ImageView, context: Context) {
         var image = downloadImage(posterUrl)
         image = Bitmap.createScaledBitmap(image, view.width, view.height, false)
         poster = RoundedBitmapDrawableFactory.create(context.resources, image)
