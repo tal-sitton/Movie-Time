@@ -28,35 +28,48 @@ class JSONUtils {
             print(json)
             val tmpAllScreenings: MutableList<Screening> = mutableListOf()
             if (json != null) {
+                val movies = json.getJSONArray("Movies")
+                val allMovies: MutableMap<String, Movie> = mutableMapOf()
+                for (i in 0 until movies.length()) {
+                    val movieInfo = movies.getJSONObject(i)
+                    val rating: String = try {
+                        movieInfo.getDouble("rating").toString()
+                    } catch (_: ClassCastException) {
+                        movieInfo.getInt("rating").toString()
+                    } catch (_: Exception) {
+                        "N/A"
+                    }
+                    val movie = Movie(
+                        movieInfo.getString("name"),
+                        movieInfo.getString("description"),
+                        rating,
+                        movieInfo.getString("image_url")
+                    )
+                    allMovies[movie.title] = movie
+                }
+                MainActivity.allMovies = allMovies
+
                 val screenings = json.getJSONArray("Screenings")
                 for (i in 0 until screenings.length()) {
                     val screeningInfo = screenings.getJSONObject(i)
-                    val date = screeningInfo.getString("date")
-                    val theater = screeningInfo.getString("cinema")
-                    val location = screeningInfo.getString("location")
-                    val district = screeningInfo.getString("district")
                     val title = screeningInfo.getString("title")
-                    val type = screeningInfo.getString("type")
-                    val time = screeningInfo.getString("time")
-                    val url = screeningInfo.getString("link")
                     val coords = screeningInfo.getJSONArray("coords")
-                    val dubbed = screeningInfo.getBoolean("dubbed")
 
                     val screening =
                         Screening(
                             title,
-                            date,
-                            time,
-                            location,
-                            district,
-                            theater,
-                            type,
-                            url,
+                            screeningInfo.getString("date"),
+                            screeningInfo.getString("time"),
+                            screeningInfo.getString("location"),
+                            screeningInfo.getString("district"),
+                            screeningInfo.getString("cinema"),
+                            screeningInfo.getString("type"),
+                            screeningInfo.getString("link"),
                             Location(title).apply {
                                 latitude = coords.getDouble(0)
                                 longitude = coords.getDouble(1)
                             },
-                            dubbed
+                            screeningInfo.getBoolean("dubbed")
                         )
 
                     if (screening.dateTime.isBefore(LocalDateTime.now())) {
