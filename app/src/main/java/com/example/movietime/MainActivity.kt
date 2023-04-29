@@ -7,7 +7,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.text.method.ScrollingMovementMethod
 import android.view.View
+import android.view.View.OnTouchListener
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
@@ -126,7 +128,6 @@ class MainActivity : MyTemplateActivity() {
         Handler(Looper.getMainLooper()).postDelayed({ recycler.scrollToPosition(0) }, 1)
     }
 
-
     private fun setupTopActivityButtons() {
         val movieButton: TextView = findViewById(R.id.movieButton)
         dateButton = findViewById(R.id.dateButton)
@@ -242,10 +243,15 @@ class MainActivity : MyTemplateActivity() {
         onRestart()
     }
 
-    fun openScreening(screening: Screening) {
+    private fun setupScreeningPopup(screening: Screening) {
         val movie: Movie = allMovies[screening.movie]!!
         findViewById<TextView>(R.id.movieTitle).text = movie.title
-        findViewById<TextView>(R.id.plot).text = movie.description
+
+        val plot = findViewById<TextView>(R.id.plot)
+        plot.text = movie.description
+        plot.movementMethod = ScrollingMovementMethod()
+        plot.scrollTo(0, 0)
+
         findViewById<TextView>(R.id.movieRating).text = movie.rating
         findViewById<TextView>(R.id.screeningInfo).text = screening.createInfo()
 
@@ -257,6 +263,15 @@ class MainActivity : MyTemplateActivity() {
         CoroutineScope(Dispatchers.Default).launch {
             movie.showPoster(findViewById(R.id.poster), this@MainActivity)
         }
+    }
+
+    fun openScreening(screening: Screening) {
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.setOnTouchListener(OnTouchListener { v, event -> true })
+        val adapter = recycler.adapter as RecyclerViewAdapter
+        adapter.clickable = false
+
+        setupScreeningPopup(screening)
 
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
         popUp.visibility = ConstraintLayout.VISIBLE
@@ -265,6 +280,11 @@ class MainActivity : MyTemplateActivity() {
     fun closeScreening() {
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
         popUp.visibility = ConstraintLayout.INVISIBLE
+
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.setOnTouchListener(OnTouchListener { v, event -> false })
+        val adapter = recycler.adapter as RecyclerViewAdapter
+        adapter.clickable = true
 
         findViewById<TextView>(R.id.order).setOnClickListener {
             // disable click to prevent mistakes
