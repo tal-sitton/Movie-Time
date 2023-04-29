@@ -170,6 +170,7 @@
             android:includeFontPadding="false"
             android:scrollbarStyle="outsideInset"
             android:scrollbars="vertical"
+            android:fadeScrollbars="false"
             android:text="תקציר הסרט"
             app:layout_constraintBottom_toTopOf="@+id/imdbRating"
             app:layout_constraintEnd_toEndOf="parent"
