@@ -1,5 +1,6 @@
 package com.example.movietime
 
+import android.content.Context
 import android.graphics.Typeface
 import android.location.Location
 import android.text.Spannable
@@ -43,6 +44,16 @@ class Screening(
         return "Screening: $movie, $dateTime, $city, $theater, $type, $dubbed, $url"
     }
 
+    override fun onClick(context: Context) {
+        if (context is MainActivity) {
+            context.openScreening(this)
+        }
+    }
+
+    fun createInfo(): String {
+        return "שעה : $timeFormatted\n" +
+                "קולנוע : $cinema"
+    }
 
     override fun createText(): Spannable {
         val text: Spannable =

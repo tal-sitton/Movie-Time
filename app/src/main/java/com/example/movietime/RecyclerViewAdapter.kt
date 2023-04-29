@@ -55,8 +55,7 @@ class RecyclerViewAdapter internal constructor(context: Context, data: List<Recy
             holder.myTextView.minHeight = ViewGroup.LayoutParams.WRAP_CONTENT;
         } else {
             holder.myTextView.setOnClickListener {
-                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(mData[position].url))
-                mContext.startActivity(browserIntent)
+                mData[position].onClick(mContext)
             }
         }
     }
