@@ -255,7 +255,7 @@ class MainActivity : MyTemplateActivity() {
         }
 
         CoroutineScope(Dispatchers.Default).launch {
-            movie.generatePoster(findViewById(R.id.poster), this@MainActivity)
+            movie.showPoster(findViewById(R.id.poster), this@MainActivity)
         }
 
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
@@ -273,7 +273,7 @@ class MainActivity : MyTemplateActivity() {
         findViewById<ImageView>(R.id.poster).setImageDrawable(
             ContextCompat.getDrawable(
                 this,
-                R.drawable.baseline_image_24
+                R.drawable.image_placeholder
             )
         )
     }
