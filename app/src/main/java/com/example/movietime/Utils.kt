@@ -10,13 +10,18 @@ import android.location.Location
 import android.util.TypedValue
 import android.widget.Toast
 import com.google.android.gms.common.api.ResolvableApiException
-import com.google.android.gms.location.*
+import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.LocationSettingsRequest
+import com.google.android.gms.location.Priority
 import org.json.JSONObject
 import java.net.URL
 import kotlin.math.min
 
 class Utils {
     companion object {
+
+        const val LOCATION_REQUEST_CODE = 23
 
         fun advanceStringListContains(list: List<String>, str: String): Boolean {
             for (s in list) {
@@ -64,7 +69,6 @@ class Utils {
             val currentCoords = "${myLocation.longitude},${myLocation.latitude}"
 
             val strUrl = "$baseURL$currentCoords;$cinemas?sources=0&annotations=distance"
-            println("STR URL: $strUrl")
             val url = URL(strUrl)
             val json = JSONObject(url.readText())
             val dist = json.getJSONArray("distances").getJSONArray(0)
@@ -112,19 +116,19 @@ class Utils {
             val task = client.checkLocationSettings(builder.build())
 
             task.addOnFailureListener(
-                (context as Activity)!!
+                (context)!!
             ) { e: Exception ->
                 if (e is ResolvableApiException) {
                     try {
-                        val resolvable: ResolvableApiException = e as ResolvableApiException
+                        showToast(context, "יש להפעיל את המיקום")
+                        val resolvable: ResolvableApiException = e
                         resolvable.startResolutionForResult(
-                            context as Activity,
-                            23
+                            context,
+                            LOCATION_REQUEST_CODE
                         )
-//                        callback.invoke(true)
                     } catch (sendEx: SendIntentException) {
                         sendEx.printStackTrace()
-//                        callback.invoke(false)
+                        callback.invoke(false)
                     }
                 }
             }
