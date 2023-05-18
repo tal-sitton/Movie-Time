@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imdbImage"
+        android:layout_width="71dp"
+        android:layout_height="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/imdb_logo_rectangle_gold" />
+
+    <TextView
+        android:id="@+id/movieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:text="N/A"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imdbImage"
+        app:layout_constraintStart_toEndOf="@+id/imdbImage"
+        app:layout_constraintTop_toTopOf="@+id/imdbImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="/10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/movieRating"
+        app:layout_constraintStart_toEndOf="@+id/movieRating"
+        app:layout_constraintTop_toTopOf="@+id/movieRating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

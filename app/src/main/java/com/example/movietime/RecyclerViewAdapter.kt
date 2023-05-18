@@ -15,6 +15,7 @@ class RecyclerViewAdapter internal constructor(context: Context, data: List<Recy
     private val mData: List<Recyclable>
     private val mContext: Context
     private val mInflater: LayoutInflater
+    var clickable = true
 
     // data is passed into the constructor
     init {
@@ -55,8 +56,9 @@ class RecyclerViewAdapter internal constructor(context: Context, data: List<Recy
             holder.myTextView.minHeight = ViewGroup.LayoutParams.WRAP_CONTENT;
         } else {
             holder.myTextView.setOnClickListener {
-                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(mData[position].url))
-                mContext.startActivity(browserIntent)
+                if (clickable) {
+                    mData[position].onClick(mContext)
+                }
             }
         }
     }

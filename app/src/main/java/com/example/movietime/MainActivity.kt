@@ -3,21 +3,31 @@ package com.example.movietime
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION
 import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.text.method.ScrollingMovementMethod
 import android.view.View
+import android.view.View.OnTouchListener
 import android.widget.CheckBox
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.time.LocalDateTime
 
 
 class MainActivity : MyTemplateActivity() {
 
     companion object {
+        var allMovies: Map<String, Movie> = mapOf()
         var allScreenings: List<Screening> = listOf()
         var filteredCinemaScreenings: Set<Screening> = setOf()
         var filteredMoviesScreenings: List<Screening> = listOf()
@@ -118,7 +128,6 @@ class MainActivity : MyTemplateActivity() {
         Handler(Looper.getMainLooper()).postDelayed({ recycler.scrollToPosition(0) }, 1)
     }
 
-
     private fun setupTopActivityButtons() {
         val movieButton: TextView = findViewById(R.id.movieButton)
         dateButton = findViewById(R.id.dateButton)
@@ -152,7 +161,6 @@ class MainActivity : MyTemplateActivity() {
 
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         recycler.removeAllViewsInLayout()
-        var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
         if (filteredScreenings.isEmpty()) {
             notFound.visibility = TextView.VISIBLE
@@ -189,6 +197,7 @@ class MainActivity : MyTemplateActivity() {
 
     override fun onRestart() {
         super.onRestart()
+        closeScreening()
         dateButton?.text = DateActivity.selectedDatStr
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
@@ -201,6 +210,10 @@ class MainActivity : MyTemplateActivity() {
 
     override val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
+            val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+            if (popUp.visibility == View.VISIBLE) {
+                return closeScreening()
+            }
             if (backPressedTime + 2000 > System.currentTimeMillis()) {
                 finishAffinity()
             } else {
@@ -227,5 +240,60 @@ class MainActivity : MyTemplateActivity() {
             filteredTypeScreenings = allScreenings.toSet()
 
         onRestart()
+    }
+
+    private fun setupScreeningPopup(screening: Screening) {
+        val movie: Movie = allMovies[screening.movie]!!
+        findViewById<TextView>(R.id.movieTitle).text = movie.title
+
+        val plot = findViewById<TextView>(R.id.plot)
+        plot.text = movie.description
+        plot.movementMethod = ScrollingMovementMethod()
+        plot.scrollTo(0, 0)
+
+        findViewById<TextView>(R.id.movieRating).text = movie.rating
+        findViewById<TextView>(R.id.screeningInfo).text = screening.createInfo()
+
+        findViewById<TextView>(R.id.order).setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))
+            startActivity(browserIntent)
+        }
+
+        CoroutineScope(Dispatchers.Default).launch {
+            movie.showPoster(findViewById(R.id.poster), this@MainActivity)
+        }
+    }
+
+    fun openScreening(screening: Screening) {
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.setOnTouchListener(OnTouchListener { v, event -> true })
+        val adapter = recycler.adapter as RecyclerViewAdapter
+        adapter.clickable = false
+
+        setupScreeningPopup(screening)
+
+        val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+        popUp.visibility = ConstraintLayout.VISIBLE
+    }
+
+    fun closeScreening() {
+        val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
+        popUp.visibility = ConstraintLayout.INVISIBLE
+
+        val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.setOnTouchListener(OnTouchListener { v, event -> false })
+        val adapter = recycler.adapter as RecyclerViewAdapter
+        adapter.clickable = true
+
+        findViewById<TextView>(R.id.order).setOnClickListener {
+            // disable click to prevent mistakes
+        }
+
+        findViewById<ImageView>(R.id.poster).setImageDrawable(
+            ContextCompat.getDrawable(
+                this,
+                R.drawable.image_placeholder
+            )
+        )
     }
 }
