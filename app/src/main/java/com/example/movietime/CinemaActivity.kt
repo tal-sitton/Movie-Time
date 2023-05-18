@@ -242,8 +242,18 @@ class CinemaActivity : MyTemplateActivity() {
                     Executors.newSingleThreadExecutor().execute {
                         sortByLocation(location, mHandler)
                     }
+                } else {
+                    Utils.showToast(this, "יש להפעיל את המיקום")
+                    Utils.enableLocation(this) { afterLocationRequest(it) }
                 }
             }
+    }
+
+    private fun afterLocationRequest(success: Boolean) {
+        if (success)
+            getLastKnownLocation()
+        else
+            Utils.showToast(this, "לא ניתנה גישה למיקום")
     }
 
     private fun sortByLocation(myLocation: Location, mHandler: Handler) {
