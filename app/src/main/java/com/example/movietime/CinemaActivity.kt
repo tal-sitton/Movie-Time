@@ -243,17 +243,26 @@ class CinemaActivity : MyTemplateActivity() {
                         sortByLocation(location, mHandler)
                     }
                 } else {
-                    Utils.showToast(this, "יש להפעיל את המיקום")
                     Utils.enableLocation(this) { afterLocationRequest(it) }
                 }
             }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == Utils.LOCATION_REQUEST_CODE) {
+            afterLocationRequest(resultCode == RESULT_OK)
+        }
+    }
+
     private fun afterLocationRequest(success: Boolean) {
         if (success)
             getLastKnownLocation()
-        else
+        else {
             Utils.showToast(this, "לא ניתנה גישה למיקום")
+            val sortByLocation: CheckBox = findViewById(R.id.sort)
+            sortByLocation.isChecked = false
+        }
     }
 
     private fun sortByLocation(myLocation: Location, mHandler: Handler) {
