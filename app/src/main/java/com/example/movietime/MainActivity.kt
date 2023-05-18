@@ -161,7 +161,6 @@ class MainActivity : MyTemplateActivity() {
 
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         recycler.removeAllViewsInLayout()
-        var i = 1
         val notFound: TextView = findViewById(R.id.noMovieFound)
         if (filteredScreenings.isEmpty()) {
             notFound.visibility = TextView.VISIBLE
