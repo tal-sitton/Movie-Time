@@ -1,12 +1,16 @@
 package com.example.movietime
 
+import android.app.Activity
 import android.content.Context
+import android.content.IntentSender.SendIntentException
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.location.Location
 import android.util.TypedValue
 import android.widget.Toast
+import com.google.android.gms.common.api.ResolvableApiException
+import com.google.android.gms.location.*
 import org.json.JSONObject
 import java.net.URL
 import kotlin.math.min
@@ -90,6 +94,43 @@ class Utils {
                 dp.toFloat(),
                 r.displayMetrics
             )
+        }
+
+        fun enableLocation(context: Activity, callback: (Boolean) -> Unit) {
+
+            val locationRequest: LocationRequest =
+                LocationRequest.Builder(Priority.PRIORITY_HIGH_ACCURACY, 10000)
+                    .setWaitForAccurateLocation(false)
+                    .setIntervalMillis(10000)
+                    .setPriority(Priority.PRIORITY_HIGH_ACCURACY)
+                    .build()
+
+
+            val builder: LocationSettingsRequest.Builder = LocationSettingsRequest.Builder()
+                .addLocationRequest(locationRequest)
+            val client = LocationServices.getSettingsClient(context)
+            val task = client.checkLocationSettings(builder.build())
+
+            task.addOnFailureListener(
+                (context as Activity)!!
+            ) { e: Exception ->
+                if (e is ResolvableApiException) {
+                    try {
+                        val resolvable: ResolvableApiException = e as ResolvableApiException
+                        resolvable.startResolutionForResult(
+                            context as Activity,
+                            23
+                        )
+//                        callback.invoke(true)
+                    } catch (sendEx: SendIntentException) {
+                        sendEx.printStackTrace()
+//                        callback.invoke(false)
+                    }
+                }
+            }
+
+            task.addOnCanceledListener(context) { callback.invoke(false) }
+            task.addOnSuccessListener(context) { callback.invoke(true) }
         }
     }
 }
