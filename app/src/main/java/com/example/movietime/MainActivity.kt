@@ -224,9 +224,8 @@ class MainActivity : MyTemplateActivity() {
         }
     }
 
-    fun screeningTypeFilter(view: View) {
-        view as CheckBox
-        if (view.isChecked)
+    fun screeningTypeFilter(view: ModifiedChip) {
+        if (view.checked)
             selectedScreeningTypes.add(view.text.toString())
         else
             selectedScreeningTypes.remove(view.text.toString())
