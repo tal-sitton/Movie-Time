@@ -27,9 +27,10 @@ class ModifiedChip(
             val a = context.obtainStyledAttributes(attrs, R.styleable.ModifiedChip)
             checked = a.getBoolean(R.styleable.ModifiedChip_checked, false)
             onCheckName = a.getString(R.styleable.ModifiedChip_onCheck)
-            Log.println(Log.DEBUG, "Chip", "OnCheckName: $onCheckName")
-            try {
+            if (onCheckName != null) {
                 onCheck = context.javaClass.getMethod(onCheckName, this::class.java)
+            }
+            try {
             } catch (e: NoSuchMethodException) {
                 Log.println(Log.ERROR, "Chip", e.toString())
                 throw e
