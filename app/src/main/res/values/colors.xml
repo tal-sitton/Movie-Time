@@ -12,5 +12,7 @@
     <color name="real_white">#FFFFFFFF</color>
     <color name="filter_unclicked">#40E0D0</color>
     <color name="filter_clicked">#008080</color>
+    <color name="chip_selected">#01AC46</color>
+    <color name="chip_unselected">#80787878</color>
 </resources>
 
