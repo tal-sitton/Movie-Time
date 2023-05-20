@@ -19,13 +19,13 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build Android App
-      uses: sparkfabrik/android-build-action@v1.3.4
+      uses: sparkfabrik/android-build-action@v1.4.0
       with:
         project-path: .
         output-path: movie-time.apk
         browserstack-upload: false
-        ruby-version: "2.7.5"
-        bundler-version: "2.3.26"
+        ruby-version: "3.2.2"
+        bundler-version: "2.4.13"
         fastlane-env: "debug"
         
     - name: save artifacts  
