@@ -80,7 +80,6 @@
             android:autoSizeTextType="uniform"
             android:maxLines="1"
             app:onCheck="screeningTypeFilter"
-            app:checked="true"
             android:text="VIP" />
 
         <Space

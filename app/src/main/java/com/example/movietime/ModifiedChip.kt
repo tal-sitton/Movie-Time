@@ -41,7 +41,7 @@ class ModifiedChip(
         setOnClickListener {
             onClick()
         }
-        setBackgroundResource(R.drawable.chip_unselected)
+        setBackgroundResource(if (checked) R.drawable.chip_selected else R.drawable.chip_unselected)
         textAlignment = TEXT_ALIGNMENT_CENTER
         gravity = android.view.Gravity.CENTER
     }
