@@ -14,84 +14,104 @@
     <LinearLayout
         android:id="@+id/topScreeningType"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLL">
 
-        <CheckBox
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
             android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="2D" />
 
-        <CheckBox
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
             android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="3D" />
 
-        <CheckBox
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="IMAX" />
 
-        <CheckBox
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="VIP" />
 
-        <CheckBox
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
-            android:layout_weight="4"
+            android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="SCREENX" />
 
-        <CheckBox
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="fill_horizontal"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            android:onClick="screeningTypeFilter"
+            app:onCheck="screeningTypeFilter"
             android:text="4DX" />
 
     </LinearLayout>
