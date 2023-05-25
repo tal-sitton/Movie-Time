@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <Button
 
+    <TextView
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/top_buttons"
+        android:gravity="center"
+        android:padding="20dp"
         android:text="חזרה לתפריט הראשי"
+        android:textColor="@color/real_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,6 +28,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -53,16 +59,16 @@
                 android:text="הראה סרטים מדובבים" />
 
             <View
-                android:layout_marginTop="10dp"
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
+                android:layout_marginTop="10dp"
                 android:background="?android:attr/listDivider" />
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:text="אודות האפליקציה"
                 android:textSize="34sp"
                 android:textStyle="bold" />
