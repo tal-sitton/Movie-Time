@@ -4,8 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.widget.SwitchCompat
 
 class SettingsActivity : MyTemplateActivity() {
@@ -26,7 +26,7 @@ class SettingsActivity : MyTemplateActivity() {
             recreate()
         }
 
-        val mainActivityButton: Button = findViewById(R.id.backButton)
+        val mainActivityButton: TextView = findViewById(R.id.backButton)
         mainActivityButton.setOnClickListener {
             onBackPressedCallback.handleOnBackPressed()
         }
