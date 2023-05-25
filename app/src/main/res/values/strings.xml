@@ -3,6 +3,9 @@
     <string name="no_movie_found">
         <font size="48">לא נמצאו סרטים תואמים לחיפוש</font>\n\n<font size="25"> לחץ על הכפתור מימין למעלה לאיפוס המסננים</font>
     </string>
+    <string name="no_movie_found_dubbed">
+        <font size="48">לא נמצאו סרטים תואמים לחיפוש</font>\n\n<font size="25"> לחץ על הכפתור מימין למעלה לאיפוס המסננים</font>\n\n<font size="18"> נסה אולי לאפשר סרטים מדובבים</font>
+    </string>
 
     <string name="about_app">
         <font size="17">
