@@ -10,7 +10,6 @@ import android.os.Looper
 import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.view.View.OnTouchListener
-import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -161,12 +160,19 @@ class MainActivity : MyTemplateActivity() {
 
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         recycler.adapter = RecyclerViewAdapter(this, listOf())
+
         val notFound: TextView = findViewById(R.id.noMovieFound)
+        val notFoundDubbed: TextView = findViewById(R.id.noMovieFoundDubbed)
+        notFound.visibility = TextView.INVISIBLE
+        notFoundDubbed.visibility = TextView.INVISIBLE
         if (filteredScreenings.isEmpty()) {
-            notFound.visibility = TextView.VISIBLE
+            if (allowDubbed)
+                notFound.visibility = TextView.VISIBLE
+            else
+                notFoundDubbed.visibility = TextView.VISIBLE
+
             return
-        } else
-            notFound.visibility = TextView.INVISIBLE
+        }
 
         var prevDay = filteredScreenings.elementAt(0).dateTime.dayOfMonth
         val screenings: MutableList<Recyclable> = mutableListOf()
@@ -265,7 +271,7 @@ class MainActivity : MyTemplateActivity() {
 
     fun openScreening(screening: Screening) {
         val recycler = findViewById<RecyclerView>(R.id.recycler)
-        recycler.setOnTouchListener(OnTouchListener { v, event -> true })
+        recycler.setOnTouchListener(OnTouchListener { _, _ -> true })
         val adapter = recycler.adapter as RecyclerViewAdapter
         adapter.clickable = false
 
@@ -280,7 +286,7 @@ class MainActivity : MyTemplateActivity() {
         popUp.visibility = ConstraintLayout.INVISIBLE
 
         val recycler = findViewById<RecyclerView>(R.id.recycler)
-        recycler.setOnTouchListener(OnTouchListener { v, event -> false })
+        recycler.setOnTouchListener(OnTouchListener { _, _ -> false })
         val adapter = recycler.adapter as RecyclerViewAdapter
         adapter.clickable = true
 

@@ -31,12 +31,12 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="2D" />
+            android:text="2D"
+            app:onCheck="screeningTypeFilter" />
 
         <Space
             android:layout_width="3dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
@@ -47,12 +47,12 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="3D" />
+            android:text="3D"
+            app:onCheck="screeningTypeFilter" />
 
         <Space
             android:layout_width="3dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
@@ -63,12 +63,12 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="IMAX" />
+            android:text="IMAX"
+            app:onCheck="screeningTypeFilter" />
 
         <Space
             android:layout_width="3dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
@@ -79,12 +79,12 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="VIP" />
+            android:text="VIP"
+            app:onCheck="screeningTypeFilter" />
 
         <Space
             android:layout_width="3dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
@@ -95,12 +95,12 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="SCREENX" />
+            android:text="SCREENX"
+            app:onCheck="screeningTypeFilter" />
 
         <Space
             android:layout_width="3dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.example.movietime.ModifiedChip
             android:layout_width="wrap_content"
@@ -111,8 +111,8 @@
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:maxLines="1"
-            app:onCheck="screeningTypeFilter"
-            android:text="4DX" />
+            android:text="4DX"
+            app:onCheck="screeningTypeFilter" />
 
     </LinearLayout>
 
@@ -120,8 +120,8 @@
         android:id="@+id/recycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:rotationY="180"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,9 +134,23 @@
         android:id="@+id/noMovieFound"
         android:layout_width="match_parent"
         android:layout_height="380dp"
-        android:fontFamily="@font/rubik_dirt"
         android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/rubik_dirt"
         android:text="@string/no_movie_found"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="@+id/recycler"
+        app:layout_constraintStart_toStartOf="@id/recycler"
+        app:layout_constraintTop_toTopOf="@+id/recycler" />
+
+    <TextView
+        android:id="@+id/noMovieFoundDubbed"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/rubik_dirt"
+        android:text="@string/no_movie_found_dubbed"
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/recycler"
