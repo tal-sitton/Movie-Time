@@ -41,7 +41,9 @@ class MovieActivity : MyTemplateActivity() {
 
     private fun createMoviesButtons(movies: List<String>, ll: LinearLayout) {
         ll.removeAllViewsInLayout()
-        val showMovies = movies.sortedWith(compareBy({ !selectedMovies.contains(it) }, { it }))
+        val showMovies = movies.sortedWith { o1, o2 -> Utils.comparePreferHebrew(o1, o2) }
+            .sortedBy { !selectedMovies.contains(it) }
+
         for (movie in showMovies) {
             val button = Button(this)
             button.text = movie
