@@ -136,5 +136,25 @@ class Utils {
             task.addOnCanceledListener(context) { callback.invoke(false) }
             task.addOnSuccessListener(context) { callback.invoke(true) }
         }
+
+        fun isHebrew(str: String): Boolean {
+            if (str[0].code in 0x590..0x5FF)
+                return true
+            return false
+        }
+
+        fun comparePreferHebrew(o1: String, o2: String): Int {
+            if (isHebrew(o1) && !isHebrew(o2)) {
+                if (o2[0].isDigit())
+                    return 1
+                return -1
+            }
+            if (!isHebrew(o1) && isHebrew(o2)) {
+                if (o1[0].isDigit())
+                    return -1
+                return 1
+            }
+            return o1.compareTo(o2)
+        }
     }
 }
