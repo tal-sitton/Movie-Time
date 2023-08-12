@@ -66,8 +66,8 @@ class DateActivity : MyTemplateActivity() {
         today = findViewById(R.id.todayButton)
 
         if (restarted) {
-            allDay.setBackgroundColor(this.getColor(R.color.purple_500))
-            today.setBackgroundColor(this.getColor(R.color.purple_500))
+            allDay.setBackgroundColor(this.getColor(R.color.primary))
+            today.setBackgroundColor(this.getColor(R.color.primary))
         }
 
         setupDateButtons()
@@ -99,9 +99,9 @@ class DateActivity : MyTemplateActivity() {
     private fun configDayButton(button: Button, day: Int) {
         if (!restarted) {
             if (selectedDays.contains(day)) {
-                button.setBackgroundColor(this.getColor(R.color.purple_500))
+                button.setBackgroundColor(this.getColor(R.color.primary))
             } else {
-                button.setBackgroundColor(this.getColor(R.color.purple_200))
+                button.setBackgroundColor(this.getColor(R.color.primary_light))
             }
         }
         button.setOnClickListener { dayClickListener(button, day) }
@@ -111,14 +111,14 @@ class DateActivity : MyTemplateActivity() {
         val nowDay = LocalDateTime.now().dayOfMonth
         if (selectedDays.contains(day)) {
             selectedDays.remove(day)
-            button.setBackgroundColor(this.getColor(R.color.purple_200))
+            button.setBackgroundColor(this.getColor(R.color.primary_light))
             if (selectedDays.isEmpty()) {
                 selectedDays.add(nowDay)
-                today.setBackgroundColor(this.getColor(R.color.purple_500))
+                today.setBackgroundColor(this.getColor(R.color.primary))
             }
         } else {
             selectedDays.add(day)
-            button.setBackgroundColor(this.getColor(R.color.purple_500))
+            button.setBackgroundColor(this.getColor(R.color.primary))
         }
         if (selectedDays.size == 1) {
             selectedDatStr = genTextForSelected(selectedDays[0])
@@ -148,9 +148,9 @@ class DateActivity : MyTemplateActivity() {
     private fun configHourButton(button: Button, hour: Hour) {
         if (!restarted) {
             if (selectedHour.contains(hour)) {
-                button.setBackgroundColor(this.getColor(R.color.purple_500))
+                button.setBackgroundColor(this.getColor(R.color.primary))
             } else {
-                button.setBackgroundColor(this.getColor(R.color.purple_200))
+                button.setBackgroundColor(this.getColor(R.color.primary_light))
             }
         }
         button.setOnClickListener { hourClickListener(button, hour) }
@@ -159,25 +159,25 @@ class DateActivity : MyTemplateActivity() {
     private fun hourClickListener(button: Button, hour: Hour) {
         if (selectedHour.contains(hour)) {
             selectedHour.remove(hour)
-            button.setBackgroundColor(this.getColor(R.color.purple_200))
+            button.setBackgroundColor(this.getColor(R.color.primary_light))
             if (selectedHour.isEmpty()) {
                 selectedHour.add(Hour.ALL_DAY)
-                allDay.setBackgroundColor(this.getColor(R.color.purple_500))
+                allDay.setBackgroundColor(this.getColor(R.color.primary))
             }
         } else {
             if (hour == Hour.ALL_DAY) {
                 selectedHour.clear()
                 selectedHour.add(Hour.ALL_DAY)
-                allDay.setBackgroundColor(this.getColor(R.color.purple_500))
-                findViewById<Button>(R.id.before12Button).setBackgroundColor(this.getColor(R.color.purple_200))
-                findViewById<Button>(R.id.till15Button).setBackgroundColor(this.getColor(R.color.purple_200))
-                findViewById<Button>(R.id.till19Button).setBackgroundColor(this.getColor(R.color.purple_200))
-                findViewById<Button>(R.id.after19Button).setBackgroundColor(this.getColor(R.color.purple_200))
+                allDay.setBackgroundColor(this.getColor(R.color.primary))
+                findViewById<Button>(R.id.before12Button).setBackgroundColor(this.getColor(R.color.primary_light))
+                findViewById<Button>(R.id.till15Button).setBackgroundColor(this.getColor(R.color.primary_light))
+                findViewById<Button>(R.id.till19Button).setBackgroundColor(this.getColor(R.color.primary_light))
+                findViewById<Button>(R.id.after19Button).setBackgroundColor(this.getColor(R.color.primary_light))
             } else {
                 selectedHour.remove(Hour.ALL_DAY)
-                allDay.setBackgroundColor(this.getColor(R.color.purple_200))
+                allDay.setBackgroundColor(this.getColor(R.color.primary_light))
                 selectedHour.add(hour)
-                button.setBackgroundColor(this.getColor(R.color.purple_500))
+                button.setBackgroundColor(this.getColor(R.color.primary))
             }
         }
     }
