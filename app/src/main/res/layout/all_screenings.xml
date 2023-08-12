@@ -10,6 +10,6 @@
         android:background="@drawable/movie_button"
         android:gravity="center_horizontal"
         android:rotationY="180"
-        android:textColor="@color/black" />
+        android:textColor="@color/contrast_theme" />
 
 </LinearLayout>

@@ -37,7 +37,7 @@
             android:background="@drawable/top_buttons"
             android:gravity="center"
             android:text="סרט"
-            android:textColor="@color/real_white" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/dateButton"
@@ -48,7 +48,7 @@
             android:background="@drawable/top_buttons"
             android:gravity="center"
             android:text="יום ושעה"
-            android:textColor="@color/real_white" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/cinemaButton"
@@ -58,7 +58,7 @@
             android:background="@drawable/top_buttons"
             android:gravity="center"
             android:text="קולנוע"
-            android:textColor="@color/real_white" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

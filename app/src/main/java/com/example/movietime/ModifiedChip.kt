@@ -43,6 +43,7 @@ class ModifiedChip(
         }
         setBackgroundResource(if (checked) R.drawable.chip_selected else R.drawable.chip_unselected)
         textAlignment = TEXT_ALIGNMENT_CENTER
+        setTextColor(context.getColor(R.color.chip_text))
         gravity = android.view.Gravity.CENTER
     }
 
