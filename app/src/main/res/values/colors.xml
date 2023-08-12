@@ -14,5 +14,6 @@
     <color name="filter_clicked">#008080</color>
     <color name="chip_selected">#01AC46</color>
     <color name="chip_unselected">#80787878</color>
+    <color name="popUpBackground">#80000000</color>
 </resources>
 
