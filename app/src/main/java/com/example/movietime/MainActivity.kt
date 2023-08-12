@@ -155,7 +155,7 @@ class MainActivity : MyTemplateActivity() {
 
     private fun preSetupScreeningPopup() {
         val popup = findViewById<ConstraintLayout>(R.id.infoPopup)
-        popup.visibility = View.INVISIBLE
+        popup.visibility = View.GONE
         popup.setOnClickListener {
             closeScreening()
         }
@@ -285,7 +285,7 @@ class MainActivity : MyTemplateActivity() {
 
     fun closeScreening() {
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
-        popUp.visibility = ConstraintLayout.INVISIBLE
+        popUp.visibility = ConstraintLayout.GONE
 
         findViewById<TextView>(R.id.order).setOnClickListener {
             // disable click to prevent mistakes
