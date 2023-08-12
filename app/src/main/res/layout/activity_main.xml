@@ -171,7 +171,7 @@
             android:layout_height="500dp"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/round_corners"
-            android:backgroundTint="@color/teal_700"
+            android:backgroundTint="@color/secondary_dark"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -224,7 +224,7 @@
                 android:layout_height="239dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/round_corners"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="@color/contrast_theme"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider2"
                 app:srcCompat="@drawable/image_placeholder" />
