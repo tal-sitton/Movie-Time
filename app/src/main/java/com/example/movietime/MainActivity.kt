@@ -9,7 +9,6 @@ import android.os.Handler
 import android.os.Looper
 import android.text.method.ScrollingMovementMethod
 import android.view.View
-import android.view.View.OnTouchListener
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -121,6 +120,7 @@ class MainActivity : MyTemplateActivity() {
         resetToDefault()
 
         setupTopActivityButtons()
+        preSetupScreeningPopup()
 
         createButtons(recycler)
 
@@ -150,6 +150,14 @@ class MainActivity : MyTemplateActivity() {
         cinemaButton.setOnClickListener {
             intent.setClass(this, CinemaActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    private fun preSetupScreeningPopup() {
+        val popup = findViewById<ConstraintLayout>(R.id.infoPopup)
+        popup.visibility = View.GONE
+        popup.setOnClickListener {
+            closeScreening()
         }
     }
 
@@ -270,25 +278,14 @@ class MainActivity : MyTemplateActivity() {
     }
 
     fun openScreening(screening: Screening) {
-        val recycler = findViewById<RecyclerView>(R.id.recycler)
-        recycler.setOnTouchListener(OnTouchListener { _, _ -> true })
-        val adapter = recycler.adapter as RecyclerViewAdapter
-        adapter.clickable = false
-
         setupScreeningPopup(screening)
-
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
         popUp.visibility = ConstraintLayout.VISIBLE
     }
 
     fun closeScreening() {
         val popUp = findViewById<ConstraintLayout>(R.id.infoPopup)
-        popUp.visibility = ConstraintLayout.INVISIBLE
-
-        val recycler = findViewById<RecyclerView>(R.id.recycler)
-        recycler.setOnTouchListener(OnTouchListener { _, _ -> false })
-        val adapter = recycler.adapter as RecyclerViewAdapter
-        adapter.clickable = true
+        popUp.visibility = ConstraintLayout.GONE
 
         findViewById<TextView>(R.id.order).setOnClickListener {
             // disable click to prevent mistakes
