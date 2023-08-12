@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary_light">#FFBB86FC</color>
-    <color name="primary">#FF6200EE</color>
-    <color name="primary_dark">#FF3700B3</color>
-    <color name="submit_green">#01AC46</color>
-    <color name="secondary">#FF03DAC5</color>
-    <color name="secondary_dark">#FF018786</color>
     <color name="theme">#FFFFFFFF</color>
     <color name="contrast_theme">#FF000000</color>
-    <color name="black_with_opacity">#B2000000</color>
+    <color name="primary">#FF6200EE</color>
+    <color name="primary_light">#FFBB86FC</color>
+    <color name="primary_dark">#FF3700B3</color>
+    <color name="secondary">#FF03DAC5</color>
+    <color name="secondary_dark">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="filter_unclicked">#40E0D0</color>
-    <color name="filter_clicked">#008080</color>
+    <color name="submit_green">#01AC46</color>
     <color name="chip_selected">#01AC46</color>
     <color name="chip_unselected">#80575757</color>
     <color name="chip_text">#FFFFFF</color>
     <color name="popUpBackground">#80000000</color>
+    <color name="divider">#B3FFFFFF</color>
 </resources>
 
