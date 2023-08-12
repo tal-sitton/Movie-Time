@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="clip_horizontal"
         android:rotationY="180"
-        android:textColor="@color/black"
+        android:textColor="@color/contrast_theme"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
         android:textStyle="bold" />
