@@ -51,7 +51,12 @@ class Screening(
     }
 
     fun createInfo(): String {
+        var dubbedInfo = ""
+        if (dubbed) {
+            dubbedInfo = "מדובב\n"
+        }
         return "שעה : $timeFormatted\n" +
+                dubbedInfo +
                 "קולנוע : $cinema"
     }
 
