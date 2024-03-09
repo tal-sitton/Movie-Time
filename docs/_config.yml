@@ -2,6 +2,10 @@ remote_theme: tuur29/pages-themes-cayman
 title: Movie Time
 markdown: kramdown
 
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
 color:
   header: "#000"
   gradient_left: "#e53935"
