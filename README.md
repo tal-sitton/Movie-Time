@@ -12,7 +12,7 @@
 אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעת תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!
 </div>
 
-[לסרבר](https://github.com/tal-sitton/Movie-Time-Server)
+[לשרת](https://github.com/tal-sitton/Movie-Time-Server)
 
 ---
 ### The app that saves you time!
