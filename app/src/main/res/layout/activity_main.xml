@@ -162,9 +162,8 @@
         android:id="@+id/infoPopup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/popUpBackground"
-        android:clickable="true"
-        android:visibility="gone">
+        android:background="@color/popup_background"
+        android:clickable="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
@@ -268,14 +267,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <Button
+            <TextView
                 android:id="@+id/order"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginBottom="6dp"
-                android:background="@drawable/top_buttons"
+                android:background="@drawable/buy_tickets_button"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:text="להזמנת כרטיסים"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
