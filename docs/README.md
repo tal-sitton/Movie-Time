@@ -51,3 +51,6 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 <div align="center">
 <img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"> <img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
 </div>
+
+<br><br>
+<a href="https://www.flaticon.com/free-animated-icons/route" title="route animated icons">Route animated icons created by Freepik - Flaticon</a>
