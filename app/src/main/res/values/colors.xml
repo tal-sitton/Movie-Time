@@ -5,14 +5,15 @@
     <color name="primary">#FF6200EE</color>
     <color name="primary_light">#FFBB86FC</color>
     <color name="primary_dark">#FF3700B3</color>
-    <color name="secondary">#FF03DAC5</color>
-    <color name="secondary_dark">#FF018786</color>
+    <color name="secondary">#0AAFC3</color>
+    <color name="secondary_dark">#FF068D9D</color>
     <color name="white">#FFFFFFFF</color>
     <color name="submit_green">#01AC46</color>
     <color name="chip_selected">#01AC46</color>
     <color name="chip_unselected">#80575757</color>
     <color name="chip_text">#FFFFFF</color>
-    <color name="popUpBackground">#80000000</color>
+    <color name="popup_background">#80000000</color>
+    <color name="buy_tickets_button">#1C35DD</color>
     <color name="divider">#B3FFFFFF</color>
 </resources>
 
