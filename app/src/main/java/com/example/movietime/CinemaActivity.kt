@@ -180,8 +180,16 @@ class CinemaActivity : MyTemplateActivity() {
     }
 
     private fun getCinemas(): List<Cinema> {
-        cinemas = mutableListOf()
-        for (screening in MainActivity.filteredMoviesScreenings.intersect(MainActivity.filteredDateScreenings)) {
+        val intersectedScreenings = MainActivity.filteredMoviesScreenings.intersect(
+            MainActivity.filteredDateScreenings
+        ).intersect(MainActivity.filteredDubScreenings)
+
+        val intersectedCinemasNames = intersectedScreenings.map { it.cinema }
+        if (intersectedCinemasNames.toSet() == cinemas.map { it.name }.toSet())
+            return cinemas
+
+        cinemas.clear()
+        for (screening in intersectedScreenings) {
             val tmpCinema = Cinema(
                 screening.cinema,
                 screening.district,

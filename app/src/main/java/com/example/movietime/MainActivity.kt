@@ -30,6 +30,8 @@ class MainActivity : MyTemplateActivity() {
         var filteredCinemaScreenings: Set<Screening> = setOf()
         var filteredMoviesScreenings: List<Screening> = listOf()
         var filteredDateScreenings: Set<Screening> = setOf()
+        var allowDubbed: Boolean = true
+        var filteredDubScreenings: Set<Screening> = setOf()
         var filteredScreenings: List<Screening> = listOf()
         var prevFilteredScreenings: List<Screening> = listOf()
         var selectedScreeningTypes: MutableSet<String> = mutableSetOf()
@@ -58,10 +60,17 @@ class MainActivity : MyTemplateActivity() {
                 DateActivity.checkScreening(screening)
             }.toSet()
 
+            filteredDubScreenings = if (!allowDubbed) {
+                allScreenings.filter { screening ->
+                    !screening.dubbed
+                }.toSet()
+            } else
+                allScreenings.toSet()
+
             val newFilteredScreenings =
                 filteredMoviesScreenings.intersect(filteredCinemaScreenings).intersect(
                     filteredDateScreenings
-                ).intersect(filteredTypeScreenings).toList()
+                ).intersect(filteredTypeScreenings).intersect(filteredDubScreenings).toList()
 
             if (newFilteredScreenings != filteredScreenings) {
                 filteredScreenings = newFilteredScreenings
@@ -95,7 +104,14 @@ class MainActivity : MyTemplateActivity() {
                 }.toSet()
             }
 
-            filteredScreenings = filteredDateScreenings.toList()
+            filteredDubScreenings = if (!allowDubbed) {
+                allScreenings.filter { screening ->
+                    !screening.dubbed
+                }.toSet()
+            } else
+                allScreenings.toSet()
+
+            filteredScreenings = filteredDateScreenings.intersect(filteredDubScreenings).toList()
             prevFilteredScreenings = filteredScreenings
         }
     }
@@ -103,7 +119,6 @@ class MainActivity : MyTemplateActivity() {
     private var dateButton: TextView? = null
 
     private lateinit var settings: SharedPreferences
-    private var allowDubbed = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -162,10 +177,6 @@ class MainActivity : MyTemplateActivity() {
     }
 
     private fun createButtons(recycler: RecyclerView) {
-        allowDubbed = settings.getBoolean("allowDubbed", true)
-        if (!allowDubbed)
-            filteredScreenings = filteredScreenings.filter { !it.dubbed }.toSet().toList()
-
         filteredScreenings = filteredScreenings.sortedBy { it.dateTime }
         recycler.adapter = RecyclerViewAdapter(this, listOf())
 
@@ -214,7 +225,8 @@ class MainActivity : MyTemplateActivity() {
         closeScreening()
         dateButton?.text = DateActivity.selectedDatStr
         val recycler = findViewById<RecyclerView>(R.id.recycler)
-        if (filter(true) || allowDubbed != settings.getBoolean("allowDubbed", true))
+        allowDubbed = settings.getBoolean("allowDubbed", true)
+        if (filter(true))
             createButtons(recycler)
 
         Handler(Looper.getMainLooper()).postDelayed({ recycler.scrollToPosition(0) }, 1)
