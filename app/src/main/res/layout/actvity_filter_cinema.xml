@@ -35,6 +35,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search" />
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/calculating"
+        android:visibility="invisible"
+        android:layout_width="166dp"
+        android:layout_height="161dp"
+        android:src="@drawable/destination"
+        app:layout_constraintBottom_toBottomOf="@+id/scrl"
+        app:layout_constraintEnd_toEndOf="@+id/scrl"
+        app:layout_constraintStart_toStartOf="@+id/scrl"
+        app:layout_constraintTop_toTopOf="@+id/scrl" />
+
     <ScrollView
         android:id="@+id/scrl"
         android:layout_width="0dp"

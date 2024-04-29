@@ -24,41 +24,35 @@ class CinemaActivity : MyTemplateActivity() {
 
     companion object {
         val selectedCinemas: MutableList<String> = mutableListOf("")
+        var sortByDistance: Boolean = false
+        val cinemas: MutableList<Cinema> = mutableListOf()
     }
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-
-    private var cinemas: MutableList<Cinema> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actvity_filter_cinema)
         setupTopButtons()
         getCinemas()
-        println(cinemas)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
         val sortByDistanceBox = findViewById<CheckBox>(R.id.sort)
 
+        sortByDistanceBox.isChecked = sortByDistance
+
         sortByDistanceBox.setOnCheckedChangeListener { _, isChecked ->
-            sortBy(isChecked)
-            createCinemasButtons(findViewById(R.id.ll), !isChecked, filterCinemas())
+            sortByDistance = isChecked
+            sort(true)
         }
 
-        sortBy(sortByDistanceBox.isChecked)
-        createCinemasButtons(findViewById(R.id.ll), !sortByDistanceBox.isChecked, filterCinemas())
+        sort(true)
 
         val search = findViewById<EditText>(R.id.search)
 
         search.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(text: Editable?) {
-                sortBy(sortByDistanceBox.isChecked)
-                val availableCinemas = filterCinemas()
-                createCinemasButtons(
-                    findViewById(R.id.ll),
-                    !sortByDistanceBox.isChecked,
-                    availableCinemas
-                )
+                sort()
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -84,6 +78,7 @@ class CinemaActivity : MyTemplateActivity() {
         sortDistricts: Boolean,
         availableCinemas: MutableList<Cinema>
     ) {
+        hideLoading()
         ll.removeAllViewsInLayout()
 
         if (availableCinemas.isEmpty())
@@ -130,7 +125,6 @@ class CinemaActivity : MyTemplateActivity() {
                     button.isSelected = true
                     selectedCinemas.add(cinema.name)
                 }
-                mHandler.sendEmptyMessage(0)
             }
             ll.addView(button)
             val spacer = Space(this)
@@ -214,12 +208,37 @@ class CinemaActivity : MyTemplateActivity() {
         }
     }
 
+    private fun isDistanceCalculated(): Boolean {
+        return cinemas.isNotEmpty() && cinemas[0].distance != 0.0
+    }
 
-    private fun sortBy(byDistance: Boolean) {
-        if (byDistance)
-            getLastKnownLocation()
-        else
+    private fun showLoading() {
+        val loadingIndicator = findViewById<ImageView>(R.id.calculating)
+        loadingIndicator.visibility = ImageView.VISIBLE
+    }
+
+    private fun hideLoading() {
+        val loadingIndicator = findViewById<ImageView>(R.id.calculating)
+        loadingIndicator.visibility = ImageView.INVISIBLE
+    }
+
+
+    private fun sort(loading: Boolean = false) {
+        if (sortByDistance) {
+            if (isDistanceCalculated()) {
+                cinemas.sortBy { cinema -> cinema.distance }
+                mHandler.sendEmptyMessage(0)
+            } else {
+                if (loading) {
+                    findViewById<LinearLayout>(R.id.ll).removeAllViewsInLayout()
+                    showLoading()
+                }
+                getLastKnownLocation(::sortByDistance)
+            }
+        } else {
             cinemas.sortWith(compareBy({ it.district }, { it.name }))
+            mHandler.sendEmptyMessage(0)
+        }
     }
 
     private val mHandler = object : Handler(Looper.getMainLooper()) {
@@ -233,7 +252,7 @@ class CinemaActivity : MyTemplateActivity() {
         }
     }
 
-    private fun getLastKnownLocation() {
+    private fun getLastKnownLocation(callback: (Location, Handler) -> Unit) {
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_COARSE_LOCATION
@@ -248,7 +267,7 @@ class CinemaActivity : MyTemplateActivity() {
             .addOnSuccessListener { location ->
                 if (location != null) {
                     Executors.newSingleThreadExecutor().execute {
-                        sortByLocation(location, mHandler)
+                        callback(location, mHandler)
                     }
                 } else {
                     Utils.enableLocation(this) { afterLocationRequest(it) }
@@ -265,15 +284,16 @@ class CinemaActivity : MyTemplateActivity() {
 
     private fun afterLocationRequest(success: Boolean) {
         if (success)
-            getLastKnownLocation()
+            getLastKnownLocation(::sortByDistance)
         else {
             Utils.showToast(this, "לא ניתנה גישה למיקום")
-            val sortByLocation: CheckBox = findViewById(R.id.sort)
-            sortByLocation.isChecked = false
+            val sortByDistanceBox: CheckBox = findViewById(R.id.sort)
+            sortByDistanceBox.isChecked = false
+            sortByDistance = false
         }
     }
 
-    private fun sortByLocation(myLocation: Location, mHandler: Handler) {
+    private fun sortByDistance(myLocation: Location, mHandler: Handler) {
         Looper.prepare()
         if (cinemas.isEmpty())
             return
@@ -295,7 +315,7 @@ class CinemaActivity : MyTemplateActivity() {
             ActivityResultContracts.RequestPermission()
         ) { isGranted: Boolean ->
             if (isGranted)
-                getLastKnownLocation()
+                getLastKnownLocation(::sortByDistance)
             else {
                 val box: CheckBox = findViewById(R.id.sort)
                 box.isChecked = false
