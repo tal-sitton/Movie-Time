@@ -102,7 +102,8 @@ class MovieActivity : MyTemplateActivity() {
 
     private fun getMovies(): List<String> {
         val movies: MutableList<String> = mutableListOf()
-        for (screening in MainActivity.filteredCinemaScreenings.intersect(MainActivity.filteredDateScreenings)) {
+        for (screening in MainActivity.filteredCinemaScreenings.intersect(MainActivity.filteredDateScreenings)
+            .intersect(MainActivity.filteredDubScreenings)) {
             if (!Utils.advanceStringListContains(movies, screening.movie)) {
                 movies.add(screening.movie)
             }
