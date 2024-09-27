@@ -24,7 +24,7 @@ class JSONUtils {
         fun jsonToList(context: Context) {
             DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")
 
-            val json: JSONObject? = loadJSONFromFile(context)
+            val json: JSONObject? = loadJSONFromFile(context, "Movies.json")
             print(json)
             val tmpAllScreenings: MutableList<Screening> = mutableListOf()
             if (json != null) {
@@ -84,9 +84,9 @@ class JSONUtils {
             MainActivity.allScreenings = tmpAllScreenings
         }
 
-        fun loadJSONFromFile(context: Context): JSONObject? {
+        fun loadJSONFromFile(context: Context, fileName: String): JSONObject? {
             val json: JSONObject? = try {
-                val stream: InputStream = context.openFileInput("Movies.json")
+                val stream: InputStream = context.openFileInput(fileName)
                 val size: Int = stream.available()
                 val buffer = ByteArray(size)
                 stream.read(buffer)
@@ -108,7 +108,7 @@ class JSONUtils {
                 println("getting results...")
                 try {
                     val result = url.readText()
-                    writeToFile(result, context)
+                    writeToFile(result, context, "Movies.json")
                     context.startActivity(Intent(context, MainActivity::class.java))
                 } catch (ex: UnknownHostException) {
                     ex.printStackTrace()
@@ -122,10 +122,10 @@ class JSONUtils {
             }
         }
 
-        private fun writeToFile(data: String, context: Context) {
+        private fun writeToFile(data: String, context: Context, fileName:String) {
             try {
                 val outputStreamWriter =
-                    OutputStreamWriter(context.openFileOutput("Movies.json", Context.MODE_PRIVATE))
+                    OutputStreamWriter(context.openFileOutput(fileName, Context.MODE_PRIVATE))
                 outputStreamWriter.write(data)
                 outputStreamWriter.close()
             } catch (e: IOException) {
