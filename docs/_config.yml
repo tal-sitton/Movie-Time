@@ -18,8 +18,8 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 
 show_downloads: true
 buttons:
-  zip_title: Download The App
-  zip_url: https://play.google.com/store/apps/details?id=com.talsitton.movietime
+  zip_title: Use The App
+  zip_url: https://code.sitton.dev/device-based-redirect/?android=https://play.google.com/store/apps/details?id=com.talsitton.movietime&other=https://movie-time.sitton.dev
   zip_hide: false
   tar_url: /
   tar_title: About Me
