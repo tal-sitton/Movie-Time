@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.talsitton.movietime"
         minSdk 26
-        targetSdk 33
-        versionCode 7
-        versionName "2.0"
+        targetSdk 34
+        versionCode 8
+        versionName "2.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
