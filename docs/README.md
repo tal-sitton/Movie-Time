@@ -1,32 +1,48 @@
 <meta name="google-site-verification" content="nLDDhM2Tr4rBx3SVG7OHEM8ZNOsAh1etEjq9rnwGrtE" />
 
 # Movie Time
+
 <h3 dir="rtl"> האפליקציה שחוסכת לך זמן! </h3>
 
-<div dir="rtl">
-במקום לבזבז זמן על חיפושים אינוספיים בין כל אתרי רשתות הקולנוע השונות, רק כדי למצוא סרט מעניין לראות, הגיע פתרון חדש - הורידו את האפליקציה וכל המידע שאתם צריכים מרוכז במקום אחד!
+<div dir="rtl"> 
+במקום לבזבז זמן על חיפושים אינוספיים בין כל אתרי רשתות הקולנוע השונות, רק כדי למצוא סרט מעניין לראות, הגיע פתרון חדש - <b> אפליקציית Movie Time:</b> כל המידע שאתם צריכים מרוכז במקום אחד!
 <br><br>
-בעזרת האפליקציה, תוכלו לראות את הסרטים שמוקרנים היום, תוכלו לסנן את התוצאות לפי סרטים מסויימים, או לפי בתי קולנוע שאתם מעדיפים, והכל במקום אחד.
+האפליקצייה תציג לכם את הסרטים שמוקרנים בבתי הקולנוע המובילים בארץ: יס פלאנט, הוט סינמה, סינמה סיטי, רב חן, לב ומובילנד!
 <br><br>
-לא רוצים לראות סרט היום? בעזרת האפליקצייה תוכלו לראות אילו סרטים יהיו בבתי הקולנוע בחמישה ימים הקרובים (אם בתי הקולנוע עדכנו זאת באתר שלהם).
+בעזרת Movie Time, תוכלו לראות את הסרטים שמוקרנים היום, ולסנן את התוצאות לפי סרטים מסוימים, או לפי בתי הקולנוע שאתם מעדיפים, והכל במקום אחד.
 <br><br>
-אתם יכולים גם לסנן לפי חלקים שונים של היום.
+לא רוצים לראות סרט היום? בעזרת Movie Time תוכלו לראות אילו סרטים יהיו בבתי הקולנוע בחמישה ימים הקרובים (אם בתי הקולנוע עדכנו זאת באתר שלהם).
 <br><br>
-אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה באפליקציה, והיא מיד תנווט אתכם לאתר הקולנוע, לקניית כרטיסים. כעת תקנו כרטיסים, קחו פופקורן, ותהנו בסרט!
+מתלבטים בין מספר סרטים? לא יודעים איזה סרט עדיף? בלחיצת כפתור אחת על ההקרנה תוכלו לקבל את תקציר העלילה והדירוג של הסרט!
+<br><br>
+אחרי שסיננתם את התוצאות ומצאתם את ההקרנה שאתם רוצים ללכת אליה, כל שעליכם לעשות זה ללחוץ על ההקרנה, ומיד תנווטו לאתר הקולנוע, לקניית כרטיסים. כל שנותר הוא לקנות כרטיסים, לקחת פופקורן, ולהנות מהסרט!
 </div>
+<br>
+
+[לשרת](https://github.com/tal-sitton/Movie-Time-Server)
+
+[לאתר](https://github.com/tal-sitton/Movie-Time-Web)
+
 
 ---
+
 ### The app that saves you time!
 
-Instead of wasting your time searching the web for every single cinema in your area for a specific movie, just download the app, and you have all the information you need in the palm of your hand.
+Instead of wasting time endlessly searching through all the different cinema chain websites just to find an interesting movie to watch, there's a new solution – **Movie Time**: all the information you need is in one place!
 
-With this app, you have all the movies from every cinema in the country.
-All you need to do is filter by your favorite cinemas, and what movie you want to watch, and voilà, you'll get all the info you need.
+The app will show you the movies currently in Israel's leading cinemas: Yes Planet, Hot Cinema, Cinema City, Rav Hen, Lev, and Movieland!
 
-Don't want to watch the movie today? pick a different date, or maybe a different time of the day.
+With Movie Time, you can see the movies playing today and filter the results by specific movies or by your preferred cinemas – all in one place.
 
-After you filtered the results and found what you wanted, all you need to do is click the button on the screening, and it will take you right to the page of the cinema.
-Now what's left is for you to purchase the tickets, grab a bucket of popcorn and enjoy the movie.
+Not planning to watch a movie today? With Movie Time, you can also check out which movies will be screening in the next five days (if the cinemas have updated this information on their website).
+
+Having trouble deciding between a few movies? Not sure which one to choose? With a click on the screening, you'll get a movie synopsis and its rating!
+
+Once you've filtered the results and found the screening you want to attend, all you need to do is click on the screening, and it will immediately take you to the cinema's website to buy tickets. All that's left is to buy tickets, grab some popcorn, and enjoy the movie!
+
+[Movie Time Server](https://github.com/tal-sitton/Movie-Time-Server)
+
+[Movie Time Web app](https://github.com/tal-sitton/Movie-Time-Web)
 
 ---
 <div align="center">
@@ -40,16 +56,11 @@ Now what's left is for you to purchase the tickets, grab a bucket of popcorn and
 </div>
 
 ---
-## The roadmap
-<iframe src="https://sharing.clickup.com/3832745/l/h/3myx9-62/bfbc2bac8945430" width=770 height=500 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
-
----
-<div align="center">
-<img alt = "main screen dark mode" src="https://imgur.com/IhNfEJa.png" height="400"> <img alt = "screening selection dark mode" src="https://imgur.com/NPCfq7G.png" height="400"> <img alt = "cinema selection dark mode" src="https://imgur.com/e4korLa.png" height="400"> <img alt = "movie selection dark mode" src="https://imgur.com/jrwQsCr.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/zwl6Qca.png" height="400">
+<div align="center" dir="rtl">
+<img alt = "slide1" src="https://i.imgur.com/2w3VnoE.png" height="400"> <img alt = "slide2" src="https://i.imgur.com/J2fg15D.png" height="400"> <img alt = "movie selection" src="https://i.imgur.com/miVY0EX.png" height="400">
 </div>
-
-<div align="center">
-<img alt = "screening selection light mode" src="https://imgur.com/SCXyV2T.png" height="400"> <img alt = "cinema selection light mode" src="https://imgur.com/JcrABwV.png" height="400"> <img alt = "movie selection light mode" src="https://imgur.com/2xrgPAK.png" height="400"> <img alt = "date selection dark mode" src="https://imgur.com/vhXTAcs.png" height="400">
+<div align="center" dir="rtl">
+<img alt = "cinema selection" src="https://i.imgur.com/SklH740.png" height="400"> <img alt = "date selection" src="https://i.imgur.com/E6fsPau.png" height="400"> <img alt = "movie info tab" src="https://i.imgur.com/K0PqKqq.png" height="400">
 </div>
 
 <br><br>
