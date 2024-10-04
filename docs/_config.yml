@@ -19,7 +19,7 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 show_downloads: true
 buttons:
   zip_title: Use The App
-  zip_url: https://movie-time.sitton.dev/#/redirect
+  zip_url: https://movietime.sitton.dev/#/redirect
   zip_hide: false
   tar_url: /
   tar_title: About Me
