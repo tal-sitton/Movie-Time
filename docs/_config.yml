@@ -1,5 +1,6 @@
 remote_theme: tuur29/pages-themes-cayman
 title: Movie Time
+description: אפליקצייה למציאת סרטים בקולנוע בקלות ובמהירות
 markdown: kramdown
 url: https://code.sitton.dev
 baseurl: /Movie-Time
