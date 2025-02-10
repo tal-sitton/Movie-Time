@@ -277,7 +277,12 @@ class MainActivity : MyTemplateActivity() {
         plot.scrollTo(0, 0)
 
         findViewById<TextView>(R.id.movieRating).text = movie.rating
-        findViewById<TextView>(R.id.screeningInfo).text = screening.createInfo()
+        findViewById<TextView>(R.id.screeningHour).text = "שעה : ${screening.timeFormatted}"
+        findViewById<TextView>(R.id.screeningLocation).text = "קולנוע : ${screening.cinema}"
+        if (screening.dubbed)
+            findViewById<TextView>(R.id.screeningDubbed).visibility = TextView.VISIBLE
+        else
+            findViewById<TextView>(R.id.screeningDubbed).visibility = TextView.GONE
 
         findViewById<TextView>(R.id.order).setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(screening.url))

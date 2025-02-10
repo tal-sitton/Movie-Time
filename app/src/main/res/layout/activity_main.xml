@@ -251,16 +251,43 @@
                 app:layout_constraintStart_toStartOf="@+id/poster"
                 app:layout_constraintTop_toBottomOf="@+id/poster" />
 
+            <TextView
+                android:id="@+id/screeningDubbed"
+                android:layout_width="307dp"
+                android:layout_height="30dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="מדובב"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/screeningHour"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/screeningInfo"
+                android:id="@+id/screeningHour"
                 android:layout_width="307dp"
-                android:layout_height="63dp"
-                android:autoSizeMaxTextSize="30sp"
+                android:layout_height="25dp"
+                android:autoSizeMaxTextSize="20sp"
                 android:autoSizeMinTextSize="12sp"
                 android:autoSizeTextType="uniform"
                 android:gravity="center"
-                android:text="שעה:  \n קולנוע:"
+                android:text="שעה:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/screeningLocation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/screeningLocation"
+                android:layout_width="307dp"
+                android:layout_height="25dp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="קולנוע:"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/order"
@@ -275,9 +302,9 @@
                 android:layout_marginBottom="6dp"
                 android:background="@drawable/buy_tickets_button"
                 android:gravity="center"
-                android:textSize="20sp"
                 android:text="להזמנת כרטיסים"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />

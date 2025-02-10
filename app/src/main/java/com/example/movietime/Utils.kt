@@ -25,6 +25,8 @@ class Utils {
 
         fun advanceStringListContains(list: List<String>, str: String): Boolean {
             for (s in list) {
+                if (s.isEmpty())
+                    continue
                 if (s == str || (s[0] == str[0] && editDistance(s, str) < 3))
                     return true
             }
